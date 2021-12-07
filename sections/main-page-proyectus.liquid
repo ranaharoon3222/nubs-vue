@@ -1,107 +1,261 @@
 <section>
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#"><span>Inicio&nbsp;</span></a>
+            </li>
+            <li class="breadcrumb-item">
+                <a class="active-item" href="#"><span>Diseñadores</span></a>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<section>
     <div class="container low-border">
-        <h1 class="space-end mx-550 ms-auto">NUB for business</h1>
+        <h1 class="space-end mx-550 ms-auto">{{section.settings.title}}</h1>
     </div>
     <div class="container high-border"></div>
     <div class="container high-border">
-        <p class="space-end mx-550 ms-auto pt-3">Somos tu mejor aliado en la elaboración de mobiliario óptimo para
-            grandes obras. Nuestro departamento de proyectos especiales está listo para ayudarte.</p>
+        <div class="space-end mx-550 ms-auto pt-3">
+            {{section.settings.description}}
+        </div>
     </div>
 </section>
+
+{% for block in section.block %}
+{% assign b = block.settings %}
+{% if b.type == "bg_section" %}
+
 <section>
-    <div class="container pad-xl"
-        style="background: url(&quot;https://remedia.bss.design/assets/img/bg22.jpg&quot;) no-repeat;background-size: cover;">
-        <div class="row mx-600 mx-auto">
-            <div class="col">
-                <h1 class="text-white">Hemos colaborado en diferentes sectores comerciales.</h1>
-                <div class="mt-5 text-white">
-                    <div class="d-flex align-items-center mt-3"><img
-                            src="https://remedia.bss.design/assets/img/aeropuertos.png">
-                        <p class="mb-0 ms-3 s-family fw-normal">Lorem ipsum dolor</p>
-                    </div>
-                    <div class="d-flex align-items-center mt-3"><img
-                            src="https://remedia.bss.design/assets/img/bancos.png">
-                        <p class="mb-0 ms-3 s-family fw-normal">Lorem ipsum dolor</p>
-                    </div>
-                    <div class="d-flex align-items-center mt-3"><img
-                            src="https://remedia.bss.design/assets/img/mas-productos%20(1).png">
-                        <p class="mb-0 ms-3 s-family fw-normal">Lorem ipsum dolor</p>
-                    </div>
+    <div class="container pad-xl" style="
+          background: url({{b.image | img_url : " master"}}) no-repeat; background-size: cover; ">
+        <div class=" row mx-600 mx-auto">
+        <div class="col">
+            <h1 class="text-white">
+                {{b.title}}
+            </h1>
+            <div class="mt-5 text-white">
+                <div class="d-flex align-items-center mt-3">
+                    <img src="{{b.ico_1_title | img_url : " master"}}" />
+                    <p class="mb-0 ms-3 s-family fw-normal"> {{b.ico_1_title}} </p>
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                    <img src="{{b.ico_2_title | img_url : " master"}}" />
+                    <p class="mb-0 ms-3 s-family fw-normal">{{b.ico_2_title}}</p>
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                    <img src="{{b.ico_3_title | img_url : " master"}}" />
+                    <p class="mb-0 ms-3 s-family fw-normal">{{b.ico_3_title}}</p>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 </section>
+
+{% endif %}
+
+{% endfor %}
+
+
 <section class="py-5">
     <!-- Start: 1 Row 2 Columns -->
     <div class="container">
         <div class="mb-3 full-border-top d-flex justify-content-between">
-            <h4>Conoce nuestros sofás modulares</h4>
-            <div class="product_slider_arrow"><img class="prev-arrow"
-                    src="https://remedia.bss.design/assets/img/prev-arrow.png"><img class="next-arrow"
-                    src="https://remedia.bss.design/assets/img/next-arrow.png"></div>
+            <h4>{{section.settings.gallery_title}}</h4>
+            <div class="product_slider_arrow">
+                <img class="prev-arrow" src="https://remedia.bss.design/assets/img/prev-arrow.png" /><img
+                    class="next-arrow" src="https://remedia.bss.design/assets/img/next-arrow.png" />
+            </div>
         </div>
         <div class="row">
             <div class="col">
                 <div id="gallery-slider" class="swiper">
                     <div class="swiper-wrapper">
-                        <div class="hover_product swiper-slide"><img class="w-100"
-                                src="https://remedia.bss.design/assets/img/Rectangle%20200.png"></div>
-                        <div class="hover_product swiper-slide"><img class="w-100"
-                                src="https://remedia.bss.design/assets/img/Rectangle%20200.png"></div>
-                        <div class="hover_product swiper-slide"><img class="w-100"
-                                src="https://remedia.bss.design/assets/img/Rectangle%20200.png"></div>
-                        <div class="hover_product swiper-slide"><img class="w-100"
-                                src="https://remedia.bss.design/assets/img/Rectangle%20200.png"></div>
-                        <div class="hover_product swiper-slide"><img class="w-100"
-                                src="https://remedia.bss.design/assets/img/Rectangle%20200.png"></div>
-                        <div class="hover_product swiper-slide"><img class="w-100"
-                                src="https://remedia.bss.design/assets/img/Rectangle%20200.png"></div>
+
+                        {% for block in section.blocks %}
+                        {% if block.type == 'gallery' %}
+                        <div class="hover_product swiper-slide">
+                            <img class="w-100" src="{{ block.image | img_url: '1024x' }}" />
+                        </div>
+                        {% endif %}
+
+                        {% endfor %}
+
+
                     </div>
                 </div>
             </div>
         </div>
-    </div><!-- End: 1 Row 2 Columns -->
+    </div>
+    <!-- End: 1 Row 2 Columns -->
 </section>
+
+{% for block in section.blocks %}
+{% if block.type == 'contact' %}
+
 <section class="py-4">
     <div class="container">
         <div class="row">
             <div class="col pb-5">
-                <h1>Contáctanos</h1>
-                <p class="pt-5 mt-5 pb-4 mx-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
-                    hendrerit augue et, a nisi, eu at. Consequat odio scelerisque est tincidunt ipsum vitae.</p><a
-                    class="text-black s-family text-decoration-none d-block" href="#">+52 22 2196 1353</a><a
-                    class="text-black s-family text-decoration-none d-block" href="#">info@nubmobiliario.mx</a>
+                <h1>{{block.settings.title}}</h1>
+                <p class="pt-5 mt-5 pb-4 mx-600">
+                    {{block.settings.description}}
+                </p>
+                <a class="text-black s-family text-decoration-none d-block" href="#"> {{block.settings.phone}}</a><a
+                    class="text-black s-family text-decoration-none d-block" href="#"> {{block.settings.email}}</a>
             </div>
             <div class="col">
                 <!-- Start: Nubs Input -->
-                <div class="form-floating mb-4"><input type="text" class="form-control" placeholder="Email"><label
-                        class="form-label">Label</label></div><!-- End: Nubs Input -->
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control" placeholder="Nombre" /><label
+                        class="form-label">Nombre</label>
+                </div>
+                <!-- End: Nubs Input -->
                 <!-- Start: Nubs Input -->
-                <div class="form-floating mb-4"><input type="text" class="form-control" placeholder="Email"><label
-                        class="form-label">Label</label></div><!-- End: Nubs Input -->
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control" placeholder="electrónico" /><label class="form-label">Correo
+                        electrónico</label>
+                </div>
+                <!-- End: Nubs Input -->
                 <!-- Start: Nubs Input -->
-                <div class="form-floating mb-4"><input type="text" class="form-control mb-4" placeholder="Email">
-                    <!-- Start: Nubs Textarea -->
-                    <div class="form-floating mb-3"><textarea class="form-control"
-                            placeholder="Message"></textarea><label class="form-label">message</label></div>
-                    <!-- End: Nubs Textarea --><label class="form-label">Label</label>
-                </div><!-- End: Nubs Input --><a class="main-button text-center w-100 text-uppercase"
-                    href="#">enviar</a>
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control mb-4" placeholder="Teléfono" />
+                    <label class="form-label">Teléfono</label>
+                </div>
+                <!-- End: Nubs Input -->
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Message"></textarea><label class="form-label">Mensaje
+                    </label>
+                </div>
+                <a class="main-button text-center w-100 text-uppercase" href="#">enviar</a>
             </div>
         </div>
     </div>
 </section>
 
 
+{% endif %}
+
+{% endfor %}
+
 <script>
     window.addEventListener('load', function () {
-
         new Swiper('#gallery-slider', {
             slidesPerView: 2,
             spaceBetween: 20,
             navigation: { nextEl: '.next-arrow', prevEl: '.prev-arrow' },
             breakpoints: { 981: { slidesPerView: 4, spaceBetween: 40 } },
         });
-    })
+    });
 </script>
+
+
+
+
+
+
+{% schema %}
+{
+"name": "business",
+"settings": [{
+"type": "text",
+"id": "title",
+"label": "Title"
+},
+{
+"type": "text",
+"id": "description",
+"label": "Description"
+},
+{
+"type": "image_picker",
+"id": "bg_image",
+"label": "Background Image"
+},
+{
+"type": "text",
+"id": "gallery_title",
+"label": "gallery_title"
+}
+],
+"blocks": [{
+"type": "bg_section",
+"name": "Background Section",
+"settings": [{
+"type": "text",
+"id": "bg_title",
+"label": "Title"
+},
+{
+"type": "text",
+"id": "ico_1_title",
+"label": "icon_1_title"
+},
+{
+"type": "image_picker",
+"id": "ico_1_image",
+"label": "Icon 1 Image"
+}, {
+"type": "text",
+"id": "ico_2_title",
+"label": "icon_2_title"
+},
+{
+"type": "image_picker",
+"id": "ico_2_image",
+"label": "Icon 2 Image"
+}, {
+"type": "text",
+"id": "ico_3_title",
+"label": "icon_3_title"
+},
+{
+"type": "image_picker",
+"id": "ico_3_image",
+"label": "Icon 3 Image"
+}
+]
+},
+
+{
+"type": "gallery",
+"name": "gallery",
+"settings": [{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}]
+},
+
+
+{
+"type": "contact",
+"name": "contact",
+"settings": [{
+"type": "text",
+"id": "title",
+"label": "Title"
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Description"
+
+},
+{
+"type": "text",
+"id": "phone",
+"label": "Phone"
+},
+{
+"type": "text",
+"id": "email",
+"label": "Email"
+}
+]
+}
+]
+}
+{% endschema %}
