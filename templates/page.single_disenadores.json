@@ -7,6 +7,8 @@
           "type": "disenadores",
           "settings": {
             "page": "richard-ibarra",
+            "c_title": "Productos del diseñador",
+            "collection": "frontpage",
             "image": "shopify:\/\/shop_images\/Rectangle_183.jpg",
             "title": "Richard Ibarra",
             "email": "david@davidvivanco.com.mx",
@@ -18,8 +20,6 @@
         "1032df45-3288-4109-9b35-f5e2c69a089c"
       ],
       "settings": {
-        "title": "Productos del diseñador",
-        "collection": "frontpage"
       }
     },
     "163889398085277dfa": {
@@ -29,6 +29,8 @@
           "type": "disenadores",
           "settings": {
             "page": "david",
+            "c_title": "",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/team_1.jpg",
             "title": "tytrytr",
             "email": "",
@@ -40,8 +42,6 @@
         "aa74acc2-9c1a-44be-a558-f41d0ef6c105"
       ],
       "settings": {
-        "title": "test",
-        "collection": "frontpage"
       }
     }
   },
