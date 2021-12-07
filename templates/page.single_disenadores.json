@@ -1,29 +1,52 @@
 {
   "sections": {
-    "main": {
+    "16388938383f3c1e4f": {
       "type": "main-page-single-disenadores",
       "blocks": {
-        "fd51c41f-82ce-45d3-a705-564c304084d0": {
+        "1032df45-3288-4109-9b35-f5e2c69a089c": {
           "type": "disenadores",
           "settings": {
-            "page": "david",
-            "image": "shopify:\/\/shop_images\/team_1.jpg",
-            "title": "David Vivanco",
+            "page": "richard-ibarra",
+            "image": "shopify:\/\/shop_images\/Rectangle_183.jpg",
+            "title": "Richard Ibarra",
             "email": "david@davidvivanco.com.mx",
             "description": "<p>Si se renuevan con cierta frecuencia los accesorios de un espacio interior se consigue que parezca diferente, aunque las piezas principales del mobiliario no cambien.<\/p>"
           }
         }
       },
       "block_order": [
-        "fd51c41f-82ce-45d3-a705-564c304084d0"
+        "1032df45-3288-4109-9b35-f5e2c69a089c"
       ],
       "settings": {
-        "title": "Slider Title",
+        "title": "Productos del diseñador",
         "collection": "frontpage"
+      }
+    },
+    "163889398085277dfa": {
+      "type": "main-page-single-disenadores",
+      "blocks": {
+        "aa74acc2-9c1a-44be-a558-f41d0ef6c105": {
+          "type": "disenadores",
+          "settings": {
+            "page": "david",
+            "image": "shopify:\/\/shop_images\/team_1.jpg",
+            "title": "tytrytr",
+            "email": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "aa74acc2-9c1a-44be-a558-f41d0ef6c105"
+      ],
+      "settings": {
+        "title": "test",
+        "collection": ""
       }
     }
   },
   "order": [
-    "main"
+    "16388938383f3c1e4f",
+    "163889398085277dfa"
   ]
 }
