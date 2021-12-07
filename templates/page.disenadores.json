@@ -23,8 +23,8 @@
           "type": "disenadores",
           "settings": {
             "image": "shopify:\/\/shop_images\/team_2.jpg",
-            "title": "",
-            "link": ""
+            "title": "Some Name",
+            "link": "#"
           }
         }
       },
