@@ -25,7 +25,7 @@
 
 {% for block in section.blocks %}
 {% assign b = block.settings %}
-{% if b.type == "bg_section" %}
+{% if block.type == "bg_section" %}
 
 <section>
     <div class="container pad-xl" style="
