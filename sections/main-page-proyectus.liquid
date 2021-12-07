@@ -36,18 +36,37 @@
                 {{b.title}}
             </h1>
             <div class="mt-5 text-white">
+                {% if b.ico_1_title !== blank %}
                 <div class="d-flex align-items-center mt-3">
                     <img src="{{b.ico_1_image| img_url : " master"}}" />
-                    <p class="mb-0 ms-3 s-family fw-normal"> {{b.ico_1_title}} </p>
+                    <p class="mb-0 ms-3 s-family fw-normal text-white"> {{b.ico_1_title}} </p>
                 </div>
+                {% endif %}
+
+                {% if b.ico_2_title !== blank %}
                 <div class="d-flex align-items-center mt-3">
                     <img src="{{b.ico_2_image | img_url : " master"}}" />
-                    <p class="mb-0 ms-3 s-family fw-normal">{{b.ico_2_title}}</p>
+                    <p class="mb-0 ms-3 s-family fw-normal text-white">{{b.ico_2_title}}</p>
                 </div>
+                {% endif %}
+
+                {% if b.ico_3_title !== blank %}
                 <div class="d-flex align-items-center mt-3">
                     <img src="{{b.ico_3_image | img_url : " master"}}" />
-                    <p class="mb-0 ms-3 s-family fw-normal">{{b.ico_3_title}}</p>
+                    <p class="mb-0 ms-3 s-family fw-normal text-white">{{b.ico_3_title}}</p>
                 </div>
+                {% endif %}
+
+                {% if b.ico_4_title !== blank %}
+                <div class="d-flex align-items-center mt-3">
+                    <img src="{{b.ico_4_image | img_url : " master"}}" />
+                    <p class="mb-0 ms-3 s-family fw-normal text-white">{{b.ico_4_title}}</p>
+                </div>
+                {% endif %}
+
+
+
+
             </div>
         </div>
     </div>
@@ -146,7 +165,7 @@
             slidesPerView: 2,
             spaceBetween: 20,
             navigation: { nextEl: '.next-arrow', prevEl: '.prev-arrow' },
-            breakpoints: { 981: { slidesPerView: 4, spaceBetween: 40 } },
+            breakpoints: { 981: { slidesPerView: 3, spaceBetween: 40 } },
         });
     });
 </script>
@@ -187,7 +206,7 @@
 {
 
 "type": "text",
-"id": "bg_title",
+"id": "title",
 "label": "Title"
 },
 {
@@ -217,6 +236,16 @@
 "type": "image_picker",
 "id": "ico_3_image",
 "label": "Icon 3 Image"
+},
+{
+"type": "text",
+"id": "ico_4_title",
+"label": "icon_4_title"
+},
+{
+"type": "image_picker",
+"id": "ico_4_image",
+"label": "Icon 4 Image"
 }
 ]
 },
