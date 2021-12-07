@@ -1,0 +1,94 @@
+<section>
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#"><span>Inicio&nbsp;</span></a></li>
+            <li class="breadcrumb-item"><a href="#"><span>Diseñadores </span></a></li>
+            <li class="breadcrumb-item"><a class="active-item" href="#"><span>David Vivanco</span></a></li>
+        </ol>
+    </div>
+</section>
+<section class="mb-5">
+    <!-- Start: 1 Row 2 Columns -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"><img class="w-100" src="https://remedia.bss.design/assets/img/team%201.jpg"></div>
+            <div class="col-md-6 flex-wrap d-flex">
+                <div class="w-100 pt-2">
+                    <h1>David Vivanco</h1>
+                    <p class="single-mail">david@davidvivanco.com.mx</p>
+                </div>
+                <div class="w-100 align-self-end single-desc position-relative">
+                    <p>Si se renuevan con cierta frecuencia los accesorios de un espacio interior se consigue que
+                        parezca diferente, aunque las piezas principales del mobiliario no cambien.</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- End: 1 Row 2 Columns -->
+</section>
+<section class="bg-EFEBEB py-5">
+    <div class="container">
+        <div class="mb-3 full-border-top d-flex justify-content-between">
+            <h4>Productos del diseñador</h4>
+            <div class="product_slider_arrow"><img class="prev-arrow"
+                    src="{{ 'prev-arrow.static.png'  | asset_img_url: 'master'}}"><img class="next-arrow"
+                    src="{{ 'next-arrow.static.png'  | asset_img_url: 'master'}}"></div>
+        </div>
+        <div id="product_slider" class="swiper">
+            <div class="swiper-wrapper">
+                <div class="hover_product swiper-slide"><img class="w-100"
+                        src="https://remedia.bss.design/assets/img/Rectangle%20200.png">
+                    <div class="ps-2">
+                        <h5>Some product title</h5><span>$00,000</span>
+                    </div>
+                </div>
+                <div class="hover_product swiper-slide"><img class="w-100"
+                        src="https://remedia.bss.design/assets/img/Rectangle%20200.png">
+                    <div class="ps-2">
+                        <h5>Some product title</h5><span>$00,000</span>
+                    </div>
+                </div>
+                <div class="hover_product swiper-slide"><img class="w-100"
+                        src="https://remedia.bss.design/assets/img/Rectangle%20200.png">
+                    <div class="ps-2">
+                        <h5>Some product title</h5><span>$00,000</span>
+                    </div>
+                </div>
+                <div class="hover_product swiper-slide"><img class="w-100"
+                        src="https://remedia.bss.design/assets/img/Rectangle%20200.png">
+                    <div class="ps-2">
+                        <h5>Some product title</h5><span>$00,000</span>
+                    </div>
+                </div>
+                <div class="hover_product swiper-slide"><img class="w-100"
+                        src="https://remedia.bss.design/assets/img/Rectangle%20200.png">
+                    <div class="ps-2">
+                        <h5>Some product title</h5><span>$00,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    window.addEventListener('load', function () {
+        new Swiper('#product_slider', {
+            navigation: { nextEl: '.next-arrow', prevEl: '.prev-arrow' },
+            slidesPerView: 2,
+            spaceBetween: 20,
+            breakpoints: { 981: { slidesPerView: 4, spaceBetween: 40 } },
+        }),
+            new Swiper('#product_slider_2_slides', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                navigation: { nextEl: '.next-arrow', prevEl: '.prev-arrow' },
+            }),
+            new Swiper('#gallery-slider', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                navigation: { nextEl: '.next-arrow', prevEl: '.prev-arrow' },
+                breakpoints: { 981: { slidesPerView: 4, spaceBetween: 40 } },
+            });
+    });
+</script>

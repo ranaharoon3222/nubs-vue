@@ -1,0 +1,409 @@
+<main id="slider-wrap">
+  <div id="swiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+      {% if block.type == 'style_1' %}
+      <div id="slide-{{ forloop.index }}" class="swiper-slide"
+        data-hash="{{block.settings.nav_title | replace: ' ', '-' | url_encode}}">
+        <!-- Start: Nubs Banner 1 -->
+        <section class="vh-100 d-grid align-items-center home-banner-1"
+          style="background: url({{block.settings.background_image  | img_url: 'master' }}) no-repeat;background-size: cover;">
+          <div class="text-center px-4">
+            <h1 class="text-white">{{block.settings.title}}</h1>
+            <h1 class="text-white fst-italic"> {{block.settings.sub_title}} </h1><a
+              class="main-button-dark mx-auto mt-4 text-uppercase"
+              href="{{block.settings.btn_link}}">{{block.settings.btn_text}}</a>
+          </div>
+        </section><!-- End: Nubs Banner 1 -->
+      </div>
+      {% endif %}
+
+      {% endfor %}
+
+      {% for block in section.blocks %}
+      {% if block.type == 'style_2' %}
+
+      <div id="slide-{{ forloop.index }}" class="swiper-slide"
+        data-hash="{{block.settings.nav_title | replace: ' ', '-' | url_encode}}">
+        <section class="px-md-5 px-3 mb-4">
+          <div class="row py-3 boder-line mx-0 mb-4 mt-3">
+            <div class="col-md-6 col-xl-7 ps-0">
+              <h3>{{ block.settings.title }}</h3>
+              <h3 class="fst-italic">{{ block.settings.sub_title }}</h3>
+            </div>
+            <div class="col-md-6 col-xl-5 home-cs-width ms-auto ps-0">
+              <p>{{ block.settings.description }}</p>
+            </div>
+          </div>
+          <div class="text-center px-3 home-2"
+            style="background: url({{block.settings.image  | img_url: 'master' }});background-size: cover;">
+            <div class="me-3 pt-5">
+              <!-- Start: Nubs Button --><a class="main-button-dark ms-auto text-uppercase"
+                href="{{ block.settings.btn_link }}">{{ block.settings.btn_text }}</a>
+              <!-- End: Nubs Button -->
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {% endif %}
+      {% endfor %}
+
+
+      {% for block in section.blocks %}
+      {% if block.type == 'style_3' %}
+      <div id="slide-{{ forloop.index }}" class="swiper-slide"
+        data-hash="{{block.settings.nav_title | replace: ' ', '-' | url_encode}}">
+        <!-- Start: Home 5 Nubs -->
+        <section class="px-md-5 px-3 mb-4">
+          <div class="row py-3 boder-line mx-0 mb-4 mt-3">
+            <div class="col-md-6 col-xl-7 ps-0">
+              <h3>{{block.settings.title}}</h3>
+            </div>
+            <div class="col-md-6 col-xl-5 home-cs-width ms-auto ps-0">
+              <p>{{block.settings.description}}
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-xl-3"><img class="w-100 slide-4-img"
+                src="{{block.settings.image | img_url: 'master'}}"></div>
+            <div class="col-md-4 col-xl-6 align-self-center">
+              <div class="accordion c-accordian" role="tablist" id="accordion-1">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                      data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false"
+                      aria-controls="accordion-1 .item-1">{{block.settings.icno_1_title}}<img
+                        src="{{block.settings.icno_1_image | img_url: 'master'}}"></button></h2>
+                  <div class="accordion-collapse collapse item-1 show" role="tabpanel" data-bs-parent="#accordion-1">
+                    <div class="accordion-body">
+                      <p class="mb-0 s-family">{{block.settings.icno_1_text}}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                      data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false"
+                      aria-controls="accordion-1 .item-2">{{block.settings.icno_2_title}}<img
+                        src="{{block.settings.icno_2_image | img_url: 'master'}}"></button></h2>
+                  <div class="accordion-collapse collapse item-2 show" role="tabpanel" data-bs-parent="#accordion-1">
+                    <div class="accordion-body">
+                      <p class="mb-0 s-family">{{block.settings.icno_2_text}}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" role="tab"><button class="accordion-button" data-bs-toggle="collapse"
+                      data-bs-target="#accordion-1 .item-3" aria-expanded="true"
+                      aria-controls="accordion-1 .item-3">{{block.settings.icno_3_title}}<img
+                        src="{{block.settings.icno_3_image | img_url: 'master'}}"></button></h2>
+                  <div class="accordion-collapse collapse show item-3 show" role="tabpanel"
+                    data-bs-parent="#accordion-1">
+                    <div class="accordion-body">
+                      <p class="mb-0 s-family">{{block.settings.icno_3_text}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <!-- Start: Nubs Button --><a class="main-button mx-lg-auto mt-4 text-uppercase text-center"
+                href="{{block.settings.btn_url}}">{{block.settings.btn_text}}</a><!-- End: Nubs Button -->
+            </div>
+          </div>
+        </section><!-- End: Home 5 Nubs -->
+      </div>
+      {% endif %}
+      {% endfor %}
+
+
+
+    </div>
+  </div>
+  <section id="custom-navigation" class="custom-slide-pagination">
+    <div>
+      <p class="slide-pagination" style="height: 239px;opacity: 0;visibility: hidden;">Paragraph</p>
+      {% for block in section.blocks %}
+      {% if block.type == 'style_1' %}
+      <p class="slide-pagination" data-slide="{{block.settings.nav_title | replace: ' ', '-' | url_encode}}">
+        {{block.settings.nav_title}}</p>
+      {% endif %}
+      {% endfor %}
+      {% for block in section.blocks %}
+      {% if block.type == 'style_2' %}
+      <p class="slide-pagination" data-slide="{{block.settings.nav_title | replace: ' ', '-' | url_encode}}">
+        {{block.settings.nav_title}}</p>
+      {% endif %}
+      {% endfor %}
+
+      {% for block in section.blocks %}
+      {% if block.type == 'style_3' %}
+      <p class="slide-pagination" data-slide="{{block.settings.nav_title | replace: ' ', '-' | url_encode}}">
+        {{block.settings.nav_title}}</p>
+      {% endif %}
+      {% endfor %}
+
+      <p class="slide-pagination" style="height: 200px;opacity: 0;visibility: hidden;">Paragraph</p><span
+        class="slide-line"></span>
+    </div>
+  </section>
+</main>
+
+
+
+
+
+<script>
+  window.addEventListener('load', () => {
+    let e = document.querySelectorAll('.slide-pagination');
+    function t(e, t, i) {
+      var o = e.scrollTop,
+        a = t - o,
+        n = 0,
+        r = function () {
+          n += 20;
+          var t = Math.easeInOutQuad(n, o, a, i);
+          (e.scrollTop = t), n < i && setTimeout(r, 20);
+        };
+      r();
+    }
+    (Math.easeInOutQuad = function (e, t, i, o) {
+      return (e /= o / 2) < 1
+        ? (i / 2) * e * e + t
+        : (-i / 2) * (--e * (e - 2) - 1) + t;
+    }),
+      e.forEach((i, o) => {
+        i.addEventListener('click', function () {
+          var i = this.offsetTop;
+          let o = this.getAttribute('data-slide');
+          t(document.querySelector('#custom-navigation > div'), i - 71, 300),
+            e.forEach((e, t) => {
+              e.classList.remove('active-slide');
+            }),
+            this.classList.add('active-slide'),
+            (location.hash = o);
+        });
+      });
+    new Swiper('#swiper', {
+      effect: 'fade',
+      fadeEffect: { crossFade: !0 },
+      autoHeight: !0,
+      direction: 'horizontal',
+      loop: !0,
+      hashNavigation: { watchState: !0 },
+      on: {
+        slideChange: function () {
+          setTimeout(() => {
+            e.forEach((i, o) => {
+              if (i.getAttribute('data-slide') === location.hash.split('#')[1]) {
+                var a = i.offsetTop;
+                t(
+                  document.querySelector('#custom-navigation > div'),
+                  a - 71,
+                  300
+                ),
+                  e.forEach((e, t) => {
+                    e.classList.remove('active-slide');
+                  }),
+                  i.classList.add('active-slide');
+              }
+            });
+          }, 400);
+        },
+      },
+    });
+  });
+
+  window.addEventListener('load', function () {
+    const e = document.querySelectorAll('.c-accordian .accordion-collapse ');
+    window.innerWidth < 980 &&
+      e.forEach(function (e) {
+        e.classList.remove('show');
+      });
+    const t = document.querySelectorAll('.footer_link_col .collapse');
+    window.innerWidth < 980 &&
+      t.forEach(function (e) {
+        e.classList.remove('show');
+      });
+  });
+
+
+</script>
+
+
+
+
+
+{% schema %}
+{
+"name": "hero",
+"settings": [],
+"blocks": [
+{
+"type": "style_1",
+"name": "style 1",
+"settings": [
+{
+"type": "image_picker",
+"id": "background_image",
+"label": "background image"
+},
+{
+"type": "text",
+"id": "nav_title",
+"label": "Navigation Title"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},
+{
+"type": "text",
+"id": "sub_title",
+"label": "Sub Heading"
+},
+{
+"type": "text",
+"id": "btn_text",
+"label": "Button Text"
+},
+{
+"type": "url",
+"id": "btn_link",
+"label": "Button Link"
+}
+]
+},
+{
+"type": "style_2",
+"name": "style 2",
+"settings": [
+{
+"type": "text",
+"id": "nav_title",
+"label": "Navigation Title"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},
+{
+"type": "text",
+"id": "sub_title",
+"label": "Sub Heading"
+},
+{
+"type": "text",
+"id": "description",
+"label": "Description"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "image"
+},
+{
+"type": "text",
+"id": "btn_text",
+"label": "Button Text"
+},
+{
+"type": "url",
+"id": "btn_link",
+"label": "Button Link"
+}
+]
+},
+{
+"type": "style_3",
+"name": "style 3",
+"settings": [
+{
+"type": "text",
+"id": "nav_title",
+"label": "Navigation Title"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},
+{
+"type": "text",
+"id": "sub_title",
+"label": "Sub Heading"
+},
+{
+"type": "text",
+"id": "description",
+"label": "Description"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "image"
+},
+{
+"type": "text",
+"id": "btn_text",
+"label": "Button Text"
+},
+{
+"type": "url",
+"id": "btn_link",
+"label": "Button Link"
+},
+
+{
+"type": "image_picker",
+"id": "icno_1_image",
+"label": "icno_1_image"
+},
+{
+"type": "text",
+"id": "icno_1_title",
+"label": "icno_1_title"
+},
+{
+"type": "text",
+"id": "icno_1_text",
+"label": "icno_1_text"
+},
+{
+"type": "image_picker",
+"id": "icno_2_image",
+"label": "icno_2_image"
+},
+{
+"type": "text",
+"id": "icno_2_title",
+"label": "icno_2_title"
+},
+{
+"type": "text",
+"id": "icno_2_text",
+"label": "icno_2_text"
+},
+{
+"type": "image_picker",
+"id": "icno_3_image",
+"label": "icno_3_image"
+},
+{
+"type": "text",
+"id": "icno_3_title",
+"label": "icno_3_title"
+},
+{
+"type": "text",
+"id": "icno_3_text",
+"label": "icno_3_text"
+}
+]
+}
+]
+}
+
+{% endschema %}

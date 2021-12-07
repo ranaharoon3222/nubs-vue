@@ -1,0 +1,79 @@
+<section id="footer" class="py-5">
+  <!-- Start: 1 Row 3 Columns -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-xl-3 col-xxl-6"><a href="/"><img
+            src="{{ section.settings.logo | img_url: 'master' }}"></a>
+        <div class="social"><a href=" {{section.settings.instagram_link}} "><img src="{{ " instagram.static.png" |
+              asset_url}}"></a><a href="{{section.settings.facebook_link}}"><img src="{{ " facebook.static.png" |
+              asset_url}}"></a></div>
+        <p class="copyright">Todos los derechos reservados © 2021 NUB<a href="#">Diseñado
+            por&nbsp;<strong>Remedia</strong></a></p>
+      </div>
+
+      {% for block in section.blocks %}
+      <div class="col-md-3 col-xl-3 col-xxl-2 footer_link_col">
+        <div><a class="p-0 btn footer_heading text-start collapsed text-uppercase" data-bs-toggle="collapse"
+            aria-expanded="true" aria-controls="collapse-{{forloop.index0}}" href="#collapse-{{forloop.index0}}"
+            role="button"> {{block.settings.heading}}
+          </a>
+          <div class="collapse show" id="collapse-{{forloop.index0}}">
+            <ul class="list-unstyled">
+              {% for link in linklists[block.settings.footer_menu].links %}
+              <li> <a href="{{ link.url }}"> {{link.title}} </a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div><!-- End: 1 Row 3 Columns -->
+</section>
+
+{% schema %}
+{
+"name": "footer",
+"settings": [
+{
+"type": "image_picker",
+"id": "logo",
+"label": "Logo"
+},
+{
+"type": "url",
+"id": "instagram_link",
+"label": "instagram link"
+},
+{
+"type": "url",
+"id": "facebook_url",
+"label": "facebook url"
+},
+{
+"type": "richtext",
+"id": "copyright",
+"label": "Copyright"
+}
+],
+"blocks": [
+{
+"type": "footer_col",
+"name": "footer column",
+"settings": [
+{
+"type": "text",
+"id": "heading",
+"label": "Heading"
+},
+{
+"type": "link_list",
+"id": "footer_menu",
+"label": "Footer Menu"
+}
+]
+}
+]
+}
+{% endschema %}

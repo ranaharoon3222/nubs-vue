@@ -1,0 +1,101 @@
+<!-- mobile menu -->
+
+
+<section class="mobile_menu d-lg-none">
+    <div class="row align-items-center">
+        <div class="col-6 col-sm-6 col-md-3 mobile_logo pe-0 py-3 ps-4 pe-3"><img class="w-100"
+                src="{{ logo  | img_url: 'master' }}"></div>
+        <div class="col-6 col-sm-6 col-md-9 ps-0 pe-4">
+            <div id="mobile_menu_action" class="hstack align-items-center justify-content-end">
+                <div><a href="#"><img src="{{ " search.static.png" | asset_url }}"></a></div>
+                <div class="px-3"><a href="#"><img src="{{ " cart.static.png" | asset_url }}"><span
+                            class="cart-counter">{% raw %}{{ $store.state['cart'].count }}{% endraw %}</span></a></div>
+                <div id="open-mobile"><img src="{{ " hamburger.static.png" | asset_url}}"></div>
+                <div id="close-mobile" style="display: none;"><img src="{{ " close.static.png" | asset_url}}"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div id="my-header d-none d-lg-block">
+    <nav id="mobile-menu">
+        <ul>
+            {% for block in blocks %}
+            {% if block.type == 'mega_menu' %}
+
+            <li>
+                <a href="{{block.settings.main_item_link}}">
+                    {{block.settings.main_item}}
+                </a>
+                {% if block.settings.sub_menu_1 != blank %}
+                <ul>
+                    {% for link in linklists[block.settings.sub_menu_1].links %}
+                    <li>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                    {% endfor %}
+                    {% if block.settings.sub_menu_1 != blank %}
+                    {% for link in linklists[block.settings.sub_menu_2].links %}
+
+                    <li>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                    {% endfor %}
+
+                    {% endif %}
+
+                </ul>
+                {% endif %}
+            </li>
+
+            {% endif %}
+            {% endfor %}
+
+
+            {% for block in section.blocks %}
+            {% if block.type == 'right_menu' %}
+            <li>
+                <a class=" active text-decoration-none" href="{{ block.settings.main_item_link }}"> {{
+                    block.settings.main_item }} </a>
+            </li>
+
+
+            {% endif %}
+            {% endfor %}
+
+
+        </ul>
+
+    </nav>
+
+</div>
+
+
+
+<!-- end mobile menu -->
+
+
+<component is="script">
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = new MmenuLight(document.querySelector('#mobile-menu'));
+
+        const navigator = menu.navigation();
+        const drawer = menu.offcanvas();
+
+        document.querySelector('#open-mobile').addEventListener('click', function (evnt) {
+            evnt.preventDefault();
+            drawer.open();
+            this.style.display = 'none';
+            document.querySelector('#close-mobile').style.display = 'block';
+        });
+        document.querySelector('#close-mobile').addEventListener('click', function (evnt) {
+            evnt.preventDefault();
+            drawer.close();
+            this.style.display = 'none';
+            document.querySelector('#open-mobile').style.display = 'block ';
+        });
+
+    });
+
+</component>

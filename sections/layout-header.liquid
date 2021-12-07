@@ -1,0 +1,175 @@
+<header vue>
+  <nav class="navbar navbar-light navbar-expand-md d-none d-lg-block">
+    <div class="container-fluid no-pad">
+      <a class="navbar-brand" href="#"><img src="{{ section.settings.logo | img_url: 'master' }}"></a>
+      <!-- <button class="navbar-toggler" data-bs-target="#navcol-1" data-bs-toggle="collapse">
+        <span class="visually-hidden">Toggle
+          navigation</span>
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <ul
+          class="navbar-nav d-md-flex d-lg-flex d-xl-flex align-items-md-center align-items-lg-center align-items-xl-center">
+
+
+          {% for block in section.blocks %}
+
+          {% if block.type == 'mega_menu' %}
+
+          <li class="nav-item {% if block.settings.sub_menu_1 != blank %} dropdown has-megamenu {% endif %}">
+
+            {% if block.settings.sub_menu_1 == blank %}
+            <a class=" active text-decoration-none" href="{{ block.settings.main_item_link }}"> {{
+              block.settings.main_item }} </a>
+            {% endif %}
+
+            {% if block.settings.sub_menu_1 != blank %}
+            <div class="nav-item dropdown">
+              <a aria-expanded="false" class="dropdown-toggle active text-decoration-none" data-bs-toggle="dropdown"
+                href="{{ block.settings.main_item_link }}"> {{ block.settings.main_item }} </a>
+
+              <div class="py-4 dropdown-menu megamenu w-100" role="menu"
+                style="border-width: 0px;border-radius: 0;box-shadow: 0px 0px 3px 2px var(--s-color);">
+                <!-- Start: 1 Row 2 Columns -->
+                <div class="container cs-width">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <ul>
+                        {% for link in linklists[block.settings.sub_menu_1].links %}
+                        <li><a href="{{ link.url }}"> {{link.title}} </a></li>
+                        {% endfor %}
+
+                      </ul>
+                    </div>
+                    <div class="col-md-2">
+                      <ul>
+                        {% for link in linklists[block.settings.sub_menu_2].links %}
+                        <li><a href="{{ link.url }}"> {{link.title}} </a></li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </div><!-- End: 1 Row 2 Columns -->
+              </div>
+            </div>
+            {% endif %}
+          </li>
+          {% endif %}
+
+          {% endfor %}
+
+        </ul>
+        <ul
+          class="navbar-nav d-md-flex d-lg-flex d-xl-flex align-items-md-center align-items-lg-center align-items-xl-center ms-auto right-menu">
+          {% for block in section.blocks %}
+          {% if block.type == 'right_menu' %}
+          <li class="nav-item {% if block.settings.sub_menu != blank %} has-dropdown {% endif %} me-4">
+
+            {% if block.settings.sub_menu == blank %}
+            <a class=" active text-decoration-none" href="{{ block.settings.main_item_link }}"> {{
+              block.settings.main_item }} </a>
+            {% endif %}
+            {% if block.settings.sub_menu != blank %}
+            <div class="nav-item dropdown">
+              <a aria-expanded="false" class="dropdown-toggle active text-decoration-none" data-bs-toggle="dropdown"
+                href="{{ block.settings.main_item_link }}">{{
+                block.settings.main_item }}</a>
+              <div class="dropdown-menu">
+                {% for link in linklists[block.settings.sub_menu].links %}
+                <a class="dropdown-item" href="{{ link.url }}"> {{link.title}} </a>
+                {% endfor %}
+
+              </div>
+            </div>
+            {% endif %}
+          </li>
+
+          {% endif %}
+          {% endfor %}
+
+          <li class="nav-item">
+            <div class="nav-item dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-bs-toggle="dropdown" href="#"><img
+                  src="{{'search.static.png '|asset_url}}"></a>
+              <div class="border-0 dropdown-menu" id="search-box"><input placeholder="| ¿Qué estás buscando?"
+                  type="search">
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="#"><img src="{{'cart.static.png' | asset_url }}"><span
+                class="cart-counter">  {% raw %}{{ $store.state['cart'].count }}{% endraw %}    </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  {% render 'mobile-navigation', logo: section.settings.logo, blocks: section.blocks %}
+
+</header>
+
+
+
+{% schema %}
+{
+"name": "header",
+"settings": [{
+"type": "image_picker",
+"id": "logo",
+"label": "Logo"
+}],
+"blocks": [
+{
+"type": "mega_menu",
+"name": "mega_menu",
+"settings": [
+{
+"type": "text",
+"id": "main_item",
+"label": "Main Item"
+},
+{
+"type": "url",
+"id": "main_item_link",
+"label": "Main Item Link"
+},
+{
+"type": "link_list",
+"id": "sub_menu_1",
+"label": "Sub Menu 1"
+},
+{
+"type": "link_list",
+"id": "sub_menu_2",
+"label": "Sub Menu 2"
+}
+]
+},
+{
+"type": "right_menu",
+"name": "right_menu",
+"settings": [
+{
+"type": "text",
+"id": "main_item",
+"label": "Main Item"
+},
+{
+"type": "url",
+"id": "main_item_link",
+"label": "Main Item Link"
+},
+{
+"type": "link_list",
+"id": "sub_menu",
+"label": "Drop Down Menu"
+}
+]
+}
+
+]
+}
+{% endschema %}

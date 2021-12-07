@@ -1,0 +1,378 @@
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+
+<div vue>
+
+  <!-- Start: Nub BreadCrumbs -->
+  <section>
+    <div class="container">
+      <ol class="breadcrumb no-border">
+        <li class="breadcrumb-item"><a href="#"><span>Inicio&nbsp;</span></a></li>
+        <li class="breadcrumb-item"><a class="active-item" href="#"><span>Diseñadores</span></a></li>
+      </ol>
+    </div>
+  </section><!-- End: Nub BreadCrumbs -->
+
+  <section class="pb-5">
+    <!-- Start: 1 Row 2 Columns -->
+
+    <div class="container">
+      <div class="row">
+        <renderless-product-variant-selector
+          v-slot="{ selectedVariant,selectOption,processCartForm,increment,decrement,quantityValue }"
+          :current-variant="{{ current_variant | json | replace: '"', "'" }}"
+          :product-options="{{ product.options_with_values | json | replace: '"', "'" }}"
+          :product-variants="{{ product.variants | json | replace: '"', "'" }}">
+          <div class="col-md-5 mt-md-0 mt-4 col-xl-4 order-2 order-md-1">
+            <h3>{{product.title}}</h3>
+            <div id="pricing" class="hstack gap-3 comp-bg product-price px-3 py-1 font-12 justify-content-center mt-1">
+              <div><span class="s-family"> {{ current_variant.price | money }} </span></div>
+              <div class="text-decoration-line-through text2-color"><span class="s-family"> {{
+                  current_variant.compare_at_price | money }}</span></div>
+            </div>
+            <div class="mt-5 dropdown">
+              <div id="product_toggle">
+                <h6 class="s-family text-uppercase dropdown-toggle position-relative" data-bs-toggle="dropdown"
+                  aria-expanded="false">modificar variantes<i
+                    class="material-icons position-absolute">keyboard_arrow_down</i></h6>
+                <ul class="dropdown-menu" aria-labelledby="product_toggle">
+                  {% for block in section.blocks %}
+                  {% if block.type == 'features' %}
+                  <div class="hstack px-3 mb-3 font-12 text2-color">
+                    <div class=" w-50 ">{{block.settings.title}}</div>
+                    <div class=" w-50 ">
+                      <a href="#" class="text2-color">
+                        {{ block.settings.value }} </a>
+                    </div>
+                  </div>
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            <div class="comp-bg px-2 py-3 product_description">
+              <h6 class="s-family text-uppercase">Descripción</h6>
+              <p class="mb-0"> {{ product.description }} </p>
+              </p>
+            </div>
+
+            {% capture cartForm %}
+            <div class="hstack mt-4 gap-4">
+              <div id="quantity_picker" class="hstack">
+                <div><button @click="decrement" class="btn " type="button"><i class="material-icons">remove</i></button>
+                </div>
+                <input type="number" class="border-0" name="quantity" :value="quantityValue.value" min="1"
+                  pattern="[0-9]*">
+                <div><button @click="increment" class="btn " type="button"><i class="material-icons">add</i></button>
+                </div>
+              </div>
+              <div id="add_to_cart"><button name="add" class="main-button text-center text-uppercase">
+                  <span class="mr-1 spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  agregar al carrito
+                </button>
+              </div>
+            </div>
+
+            {% endcapture %}
+
+            <!-- add to cart -->
+            <form method="post" @submit.prevent="processCartForm" action="/cart/add" id="product_cart_form">
+
+              {% if product.has_only_default_variant %}
+              <input name="id" type="hidden" :value="{{ current_variant.id }}" readonly>
+              {{cartForm}}
+              {% else %}
+
+              <input name="id" type="hidden" :value="selectedVariant.id" readonly>
+
+              {{cartForm}}
+
+              {% endif %}
+
+            </form>
+            <!-- end cart btn -->
+
+          </div>
+        </renderless-product-variant-selector>
+
+        <div class="col-md-7 col-xl-8 order-1 order-md-2">
+          <div class="swiper" id="product_gallery">
+            <div class="swiper-wrapper">
+              {% for image in product.images %}
+              <div class="swiper-slide">
+                <a class="spotlight" href="{{ image.src | product_img_url: 'master' }}">
+                  <img class="w-100" src="{{ image.src | product_img_url: 'master' }}">
+                </a>
+              </div>
+              {% endfor %}
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+
+            <div id="inner-navigation">
+              <div class="inner-next">
+                <img src="{{ 'next-arrow.static.png' | asset_url }}">
+              </div>
+              <div class="inner-prev">
+                <img src="{{ 'prev-arrow.static.png' | asset_url }}">
+              </div>
+            </div>
+
+            <div class="sale-badge">
+              <span> {{ product.compare_at_price_max | minus:product.price | times:100 |
+                divided_by:product.compare_at_price_max }}% </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- End: 1 Row 2 Columns -->
+  </section>
+  <section class="mb-5">
+    <div class="container">
+      <div class="mb-3 full-border-top d-flex justify-content-between">
+        <h4>Detalles del producto</h4>
+      </div>
+    </div><!-- Start: 1 Row 4 Columns -->
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-5 col-sm-5 col-md-3">
+          <h6 class="text-uppercase s-family boder-line pb-2 p-color">dimensiones</h6>
+          <!-- <h6 class="s-family boder-line pb-2">General</h6> -->
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 pe-0">
+          <h6 class="s-family boder-line pb-2 p-color text2-color">Alto</h6>
+          <!-- <h6 class="s-family boder-line pb-2">12"</h6> -->
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 px-0">
+          <h6 class="s-family boder-line pb-2 p-color text2-color">Ancho</h6>
+          <!-- <h6 class="s-family boder-line pb-2">12"</h6> -->
+        </div>
+        <div class="col-3 col-sm-3 col-md-2 ps-0">
+          <h6 class="s-family boder-line pb-2 p-color text2-color">Profundidad</h6>
+          <!-- <h6 class="s-family boder-line pb-2">12"</h6> -->
+        </div>
+        <div class="col-sm-12 col-md-3 py-sm-0 py-4">
+          <!-- <img class="w-100" src="https://remedia.bss.design/assets/img/image%208.png"> -->
+        </div>
+      </div>
+
+      {% for block in section.blocks %}
+      {% if block.type == 'dimensions' %}
+
+      <div class="row ">
+        <div class="col-5 col-sm-5 col-md-3">
+          <h6 class="s-family boder-line pb-2"> {{block.settings.title}} </h6>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 pe-0">
+          <h6 class="s-family boder-line pb-2"> {{block.settings.alto}} </h6>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 px-0">
+          <h6 class="s-family boder-line pb-2"> {{block.settings.ancho}} </h6>
+        </div>
+        <div class="col-3 col-sm-3 col-md-2 ps-0">
+          <h6 class="s-family boder-line pb-2"> {{block.settings.profundidad}} </h6>
+        </div>
+        <div class="col-sm-12 col-md-3 py-sm-0 py-4"><img class="w-100" src=""></div>
+      </div>
+
+      {% endif %}
+      {% endfor %}
+
+      <!-- materials -->
+      <div class="row mt-5">
+        <div class="col-5 col-sm-5 col-md-3">
+          <h6 class="text-uppercase s-family boder-line pb-2 p-color">materiales</h6>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 pe-0">
+          <h6 class="s-family boder-line pb-2 p-color text2-color">Textil</h6>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 px-0">
+          <h6 class="s-family boder-line pb-2 p-color text2-color">Superficie</h6>
+        </div>
+        <div class="col-3 col-sm-3 col-md-5 px-0">
+          <h6 class="s-family pb-2 p-color text2-color boder-line">Metal</h6>
+        </div>
+      </div>
+
+      {% for block in section.blocks %}
+      {% if block.type == 'materials' %}
+
+      <div class="row ">
+        <div class="col-5 col-sm-5 col-md-3">
+          <h6 class="s-family boder-line pb-2">{{block.settings.title}}</h6>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 pe-0">
+          <h6 class="s-family boder-line pb-2"> {{block.settings.Textil}} </h6>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 px-0">
+          <h6 class="s-family boder-line pb-2"> {{block.settings.Superficie}} </h6>
+        </div>
+        <div class="col-3 col-sm-3 col-md-5 px-0">
+          <h6 class="s-family boder-line pb-2"> {{block.settings.Metal}} </h6>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+
+
+      <div class="row mt-5">
+        <div class="col-5 col-sm-5 col-md-3">
+          <h6 class="text-uppercase s-family boder-line pb-2 p-color">cuidados</h6>
+        </div>
+        <div class="col-7 col-sm-7 col-md-9">
+          <h6 class="s-family pb-2 p-color text2-color boder-line">Descripción</h6>
+        </div>
+      </div>
+
+
+      {% for block in section.blocks %}
+      {% if block.type == 'cuidados' %}
+
+      <div class="row ">
+        <div class="col-5 col-sm-5 col-md-3">
+          <h6 class="s-family boder-line pb-2 h-100"> {{block.settings.title}} </h6>
+        </div>
+        <div class="col-7 col-sm-7 col-md-9">
+          <h6 class="s-family boder-line pb-2 h-100">{{block.settings.description}}
+          </h6>
+        </div>
+      </div>
+
+      {% endif %}
+      {% endfor %}
+
+
+    </div><!-- End: 1 Row 4 Columns -->
+  </section>
+
+
+</div>
+
+
+
+
+</div>
+
+
+<script>
+  window.addEventListener('load', function () {
+    new Swiper('#product_gallery', {
+      slidesPerView: 1,
+      autoHeight: true,
+      navigation: { nextEl: '.inner-next', prevEl: '.inner-prev' },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+      // breakpoints: { 981: { slidesPerView: 4, spaceBetween: 40 } },
+    });
+  })
+</script>
+
+
+
+
+<script src="{{'spotlight.static.bundle.js' | asset_url }}"></script>
+
+
+{% schema %}
+{
+"name": "product",
+"settings": [],
+"blocks": [
+{
+"type": "features",
+"name": "features",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Feature Heading"
+},
+{
+"type": "text",
+"id": "value",
+"label": "Feature Value"
+}
+]
+},
+{
+"type": "dimensions",
+"name": "Dimensions",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Dimensions Title"
+},
+{
+"type": "text",
+"id": "alto",
+"label": "Alto"
+},
+{
+"type": "text",
+"id": "ancho",
+"label": "Ancho Dimension"
+},
+{
+"type": "text",
+"id": "profundidad",
+"label": "Profundidad Dimension"
+}
+]
+},
+{
+"type": "materials",
+"name": "Materials",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Dimensions Title"
+},
+{
+"type": "text",
+"id": "Textil",
+"label": "Textil"
+},
+{
+"type": "text",
+"id": "Superficie",
+"label": "Superficie"
+},
+{
+"type": "text",
+"id": "Metal",
+"label": "Metal"
+}
+]
+},
+{
+"type": "cuidados",
+"name": "Cuidados",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Cuidados Title"
+},
+{
+"type": "text",
+"id": "description",
+"label": "Description"
+}
+]
+}
+]
+}
+{% endschema %}

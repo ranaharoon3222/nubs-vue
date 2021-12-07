@@ -1,0 +1,29 @@
+<!-- Modal -->
+
+<renderless-cart-popup v-slot={popup,close_popup,cart}>
+
+
+    <div :isopened="popup" id="cart_popup" class="modal fade s-family">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="icon-box">
+                        <i class="material-icons">&#xE876;</i>
+                    </div>
+                    <h3 class=" w-100 text-center mt-4"> <span v-text="cart.title"></span> </h4>
+                        <h3 class="text-center w-100 " style="font-size: 16px;">Quantity : <span
+                                v-text="cart.quantity"></span> </h3>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center" v-text="cart.product_description"></p>
+                </div>
+                <div class="modal-footer d-flex flex-nowrap">
+                    <a href="/cart" class="btn btn-success justify-content-center align-items-center d-flex">Cart</a>
+                    <button class="btn btn-success justify-content-center align-items-center d-flex"
+                        @click="close_popup" data-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</renderless-cart-popup>
