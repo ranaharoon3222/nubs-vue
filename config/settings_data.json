@@ -11,13 +11,94 @@
       },
       "layout-header": {
         "type": "layout-header",
+        "blocks": {
+          "4e50ff75-5ef1-4b18-8268-7bed8cf84ec4": {
+            "type": "mega_menu",
+            "settings": {
+              "main_item": "Sofas",
+              "main_item_link": "#",
+              "sub_menu_1": "main-menu",
+              "sub_menu_2": "footer"
+            }
+          },
+          "63efaab0-f5a6-46f0-9993-8df0a04579da": {
+            "type": "mega_menu",
+            "settings": {
+              "main_item": "Accesorios",
+              "main_item_link": "",
+              "sub_menu_1": "",
+              "sub_menu_2": ""
+            }
+          },
+          "e09edcd4-36d8-4083-84fa-0b89a8a8eeec": {
+            "type": "mega_menu",
+            "settings": {
+              "main_item": "Proyectos",
+              "main_item_link": "",
+              "sub_menu_1": "",
+              "sub_menu_2": ""
+            }
+          },
+          "08d1266c-0a68-4bd4-a7b4-360cf95f4d06": {
+            "type": "right_menu",
+            "settings": {
+              "main_item": "Nosotros",
+              "main_item_link": "",
+              "sub_menu": "main-menu"
+            }
+          },
+          "3a907643-71fc-4f9b-9c9e-597943a5dfce": {
+            "type": "right_menu",
+            "settings": {
+              "main_item": "Contacto",
+              "main_item_link": "",
+              "sub_menu": ""
+            }
+          }
+        },
+        "block_order": [
+          "4e50ff75-5ef1-4b18-8268-7bed8cf84ec4",
+          "63efaab0-f5a6-46f0-9993-8df0a04579da",
+          "e09edcd4-36d8-4083-84fa-0b89a8a8eeec",
+          "08d1266c-0a68-4bd4-a7b4-360cf95f4d06",
+          "3a907643-71fc-4f9b-9c9e-597943a5dfce"
+        ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Group.png"
+          "logo": "shopify://shop_images/Group.png"
         }
       },
       "layout-footer": {
         "type": "layout-footer",
+        "blocks": {
+          "6984e39d-39fb-486d-837b-39f318195947": {
+            "type": "footer_col",
+            "settings": {
+              "heading": "Catálogo",
+              "footer_menu": "main-menu"
+            }
+          },
+          "daa592cc-514f-438d-bf86-916f2b7d4637": {
+            "type": "footer_col",
+            "settings": {
+              "heading": "empresa",
+              "footer_menu": "main-menu"
+            }
+          },
+          "dfc261e7-07db-4997-a12f-08eac3524c02": {
+            "type": "footer_col",
+            "settings": {
+              "heading": "legales",
+              "footer_menu": "main-menu"
+            }
+          }
+        },
+        "block_order": [
+          "6984e39d-39fb-486d-837b-39f318195947",
+          "daa592cc-514f-438d-bf86-916f2b7d4637",
+          "dfc261e7-07db-4997-a12f-08eac3524c02"
+        ],
         "settings": {
+          "logo": "shopify://shop_images/logotipo.png",
           "instagram_link": "",
           "facebook_url": "",
           "copyright": ""
@@ -25,12 +106,9 @@
       },
       "layout-mobile-navigation": {
         "type": "layout-mobile-navigation",
-        "settings": {
-        }
+        "settings": {}
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   }
 }
