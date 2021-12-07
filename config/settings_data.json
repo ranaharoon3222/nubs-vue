@@ -1,3 +1,36 @@
 {
-  "current": {}
+  "current": {
+    "sections": {
+      "layout-announcement-bar": {
+        "type": "layout-announcement-bar",
+        "settings": {
+          "visible": false,
+          "home_page_only": true,
+          "content": "Lorem ipsum dolor sit amet."
+        }
+      },
+      "layout-header": {
+        "type": "layout-header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Group.png"
+        }
+      },
+      "layout-footer": {
+        "type": "layout-footer",
+        "settings": {
+          "instagram_link": "",
+          "facebook_url": "",
+          "copyright": ""
+        }
+      },
+      "layout-mobile-navigation": {
+        "type": "layout-mobile-navigation",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
 }

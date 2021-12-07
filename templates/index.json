@@ -1,8 +1,28 @@
 {
   "sections": {
     "section-hero": {
-      "type": "section-hero"
+      "type": "section-hero",
+      "blocks": {
+        "3812472e-76cc-4b72-8b3a-af5202a10f98": {
+          "type": "style_1",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/banner.jpg",
+            "nav_title": "",
+            "title": "",
+            "sub_title": "",
+            "btn_text": "",
+            "btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3812472e-76cc-4b72-8b3a-af5202a10f98"
+      ],
+      "settings": {
+      }
     }
   },
-  "order": ["section-hero"]
+  "order": [
+    "section-hero"
+  ]
 }
