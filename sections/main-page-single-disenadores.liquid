@@ -1,3 +1,7 @@
+{% for block in section.blocks %}
+{% assign b = block.settings %}
+{% if page.handle == b.page %}
+
 <section>
     <div class="container">
         <ol class="breadcrumb">
@@ -10,10 +14,6 @@
 
 <section class="mb-5">
     <!-- Start: 1 Row 2 Columns -->
-
-    {% for block in section.blocks %}
-    {% assign b = block.settings %}
-    {% if page.handle == b.page %}
     <div class="container">
         <div class="row">
             <div class="col-md-6"><img class="w-100" src="{{b.image | img_url: 'master' }}"></div>
@@ -28,9 +28,7 @@
             </div>
         </div>
     </div>
-    {% break %}
-    {% endif %}
-    {% endfor %}
+
 
 
 
@@ -62,6 +60,10 @@
         </div>
     </div>
 </section>
+
+
+{% endif %}
+{% endfor %}
 
 
 <script>
@@ -126,7 +128,7 @@
 }],
 "presets": [
 {
-"name": "Single Prodile",
+"name": "Single Profile",
 "category": "Profile"
 }
 ]
