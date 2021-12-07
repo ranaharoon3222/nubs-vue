@@ -29,7 +29,7 @@
 
 <section>
     <div class="container pad-xl" style="
-          background: url({{b.image | img_url : " master"}}) no-repeat; background-size: cover; ">
+          background: url({{b.bg_image | img_url : " master"}}) no-repeat; background-size: cover; ">
         <div class=" row mx-600 mx-auto">
         <div class="col">
             <h1 class="text-white">
@@ -37,15 +37,15 @@
             </h1>
             <div class="mt-5 text-white">
                 <div class="d-flex align-items-center mt-3">
-                    <img src="{{b.ico_1_title | img_url : " master"}}" />
+                    <img src="{{b.ico_1_image| img_url : " master"}}" />
                     <p class="mb-0 ms-3 s-family fw-normal"> {{b.ico_1_title}} </p>
                 </div>
                 <div class="d-flex align-items-center mt-3">
-                    <img src="{{b.ico_2_title | img_url : " master"}}" />
+                    <img src="{{b.ico_2_image | img_url : " master"}}" />
                     <p class="mb-0 ms-3 s-family fw-normal">{{b.ico_2_title}}</p>
                 </div>
                 <div class="d-flex align-items-center mt-3">
-                    <img src="{{b.ico_3_title | img_url : " master"}}" />
+                    <img src="{{b.ico_3_image | img_url : " master"}}" />
                     <p class="mb-0 ms-3 s-family fw-normal">{{b.ico_3_title}}</p>
                 </div>
             </div>
@@ -170,11 +170,6 @@
 "label": "Description"
 },
 {
-"type": "image_picker",
-"id": "bg_image",
-"label": "Background Image"
-},
-{
 "type": "text",
 "id": "gallery_title",
 "label": "gallery_title"
@@ -183,7 +178,14 @@
 "blocks": [{
 "type": "bg_section",
 "name": "Background Section",
-"settings": [{
+"settings": [
+{
+"type": "image_picker",
+"id": "bg_image",
+"label": "Background Image"
+},
+{
+
 "type": "text",
 "id": "bg_title",
 "label": "Title"
