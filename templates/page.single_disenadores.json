@@ -43,10 +43,33 @@
       ],
       "settings": {
       }
+    },
+    "1638898334113107cd": {
+      "type": "main-page-single-disenadores",
+      "blocks": {
+        "036ee79f-cba4-4205-bbae-6294b3bf2b7a": {
+          "type": "disenadores",
+          "settings": {
+            "page": "sofia-gallardo",
+            "c_title": "Productos del diseñador",
+            "collection": "frontpage",
+            "image": "shopify:\/\/shop_images\/Rectangle_181_1.jpg",
+            "title": "sofia gallardo",
+            "email": "david@davidvivanco.com.mx",
+            "description": "<p>Si se renuevan con cierta frecuencia los accesorios de un espacio interior se consigue que parezca diferente, aunque las piezas principales del mobiliario no cambien.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "036ee79f-cba4-4205-bbae-6294b3bf2b7a"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "16388938383f3c1e4f",
-    "163889398085277dfa"
+    "163889398085277dfa",
+    "1638898334113107cd"
   ]
 }
