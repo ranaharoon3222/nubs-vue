@@ -36,28 +36,28 @@
                 {{b.title}}
             </h1>
             <div class="mt-5 text-white">
-                {% if b.ico_1_title !== blank %}
+                {% if b.ico_1_title != blank %}
                 <div class="d-flex align-items-center mt-3">
                     <img src="{{b.ico_1_image| img_url : " master"}}" />
                     <p class="mb-0 ms-3 s-family fw-normal text-white"> {{b.ico_1_title}} </p>
                 </div>
                 {% endif %}
 
-                {% if b.ico_2_title !== blank %}
+                {% if b.ico_2_title != blank %}
                 <div class="d-flex align-items-center mt-3">
                     <img src="{{b.ico_2_image | img_url : " master"}}" />
                     <p class="mb-0 ms-3 s-family fw-normal text-white">{{b.ico_2_title}}</p>
                 </div>
                 {% endif %}
 
-                {% if b.ico_3_title !== blank %}
+                {% if b.ico_3_title != blank %}
                 <div class="d-flex align-items-center mt-3">
                     <img src="{{b.ico_3_image | img_url : " master"}}" />
                     <p class="mb-0 ms-3 s-family fw-normal text-white">{{b.ico_3_title}}</p>
                 </div>
                 {% endif %}
 
-                {% if b.ico_4_title !== blank %}
+                {% if b.ico_4_title != blank %}
                 <div class="d-flex align-items-center mt-3">
                     <img src="{{b.ico_4_image | img_url : " master"}}" />
                     <p class="mb-0 ms-3 s-family fw-normal text-white">{{b.ico_4_title}}</p>
