@@ -26,12 +26,21 @@
             "title": "Some Name",
             "link": "#"
           }
+        },
+        "1ee08bba-82a8-41a6-b465-b3e99bb08c94": {
+          "type": "disenadores",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_181_1.jpg",
+            "title": "Name",
+            "link": "#"
+          }
         }
       },
       "block_order": [
         "c36e4e39-368c-4f86-a263-cc295b83f597",
         "57e6ef6c-c1bd-4d7c-ad39-05a89299075c",
-        "0e3edfb7-d7ee-45a8-92d8-3e6b2d2474b9"
+        "0e3edfb7-d7ee-45a8-92d8-3e6b2d2474b9",
+        "1ee08bba-82a8-41a6-b465-b3e99bb08c94"
       ],
       "settings": {
         "title": "Diseñadores detras de nuestro sistema"
