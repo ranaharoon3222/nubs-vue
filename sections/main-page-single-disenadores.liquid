@@ -37,14 +37,14 @@
 <section class="bg-EFEBEB py-5">
     <div class="container">
         <div class="mb-3 full-border-top d-flex justify-content-between">
-            <h4>{{section.settings.title}}</h4>
+            <h4>{{b.c_title}}</h4>
             <div class="product_slider_arrow"><img class="prev-arrow"
                     src="{{ 'prev-arrow.static.png'  | asset_img_url: 'master'}}"><img class="next-arrow"
                     src="{{ 'next-arrow.static.png'  | asset_img_url: 'master'}}"></div>
         </div>
         <div id="product_slider" class="swiper">
             <div class="swiper-wrapper">
-                {% assign collection = section.settings.collection %}
+                {% assign collection = b.collection %}
                 {% for product in collection.products %}
                 <div class="hover_product swiper-slide">
                     <a href="{{product.url}}">
@@ -84,26 +84,27 @@
 {
 "name": "single_disenadores",
 "max_blocks": 1,
-"settings": [{
-"type": "text",
-"id": "title",
-"label": "title"
-},
-{
-"type": "collection",
-"id": "collection",
-"label": "Select Collection"
-}
-],
+"settings": [],
 "blocks": [{
 "type": "disenadores",
 "name": "disenadores",
 "settings": [{
 "type": "page",
 "id": "page",
-"label": "Select Current Page",
-"info": "Page"
+"label": "Select Current Page"
 },
+
+{
+"type": "text",
+"id": "c_title",
+"label": "Collection Title"
+},
+{
+"type": "collection",
+"id": "collection",
+"label": "Select Collection"
+}
+
 {
 "type": "image_picker",
 "id": "image",
