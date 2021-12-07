@@ -1,8 +1,29 @@
 {
   "sections": {
     "main": {
-      "type": "main-page-single-disenadores"
+      "type": "main-page-single-disenadores",
+      "blocks": {
+        "fd51c41f-82ce-45d3-a705-564c304084d0": {
+          "type": "disenadores",
+          "settings": {
+            "page": "david",
+            "image": "shopify:\/\/shop_images\/team_1.jpg",
+            "title": "David Vivanco",
+            "email": "david@davidvivanco.com.mx",
+            "description": "<p>Si se renuevan con cierta frecuencia los accesorios de un espacio interior se consigue que parezca diferente, aunque las piezas principales del mobiliario no cambien.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fd51c41f-82ce-45d3-a705-564c304084d0"
+      ],
+      "settings": {
+        "title": "",
+        "collection": ""
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
