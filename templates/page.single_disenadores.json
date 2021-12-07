@@ -21,9 +21,32 @@
         "title": "Productos del diseñador",
         "collection": "frontpage"
       }
+    },
+    "163889398085277dfa": {
+      "type": "main-page-single-disenadores",
+      "blocks": {
+        "aa74acc2-9c1a-44be-a558-f41d0ef6c105": {
+          "type": "disenadores",
+          "settings": {
+            "page": "david",
+            "image": "shopify:\/\/shop_images\/team_1.jpg",
+            "title": "tytrytr",
+            "email": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "aa74acc2-9c1a-44be-a558-f41d0ef6c105"
+      ],
+      "settings": {
+        "title": "test",
+        "collection": ""
+      }
     }
   },
   "order": [
-    "16388938383f3c1e4f"
+    "16388938383f3c1e4f",
+    "163889398085277dfa"
   ]
 }
