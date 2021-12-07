@@ -7,13 +7,14 @@
           "type": "bg_section",
           "settings": {
             "bg_image": "shopify:\/\/shop_images\/bg22.jpg",
-            "bg_title": "Hemos colaborado en diferentes sectores comerciales.",
+            "title": "Hemos colaborado en diferentes sectores comerciales.",
             "ico_1_title": "Aeropuertos",
             "ico_1_image": "shopify:\/\/shop_images\/aeropuertos.png",
             "ico_2_title": "Bancos",
             "ico_2_image": "shopify:\/\/shop_images\/mas-productos_1.png",
             "ico_3_title": "Consultorios médicos",
-            "ico_3_image": "shopify:\/\/shop_images\/consultorios-medicos.png"
+            "ico_3_image": "shopify:\/\/shop_images\/consultorios-medicos.png",
+            "ico_4_title": ""
           }
         },
         "77c7762e-d400-4e3f-82c1-dde23fbf2b4b": {
