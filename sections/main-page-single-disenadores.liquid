@@ -16,7 +16,7 @@
     {% if page.handle == b.page %}
     <div class="container">
         <div class="row">
-            <div class="col-md-6"><img class="w-100" src="{{ " b.image" | img_url: 'master' }}"></div>
+            <div class="col-md-6"><img class="w-100" src="{{b.image | img_url: 'master' }}"></div>
             <div class="col-md-6 flex-wrap d-flex">
                 <div class="w-100 pt-2">
                     <h1> {{b.title}} </h1>
