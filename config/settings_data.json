@@ -64,7 +64,7 @@
           "3a907643-71fc-4f9b-9c9e-597943a5dfce"
         ],
         "settings": {
-          "logo": "shopify://shop_images/Group.png"
+          "logo": "shopify:\/\/shop_images\/Group.png"
         }
       },
       "layout-footer": {
@@ -98,7 +98,7 @@
           "dfc261e7-07db-4997-a12f-08eac3524c02"
         ],
         "settings": {
-          "logo": "shopify://shop_images/logotipo.png",
+          "logo": "shopify:\/\/shop_images\/logotipo.png",
           "instagram_link": "",
           "facebook_url": "",
           "copyright": ""
@@ -106,9 +106,12 @@
       },
       "layout-mobile-navigation": {
         "type": "layout-mobile-navigation",
-        "settings": {}
+        "settings": {
+        }
       }
     },
-    "content_for_index": []
+    "content_for_index": [
+
+    ]
   }
 }
