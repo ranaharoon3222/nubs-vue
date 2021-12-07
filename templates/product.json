@@ -1,7 +1,143 @@
 {
   "sections": {
     "main": {
-      "type": "main-product"
+      "type": "main-product",
+      "blocks": {
+        "2404821d-f534-46be-a086-185f126275ef": {
+          "type": "features",
+          "settings": {
+            "title": "Tamaño",
+            "value": "{{ product.metafields.prop.tomano.value }}"
+          }
+        },
+        "cfdc1e59-b3a4-428c-a1fa-ff3ca2feaa66": {
+          "type": "features",
+          "settings": {
+            "title": "Modelo",
+            "value": "{{ product.metafields.prop.modelo.value }}"
+          }
+        },
+        "14ac0960-5142-4666-8bd5-778ea881b404": {
+          "type": "features",
+          "settings": {
+            "title": "Textil",
+            "value": "{{ product.metafields.prop.textil.value }}"
+          }
+        },
+        "a961fec0-062d-4c47-adee-4aeab261b523": {
+          "type": "features",
+          "settings": {
+            "title": "Costura",
+            "value": "{{ product.metafields.prop.costura.value }}"
+          }
+        },
+        "b2dfc633-614e-430c-864f-087eab1a515e": {
+          "type": "features",
+          "settings": {
+            "title": "Color",
+            "value": "{{ product.metafields.prop.color.value }}"
+          }
+        },
+        "dfdc1d88-973e-4755-98f0-f895e8e681e2": {
+          "type": "features",
+          "settings": {
+            "title": "Costados",
+            "value": "{{ product.metafields.prop.costados.value }}"
+          }
+        },
+        "f5d700eb-6bee-4ac1-9b08-2f44988b42be": {
+          "type": "features",
+          "settings": {
+            "title": "Patas",
+            "value": "{{ product.metafields.prop.patas.value }}"
+          }
+        },
+        "68927a3a-1f16-4cf1-8be0-34e1e8d5be18": {
+          "type": "dimensions",
+          "settings": {
+            "title": "General",
+            "alto": "{{ product.metafields.dimensions.general_alto.value }}",
+            "ancho": "{{ product.metafields.dimensions.general_ancho.value }}",
+            "profundidad": "{{ product.metafields.dimensions.profundidad.value }}"
+          }
+        },
+        "69f204b7-da2a-4ea8-a2c8-47684a352de7": {
+          "type": "materials",
+          "settings": {
+            "title": "materiales",
+            "Textil": "{{ product.metafields.materials.general_textil.value }}",
+            "Superficie": "{{ product.metafields.materials[\"general-superficie\"].value }}",
+            "Metal": "{{ product.metafields.materials.general_metal.value }}"
+          }
+        },
+        "8b0e69b6-9302-4d77-bb2c-4db39c3df447": {
+          "type": "cuidados",
+          "settings": {
+            "title": "Tela Algodón",
+            "description": "<p>{{ product.metafields.cuidados.tela_algodon | metafield_tag }}<\/p>"
+          }
+        },
+        "322f250f-b396-4990-8093-6bc163cebdd6": {
+          "type": "cuidados",
+          "settings": {
+            "title": "Madera Maple",
+            "description": "<p>{{ product.metafields.cuidados.madera_maple | metafield_tag }}<\/p>"
+          }
+        },
+        "225fa1f4-be9e-45c1-879d-eb02b5e498b8": {
+          "type": "cuidados",
+          "settings": {
+            "title": "Maple",
+            "description": "<p>{{ product.metafields.cuidados.maple | metafield_tag }}<\/p>"
+          }
+        },
+        "c36cfa2a-aa40-4c61-a43f-502efc2e37ce": {
+          "type": "dimensions",
+          "settings": {
+            "title": "Asiento",
+            "alto": "{{ product.metafields.dimensions.asiento_alto.value }}",
+            "ancho": "{{ product.metafields.dimensions.asiento_ancho.value }}",
+            "profundidad": "{{ product.metafields.dimensions.asiento_profundidad.value }}"
+          }
+        },
+        "210b1945-e455-48bb-850f-3bd511b85587": {
+          "type": "dimensions",
+          "settings": {
+            "title": "Respaldo",
+            "alto": "{{ product.metafields.dimensions.respaldo_alto.value }}",
+            "ancho": "{{ product.metafields.dimensions.respaldo_ancho.value }}",
+            "profundidad": "{{ product.metafields.dimensions.respaldo_profundidad.value }}"
+          }
+        },
+        "20886707-5cb0-4f9f-8c6f-4a33b91ffca4": {
+          "type": "dimensions",
+          "settings": {
+            "title": "Reposabrazos",
+            "alto": "{{ product.metafields.dimensions.reposabrazos_alto.value }}",
+            "ancho": "{{ product.metafields.dimensions.reposabrazos_ancho.value }}",
+            "profundidad": "{{ product.metafields.dimensions.reposabrazos_profundidad.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "2404821d-f534-46be-a086-185f126275ef",
+        "cfdc1e59-b3a4-428c-a1fa-ff3ca2feaa66",
+        "14ac0960-5142-4666-8bd5-778ea881b404",
+        "a961fec0-062d-4c47-adee-4aeab261b523",
+        "b2dfc633-614e-430c-864f-087eab1a515e",
+        "dfdc1d88-973e-4755-98f0-f895e8e681e2",
+        "f5d700eb-6bee-4ac1-9b08-2f44988b42be",
+        "68927a3a-1f16-4cf1-8be0-34e1e8d5be18",
+        "69f204b7-da2a-4ea8-a2c8-47684a352de7",
+        "8b0e69b6-9302-4d77-bb2c-4db39c3df447",
+        "322f250f-b396-4990-8093-6bc163cebdd6",
+        "225fa1f4-be9e-45c1-879d-eb02b5e498b8",
+        "c36cfa2a-aa40-4c61-a43f-502efc2e37ce",
+        "210b1945-e455-48bb-850f-3bd511b85587",
+        "20886707-5cb0-4f9f-8c6f-4a33b91ffca4"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
