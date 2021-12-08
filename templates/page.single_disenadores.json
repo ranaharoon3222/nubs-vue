@@ -109,6 +109,27 @@
       ],
       "settings": {
       }
+    },
+    "163898682591a1480a": {
+      "type": "main-page-single-disenadores",
+      "blocks": {
+        "468c69ff-9a7e-475c-9a18-61812b03c410": {
+          "type": "disenadores",
+          "settings": {
+            "page": "erick-ortiz",
+            "c_title": "",
+            "collection": "",
+            "title": "",
+            "email": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "468c69ff-9a7e-475c-9a18-61812b03c410"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -116,6 +137,7 @@
     "16388938383f3c1e4f",
     "1638986444b5ce91be",
     "1638898334113107cd",
-    "1638986584dac9b12d"
+    "1638986584dac9b12d",
+    "163898682591a1480a"
   ]
 }
