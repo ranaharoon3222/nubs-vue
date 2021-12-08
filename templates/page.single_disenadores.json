@@ -1,27 +1,5 @@
 {
   "sections": {
-    "16388938383f3c1e4f": {
-      "type": "main-page-single-disenadores",
-      "blocks": {
-        "1032df45-3288-4109-9b35-f5e2c69a089c": {
-          "type": "disenadores",
-          "settings": {
-            "page": "richard-ibarra",
-            "c_title": "Productos del diseñador",
-            "collection": "frontpage",
-            "image": "shopify:\/\/shop_images\/Rectangle_183.jpg",
-            "title": "Richard Ibarra",
-            "email": "david@davidvivanco.com.mx",
-            "description": "<p>Si se renuevan con cierta frecuencia los accesorios de un espacio interior se consigue que parezca diferente, aunque las piezas principales del mobiliario no cambien.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1032df45-3288-4109-9b35-f5e2c69a089c"
-      ],
-      "settings": {
-      }
-    },
     "163889398085277dfa": {
       "type": "main-page-single-disenadores",
       "blocks": {
@@ -33,13 +11,57 @@
             "collection": "frontpage",
             "image": "shopify:\/\/shop_images\/team_1.jpg",
             "title": "David Vivanco",
-            "email": "david@davidvivanco.com.mx",
+            "email": "david@nub.com.mx",
             "description": "<p>Si se renuevan con cierta frecuencia los accesorios de un espacio interior se consigue que parezca diferente, aunque las piezas principales del mobiliario no cambien.<\/p>"
           }
         }
       },
       "block_order": [
         "aa74acc2-9c1a-44be-a558-f41d0ef6c105"
+      ],
+      "settings": {
+      }
+    },
+    "16388938383f3c1e4f": {
+      "type": "main-page-single-disenadores",
+      "blocks": {
+        "1032df45-3288-4109-9b35-f5e2c69a089c": {
+          "type": "disenadores",
+          "settings": {
+            "page": "richard-ibarra",
+            "c_title": "Productos del diseñador",
+            "collection": "frontpage",
+            "image": "shopify:\/\/shop_images\/colaborador-2.jpg",
+            "title": "Richard Ibarra",
+            "email": "richard@nub.com.mx",
+            "description": "<p>Si se renuevan con cierta frecuencia los accesorios de un espacio interior se consigue que parezca diferente, aunque las piezas principales del mobiliario no cambien.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1032df45-3288-4109-9b35-f5e2c69a089c"
+      ],
+      "settings": {
+      }
+    },
+    "1638986444b5ce91be": {
+      "type": "main-page-single-disenadores",
+      "blocks": {
+        "d4e383d1-f431-4c66-8faa-d5790b9524e8": {
+          "type": "disenadores",
+          "settings": {
+            "page": "andres-olea",
+            "c_title": "Productos del diseñador",
+            "collection": "frontpage",
+            "image": "shopify:\/\/shop_images\/colaborador-3.jpg",
+            "title": "Andrés Olea",
+            "email": "andres@nub.com.mx",
+            "description": "<p>Si se renuevan con cierta frecuencia los accesorios de un espacio interior se consigue que parezca diferente, aunque las piezas principales del mobiliario no cambien.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d4e383d1-f431-4c66-8faa-d5790b9524e8"
       ],
       "settings": {
       }
@@ -54,8 +76,8 @@
             "c_title": "Productos del diseñador",
             "collection": "frontpage",
             "image": "shopify:\/\/shop_images\/Rectangle_181_1.jpg",
-            "title": "sofia gallardo",
-            "email": "david@davidvivanco.com.mx",
+            "title": "Sofía Gallardo",
+            "email": "sofia@nub.com.mx",
             "description": "<p>Si se renuevan con cierta frecuencia los accesorios de un espacio interior se consigue que parezca diferente, aunque las piezas principales del mobiliario no cambien.<\/p>"
           }
         }
@@ -65,11 +87,58 @@
       ],
       "settings": {
       }
+    },
+    "1638986584dac9b12d": {
+      "type": "main-page-single-disenadores",
+      "blocks": {
+        "81b75a89-f99f-44cc-9aa1-ebce8a657229": {
+          "type": "disenadores",
+          "settings": {
+            "page": "christian-vera",
+            "c_title": "Productos del diseñador",
+            "collection": "frontpage",
+            "image": "shopify:\/\/shop_images\/colaborador-5.jpg",
+            "title": "Christian Vera",
+            "email": "christian@nub.com.mx",
+            "description": "<p>Si se renuevan con cierta frecuencia los accesorios de un espacio interior se consigue que parezca diferente, aunque las piezas principales del mobiliario no cambien.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "81b75a89-f99f-44cc-9aa1-ebce8a657229"
+      ],
+      "settings": {
+      }
+    },
+    "163898682591a1480a": {
+      "type": "main-page-single-disenadores",
+      "blocks": {
+        "468c69ff-9a7e-475c-9a18-61812b03c410": {
+          "type": "disenadores",
+          "settings": {
+            "page": "erick-ortiz",
+            "c_title": "Productos del diseñador",
+            "collection": "frontpage",
+            "image": "shopify:\/\/shop_images\/colaborador-6.jpg",
+            "title": "Erick Ortiz",
+            "email": "erick@nub.com.mx",
+            "description": "<p>Si se renuevan con cierta frecuencia los accesorios de un espacio interior se consigue que parezca diferente, aunque las piezas principales del mobiliario no cambien.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "468c69ff-9a7e-475c-9a18-61812b03c410"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "16388938383f3c1e4f",
     "163889398085277dfa",
-    "1638898334113107cd"
+    "16388938383f3c1e4f",
+    "1638986444b5ce91be",
+    "1638898334113107cd",
+    "1638986584dac9b12d",
+    "163898682591a1480a"
   ]
 }
