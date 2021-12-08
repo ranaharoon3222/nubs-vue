@@ -38,9 +38,26 @@
 </head>
 
 <body class="min-h-screen">
-<div vue>
-{% render 'cart-popup' %}
-</div>
+  <div vue>
+    {% render 'cart-popup' %}
+  </div>
+
+  {% if template.name != "index" %}
+  <section>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#"><span>Inicio&nbsp;</span></a>
+        </li>
+        <li class="breadcrumb-item">
+          <a class="active-item" href="#"><span>{{page.title}}</span></a>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  {% endif %}
+
 
   {% if request.page_type == 'captcha' %}
   {% comment %}

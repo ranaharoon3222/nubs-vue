@@ -1,18 +1,4 @@
 <section>
-    <div class="container">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="#"><span>Inicio&nbsp;</span></a>
-            </li>
-            <li class="breadcrumb-item">
-                <a class="active-item" href="#"><span>Diseñadores</span></a>
-            </li>
-        </ol>
-    </div>
-</section>
-
-
-<section>
     <div class="container low-border">
         <h1 class="space-end mx-550 ms-auto"> {{section.settings.title}} </h1>
     </div>
@@ -112,7 +98,7 @@
         </div>
         <div class="row">
             <div class="col-md-6 align-self-center">
-                <p class="mb-5 mx-550">{{b.description}}</p><a class="main-button text-center text-uppercase"
+                <div class="mb-5 mx-550">{{b.description}}</div><a class="main-button text-center text-uppercase"
                     href="{{b.btn_url}}">{{b.btn_text}}</a>
             </div>
             <div class="col-md-6">
@@ -189,7 +175,7 @@
 {
 "type": "richtext",
 "id": "description",
-"label": "Title"
+"label": "Description"
 },
 {
 "type": "text",
