@@ -12,9 +12,9 @@
             "ico_1_title": "Lorem ipsum dolor",
             "ico_1_image": "shopify:\/\/shop_images\/materials.png",
             "ico_2_title": "Lorem ipsum dolor",
-            "ico_2_image": "shopify:\/\/shop_images\/recycling.png",
+            "ico_2_image": "shopify:\/\/shop_images\/materials.png",
             "ico_3_title": "Lorem ipsum dolor",
-            "ico_3_image": "shopify:\/\/shop_images\/community.png",
+            "ico_3_image": "shopify:\/\/shop_images\/materials.png",
             "ico_4_title": "",
             "ico_5_title": ""
           }
@@ -28,9 +28,9 @@
             "ico_1_title": "Lorem ipsum dolor",
             "ico_1_image": "shopify:\/\/shop_images\/materials.png",
             "ico_2_title": "Lorem ipsum dolor",
-            "ico_2_image": "shopify:\/\/shop_images\/community.png",
+            "ico_2_image": "shopify:\/\/shop_images\/materials.png",
             "ico_3_title": "Lorem ipsum dolor",
-            "ico_3_image": "shopify:\/\/shop_images\/recycling.png",
+            "ico_3_image": "shopify:\/\/shop_images\/materials.png",
             "ico_4_title": "",
             "ico_5_title": ""
           }
@@ -38,12 +38,15 @@
         "6c149587-3c50-4831-969c-e6d53251fc49": {
           "type": "two_columns",
           "settings": {
+            "image": "shopify:\/\/shop_images\/resposabilidad-3.jpg",
             "title": "TRANSFORMANDO COMUNIDADES",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit bibendum odio sed gravida mecenas ac gravida augue. Phasellus vestibulum eros at bibendum mollis.<\/p>",
-            "ico_1_title": "",
+            "ico_1_title": "Lorem ipsum dolor",
             "ico_1_image": "shopify:\/\/shop_images\/materials.png",
             "ico_2_title": "Lorem ipsum dolor",
-            "ico_3_title": "",
+            "ico_2_image": "shopify:\/\/shop_images\/materials.png",
+            "ico_3_title": "Lorem ipsum dolor",
+            "ico_3_image": "shopify:\/\/shop_images\/materials.png",
             "ico_4_title": "",
             "ico_5_title": ""
           }
