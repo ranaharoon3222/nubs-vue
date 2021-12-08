@@ -165,8 +165,7 @@
 {% schema %}
 {
 "name": "business",
-"settings": [
-{
+"settings": [{
 "type": "text",
 "id": "title",
 "label": "Title"
@@ -175,26 +174,26 @@
 "type": "text",
 "id": "description",
 "label": "Description"
-}
-],
-"blocks": [
-{
-"type": "two_columns",
-"name": "Two Columns",
-"settings": [
-{
-"type": "image_picker",
-"id": "image",
-"label": "Image"
 },
 {
 "type": "text",
-"id": "title",
-"label": "Title"
+"id": "gallery_title",
+"label": "gallery_title"
+}
+],
+"blocks": [{
+"type": "bg_section",
+"name": "Background Section",
+"settings": [
+{
+"type": "image_picker",
+"id": "bg_image",
+"label": "Background Image"
 },
 {
-"type": "richtext",
-"id": "description",
+
+"type": "text",
+"id": "title",
 "label": "Title"
 },
 {
@@ -206,8 +205,7 @@
 "type": "image_picker",
 "id": "ico_1_image",
 "label": "Icon 1 Image"
-},
-{
+}, {
 "type": "text",
 "id": "ico_2_title",
 "label": "icon_2_title"
@@ -216,8 +214,7 @@
 "type": "image_picker",
 "id": "ico_2_image",
 "label": "Icon 2 Image"
-},
-{
+}, {
 "type": "text",
 "id": "ico_3_title",
 "label": "icon_3_title"
@@ -241,10 +238,20 @@
 },
 
 {
-"type": "cta",
-"name": "Cta Section",
-"settings": [
+"type": "gallery",
+"name": "gallery",
+"settings": [{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}]
+},
+
+
 {
+"type": "contact",
+"name": "contact",
+"settings": [{
 "type": "text",
 "id": "title",
 "label": "Title"
@@ -253,42 +260,20 @@
 "type": "richtext",
 "id": "description",
 "label": "Description"
-}
-]
-},
 
-{
-"type": "sofas",
-"name": "sofas Section",
-"settings": [
-{
-"type": "text",
-"id": "title",
-"label": "Title"
-},
-{
-"type": "richtext",
-"id": "description",
-"label": "Description"
 },
 {
 "type": "text",
-"id": "btn_text",
-"label": "Button Text"
+"id": "phone",
+"label": "Phone"
 },
 {
-"type": "url",
-"id": "btn_url",
-"label": "Button Link"
-},
-{
-"type": "collection",
-"id": "collection",
-"label": "Select Collection"
+"type": "text",
+"id": "email",
+"label": "Email"
 }
 ]
 }
 ]
 }
-
 {% endschema %}
