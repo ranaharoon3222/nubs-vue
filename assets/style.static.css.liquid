@@ -902,3 +902,78 @@ div#inner-navigation {
 }
 
 /* cart popup end */
+
+
+
+
+
+
+
+.cart_img {
+  min-width: 130px;
+  max-width: 150px;
+}
+
+.boder-line-top {
+  border-top: 1px solid var(--p-color);
+}
+
+.quantity_picker {
+  border: 0.5px solid #3c3c3b;
+  width: 120px;
+  height: 32px;
+  justify-content: space-between;
+}
+
+.quantity_picker input::-webkit-outer-spin-button,
+.quantity_picker input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity_picker i.material-icons {
+  font-size: 20px;
+}
+
+.quantity_picker input {
+  width: 35px;
+  background: transparent;
+  text-align: center;
+}
+
+.quantity_picker input:focus {
+  border: none;
+  outline: none;
+}
+
+.quantity_picker button {
+  display: flex;
+  padding: 0 3px;
+}
+
+.quantity_picker button:focus,
+.quantity_picker button:active {
+  box-shadow: none;
+}
+
+@media all and (min-width: 980px) {
+  .quantity_picker button {
+    padding: 0 10px;
+  }
+}
+
+i {
+  cursor: pointer;
+}
+
+
+
+
+
+.cart_spinner {
+  display: none;
+}
+
+.loading .cart_spinner {
+  display: block;
+}

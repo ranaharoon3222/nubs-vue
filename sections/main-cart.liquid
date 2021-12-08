@@ -1,66 +1,72 @@
-<div class="container max-w-screen-lg">
-  <h1 class="text-2xl md:text-3xl font-bold text-center mb-4">
-    {{ 'cart.title' | t }}
-  </h1>
-
-  <div class="text-center mb-8 md:mb-16">
-    <a href="{{ routes.root_url }}" class="text-sm underline">
-      {{ 'action.continue_shopping' | t }}
-    </a>
-  </div>
-
-  {% if cart.item_count > 0 %}
-    <div class="hidden md:grid grid-cols-8 gap-4 border-b text-gray-600 text-sm tracking-wider uppercase pb-4 mb-8">
-      <span class="col-span-5">{{ 'common.product' | t }}</span>
-      <span class="text-right">{{ 'common.price' | t }}</span>
-      <span class="text-right">{{ 'common.quantity' | t }}</span>
-      <span class="text-right">{{ 'common.total' | t }}</span>
+<section vue>
+    {% if cart.items == blank %}
+    <div class="container" style="padding-top: 200px;padding-bottom: 200px;">
+        <h3 class="text-center text2-color">Aún no tienes productos en tu carrito.</h3>
+        <div>
+            <a href="/" class="mx-auto mt-5 main-button text-uppercase text-center">Explorar sofás</a>
+        </div>
     </div>
 
-    <form action="/cart?locale={{ request.locale.iso_code }}" method="post" novalidate>
-      <input type="hidden" name="attributes[locale]" value="{{ request.locale.iso_code }}" />
 
-      {% for item in cart.items %}
-        {% capture deleteUrl %}{% unless routes.root_url == '/' %}{{ routes.root_url }}{% endunless %}/cart/change?line={{ forloop.index }}&amp;quantity=0{% endcapture %}
+    {% else %}
 
-        {% render 'layout-product-cart',
-          class: 'mb-12 md:mb-8'
-          product: item
-          deleteUrl: deleteUrl
-        %}
-      {% endfor %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-xl-8 pt-5">
+                <h3 class="mb-4">Mi carrito</h3>
+                {% for item in cart.items %}
 
-      <div class="flex flex-col items-end border-t pt-6">
-        <div class="text-lg font-semibold space-x-8">
-          <span class="inline-block">{{ 'cart.subtotal' | t }}</span>
-          <span class="inline-block">{{ cart.total_price | money_with_currency }}</span>
+                <renderless-cart v-slot={increment,decrement,quantityValue,deleteItem} :qty="{{item.quantity}}">
+
+                    <div class="hstack justify-content-between flex-wrap boder-line-top py-3">
+                        <div class="hstack"><img class="cart_img"
+                                src="{{item.product.featured_image.src | img_url: 'medium'}}">
+                            <div class="ms-2">
+                                <h5 class="font-12 s-family">{{item.product.title}}</h5>
+                                <p class="font-12 s-family mb-0 text2-color">Color: Gris oxford</p>
+                                <p class="font-12 s-family mb-0 text2-color">Patas: Tubo</p>
+                                <p class="font-12 s-family mb-0 text2-color">Costados: Piel</p>
+                                <div class="hstack">
+                                    <p class="font-12 s-family me-3">{{item.product.price |
+                                        money_without_trailing_zeros}}
+                                    </p>
+                                    <p class="font-12 s-family text2-color">{{item.product.compare_at_price |
+                                        money_without_trailing_zeros}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hstack align-self-auto">
+                            <div class="spinner-border spinner-border-sm me-3 cart_spinner" role="status"> </div>
+                            <div class="hstack v2 quantity_picker">
+                                <div><button @click="() => decrement({{item.variant_id}})" class="btn" type="button"><i
+                                            class="material-icons">remove</i></button>
+                                </div><input :value="quantityValue.value" type="number" class="border-0">
+                                <div><button @click="() => increment({{item.variant_id}} )" class="btn" type="button"><i
+                                            class="material-icons">add</i></button></div>
+                            </div><i class="material-icons ms-3"
+                                @click="()=> deleteItem({{item.variant_id}})">delete</i>
+                        </div>
+                    </div>
+
+                </renderless-cart>
+
+                {% endfor %}
+            </div>
+            <div class="col-md-4 col-xl-4 bg-white px-3 py-4 pt-5">
+                <h6 class="s-family text-uppercase boder-line pb-2">Resumen de tu compra</h6>
+                <div class="form-floating mb-3 mt-3"><input type="text" class="form-control" placeholder="Email"><label
+                        class="form-label">Agrega un cupón de descuento</label></div>
+                <div class="hstack justify-content-between">
+                    <h4 class="s-family font-12 mb-0">Subtotal</h4>
+                    <h4 class="font-12 s-family mb-0">${% raw %}{{ $store.state['cart'].total }}{% endraw %} MXN</h4>
+                </div>
+                <div class="hstack justify-content-between">
+                    <h4 class="s-family font-12 mb-0">Descuento</h4>
+                    <h4 class="font-12 s-family mb-0">${% raw %}{{ $store.state['cart'].total }}{% endraw %} MXN </h4>
+                </div><a class="main-button w-100 text-center mt-3 text-uppercase" href="/checkout">finalizar pedido</a>
+            </div>
         </div>
-
-        <div class="text-gray-600 text-sm">
-          {% if shop.taxes_included %}
-            {{ 'common.including_tax' | t }}
-          {% else %}
-            {{ 'common.excluding_tax' | t }}
-          {% endif %}
-        </div>
-
-        <button
-          name="checkout"
-          class="button button-primary mt-8"
-        >
-          {{ 'action.checkout' | t }}
-        </button>
-      </div>
-    </form>
-  {% else %}
-    <p class="text-center mb-16">
-      {{ 'cart.empty_cart' | t }}
-    </p>
-
-    <div class="text-center">
-      <a href="{{ routes.root_url }}" class="button button-primary inline-flex">
-        {{ 'action.continue_shopping' | t }} {% render 'icon-chevron-right', class: 'w-4 h-auto', style: 'margin-top: 2px;' %}
-      </a>
     </div>
-  {% endif %}
-</div>
+    {% endif %}
+
+</section>
