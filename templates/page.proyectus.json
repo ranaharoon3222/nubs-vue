@@ -30,6 +30,12 @@
             "image": "shopify:\/\/shop_images\/proyecto-2.jpg"
           }
         },
+        "b9102835-65f1-418c-aba6-396276ec9720": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/proyecto-3.jpg"
+          }
+        },
         "dabfd8a3-9bfa-4465-871d-96dfcefce855": {
           "type": "contact",
           "settings": {
@@ -38,20 +44,14 @@
             "phone": "+52 22 2196 1353",
             "email": "info@nubmobiliario.mx"
           }
-        },
-        "b9102835-65f1-418c-aba6-396276ec9720": {
-          "type": "gallery",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/proyecto-3.jpg"
-          }
         }
       },
       "block_order": [
         "bc68b0cc-a540-4272-8dce-b988faceb104",
         "77c7762e-d400-4e3f-82c1-dde23fbf2b4b",
         "747594cd-5b44-405d-a725-09373ffd5b89",
-        "dabfd8a3-9bfa-4465-871d-96dfcefce855",
-        "b9102835-65f1-418c-aba6-396276ec9720"
+        "b9102835-65f1-418c-aba6-396276ec9720",
+        "dabfd8a3-9bfa-4465-871d-96dfcefce855"
       ],
       "settings": {
         "title": "NUB for business",
