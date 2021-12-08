@@ -24,22 +24,31 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/team_2.jpg",
             "title": "Andrés Olea",
-            "link": "#"
+            "link": "shopify:\/\/pages\/andres-olea"
           }
         },
         "1ee08bba-82a8-41a6-b465-b3e99bb08c94": {
           "type": "disenadores",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_181_1.jpg",
-            "title": "Name",
-            "link": "#"
+            "title": "Sofía Gallardo",
+            "link": "shopify:\/\/pages\/sofia-gallardo"
           }
         },
         "94c9b498-0d84-40f9-aa0a-4e2f25fa2708": {
           "type": "disenadores",
           "settings": {
-            "title": "",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/colaborador-5.jpg",
+            "title": "Christian Vera",
+            "link": "shopify:\/\/pages\/christian-vera"
+          }
+        },
+        "e3fdc98f-c417-40b7-81f4-70cba8f7643e": {
+          "type": "disenadores",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/colaborador-6.jpg",
+            "title": "Erick Ortiz",
+            "link": "shopify:\/\/pages\/erick-ortiz"
           }
         }
       },
@@ -48,7 +57,8 @@
         "57e6ef6c-c1bd-4d7c-ad39-05a89299075c",
         "0e3edfb7-d7ee-45a8-92d8-3e6b2d2474b9",
         "1ee08bba-82a8-41a6-b465-b3e99bb08c94",
-        "94c9b498-0d84-40f9-aa0a-4e2f25fa2708"
+        "94c9b498-0d84-40f9-aa0a-4e2f25fa2708",
+        "e3fdc98f-c417-40b7-81f4-70cba8f7643e"
       ],
       "settings": {
         "title": "Diseñadores detras de nuestro sistema"
