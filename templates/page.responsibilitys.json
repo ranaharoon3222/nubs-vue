@@ -1,8 +1,71 @@
 {
   "sections": {
     "main": {
-      "type": "main-page-responsibilitys"
+      "type": "main-page-responsibilitys",
+      "blocks": {
+        "70774b86-40fd-4812-89c0-ab5ab20918d3": {
+          "type": "two_columns",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nub_place-1.jpg",
+            "title": "COMPROMISO SOCIAL",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit bibendum odio sed gravida mecenas ac gravida augue. Phasellus vestibulum eros at bibendum mollis.<\/p>",
+            "ico_1_title": "Lorem ipsum dolor",
+            "ico_1_image": "shopify:\/\/shop_images\/materials.png",
+            "ico_2_title": "Lorem ipsum dolor",
+            "ico_2_image": "shopify:\/\/shop_images\/recycling.png",
+            "ico_3_title": "Lorem ipsum dolor",
+            "ico_3_image": "shopify:\/\/shop_images\/community.png",
+            "ico_4_title": "",
+            "ico_5_title": ""
+          }
+        },
+        "d4a8ea99-c7b2-48e2-b017-831b88a10373": {
+          "type": "two_columns",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nub_place-1.jpg",
+            "title": "COMPROMISO SOCIAL",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit bibendum odio sed gravida mecenas ac gravida augue. Phasellus vestibulum eros at bibendum mollis.<\/p>",
+            "ico_1_title": "Lorem ipsum dolor",
+            "ico_1_image": "shopify:\/\/shop_images\/materials.png",
+            "ico_2_title": "Lorem ipsum dolor",
+            "ico_2_image": "shopify:\/\/shop_images\/community.png",
+            "ico_3_title": "Lorem ipsum dolor",
+            "ico_3_image": "shopify:\/\/shop_images\/recycling.png",
+            "ico_4_title": "",
+            "ico_5_title": ""
+          }
+        },
+        "b317f65e-d8dd-4b7d-9335-48d42bc77dbc": {
+          "type": "cta",
+          "settings": {
+            "title": "¿Por qué elegirnos?",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit bibendum odio sed gravida. Maecenas ac gravida augue. Phasellus vestibulum eros at bibendum mollis.<\/p>"
+          }
+        },
+        "1f218d68-ae10-4a7c-b46f-b31b20bfa710": {
+          "type": "sofas",
+          "settings": {
+            "title": "Conoce nuestros sofás modulares",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit bibendum odio sed gravida. Maecenas ac gravida augue. Phasellus vestibulum eros at bibendum mollis.<\/p>",
+            "btn_text": "VER TODOS LOS SOFÁS",
+            "btn_url": "#",
+            "collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "70774b86-40fd-4812-89c0-ab5ab20918d3",
+        "d4a8ea99-c7b2-48e2-b017-831b88a10373",
+        "b317f65e-d8dd-4b7d-9335-48d42bc77dbc",
+        "1f218d68-ae10-4a7c-b46f-b31b20bfa710"
+      ],
+      "settings": {
+        "title": "Responsabilidad social",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit bibendum odio sed gravida. Maecenas ac gravida augue. Phasellus vestibulum eros at bibendum mollis."
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
