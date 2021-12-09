@@ -15,7 +15,7 @@
             <div class="col-md-8 col-xl-8 pt-5">
                 <h3 class="mb-4">Mi carrito</h3>
                 {% for item in cart.items %}
-
+                {% assign prop = item.product.metafields.prop %}
                 <renderless-cart v-slot={increment,decrement,quantityValue,deleteItem} :qty="{{item.quantity}}">
 
                     <div class="hstack justify-content-between flex-wrap boder-line-top py-3">
@@ -23,9 +23,10 @@
                                 src="{{item.product.featured_image.src | img_url: 'medium'}}">
                             <div class="ms-2">
                                 <h5 class="font-12 s-family">{{item.product.title}}</h5>
-                                <p class="font-12 s-family mb-0 text2-color">Color: Gris oxford</p>
-                                <p class="font-12 s-family mb-0 text2-color">Patas: Tubo</p>
-                                <p class="font-12 s-family mb-0 text2-color">Costados: Piel</p>
+                                <p class="font-12 s-family mb-0 text2-color">Color: {{prop.color}}
+                                </p>
+                                <p class="font-12 s-family mb-0 text2-color">Patas: {{prop.patas}}</p>
+                                <p class="font-12 s-family mb-0 text2-color">Costados: {{prop.costados}}</p>
                                 <div class="hstack">
                                     <p class="font-12 s-family me-3">{{item.product.price |
                                         money_without_trailing_zeros}}
