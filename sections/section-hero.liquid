@@ -190,6 +190,7 @@
       autoHeight: !0,
       direction: 'horizontal',
       loop: !0,
+      mousewheel: true,
       hashNavigation: { watchState: !0 },
       on: {
         slideChange: function () {
@@ -214,18 +215,7 @@
     });
   });
 
-  window.addEventListener('load', function () {
-    const e = document.querySelectorAll('.c-accordian .accordion-collapse ');
-    window.innerWidth < 980 &&
-      e.forEach(function (e) {
-        e.classList.remove('show');
-      });
-    const t = document.querySelectorAll('.footer_link_col .collapse');
-    window.innerWidth < 980 &&
-      t.forEach(function (e) {
-        e.classList.remove('show');
-      });
-  });
+
 
 
 </script>

@@ -97,6 +97,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
+  <script>
+  
+    window.addEventListener('load', function () {
+    const e = document.querySelectorAll('.c-accordian .accordion-collapse ');
+    window.innerWidth < 980 &&
+      e.forEach(function (e) {
+        e.classList.remove('show');
+      });
+    const t = document.querySelectorAll('.footer_link_col .collapse');
+    window.innerWidth < 980 &&
+      t.forEach(function (e) {
+        e.classList.remove('show');
+      });
+  });
+  
+  </script>
+
 
 </body>
 
