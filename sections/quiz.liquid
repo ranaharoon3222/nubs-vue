@@ -21,26 +21,39 @@
                 <div class="w-100">
 
 
-                    {% for block in section.blcoks %}
+                    {% for block in section.blocks %}
                     {% assign b = block.settings %}
 
-                    {% if b.type == 'tamano' %}
-                    {% render 'quiz', b:b %}
+                    {% if b.quiz_type == 'tamano' %}
+                    {% render 'quiz', b:b, for: forloop.index %}
 
-                    {% elsif b.type == 'modelo' %}
+                    {% elsif b.quiz_type == 'modelo' %}
 
-                    {% render 'quiz', b:b %}
+                    {% render 'quiz', b:b, for: forloop.index %}
 
+                    {% elsif b.quiz_type == 'modelo' %}
+
+                    {% render 'quiz', b:b, for: forloop.index %}
+
+                    {% elsif b.quiz_type == 'textil' %}
+
+                    {% render 'quiz', b:b, for: forloop.index %}
+
+                    {% elsif b.quiz_type == 'costura' %}
+
+                    {% render 'quiz', b:b, for: forloop.index %}
+
+                    {% elsif b.quiz_type == 'color' %}
+
+                    {% render 'quiz', b:b, for: forloop.index %}
+
+                    {% elsif b.quiz_type == 'costados' %}
+
+                    {% render 'quiz', b:b, for: forloop.index %}
 
                     {% endif %}
 
-
                     {% endfor %}
-
-
-
-
-
 
                     <h4 class="font-12 text2-color s-family">¿Necesitas una personalización más avanzada?<a
                             class="text-uppercase ms-3 text2-color s-family text-decoration-none boder-line pb-1"
@@ -51,7 +64,8 @@
                             class="main-button text-center text-uppercase" href="#">siguiente</a></div>
                 </div>
             </div>
-            <div class="col-md-6 pe-0 ps-0"><img class="w-100" src="/sofa.png"></div>
+            <div class="col-md-6 pe-0 ps-0"><img class="w-100" src="{{section.settings.sofa | img_url: 'master'}}">
+            </div>
         </div>
     </div>
 </section>
@@ -86,6 +100,9 @@
 },
 {
 "type": "select",
+"id": "quiz_type",
+"label": "Type",
+"default": "tamano",
 "options": [{
 "value": "tamano",
 "label": "TAMANO"
@@ -110,9 +127,7 @@
 "value": "costados",
 "label": "COSTADOS"
 }
-],
-"id": "type",
-"label": "Type"
+]
 }
 ]
 }],

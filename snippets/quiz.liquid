@@ -1,11 +1,11 @@
    
    
    
-    <div id="tamano">
+    <div data-quiz="{{b.title}}-{{for}}">
                         <div class="cs-radio py-3">
                             <div class="form-check d-flex align-items-center"><input class="form-check-input"
-                                    type="radio" id="{{b.title}}">
-                                <label class="form-check-label" for="{{b.title}}">
+                                    type="radio" id="{{b.title}}-{{for}}">
+                                <label class="form-check-label" for="{{b.title}}-{{for}}">
                                     <img class="me-4 ms-4" src="{{b.image | img_url: 'master'}}">{{b.title}}
                                 </label>
                             </div>
