@@ -977,3 +977,49 @@ i {
 .loading .cart_spinner {
   display: block;
 }
+
+
+.cs-radio {
+  border-top: 1px solid #efebeb;
+}
+
+.quiz-col {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#quiz .breadcrumb * {
+  font-family: var(--s-family);
+  color: var(--text-3-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#quiz .breadcrumb {
+  border-bottom: none;
+}
+
+.quiz-bdc + .quiz-bdc::before {
+  content: '\e5cc';
+  color: var(--text-3-color);
+  font-family: 'Material Icons';
+}
+
+.quiz-bdc span {
+  font-size: 12px;
+}
+
+#quiz .breadcrumb li {
+  display: flex;
+}
+
+.quiz-bdc.active a {
+  color: var(--p-color) !important;
+  border-bottom: 2px solid var(--p-color);
+}
+.quiz-bdc.active a span {
+  color: var(--p-color) !important;
+}
