@@ -60,37 +60,33 @@
 {% schema %}
 {
 "name": "quiz",
-"settings": [
-{
+"settings": [{
 "type": "text",
 "id": "title",
-"label": "Title",
+"label": "Title"
 },
 {
 "type": "image_picker",
 "id": "sofa",
-"label": "Sofá image",
+"label": "Sofá image"
 }
 ],
-"blocks": [
-{
+"blocks": [{
 "type": "questions",
 "name": "questions",
-"settings": [
-{
+"settings": [{
 "type": "text",
 "id": "title",
-"label": "Title",
+"label": "Title"
 },
 {
 "type": "image_picker",
 "id": "image",
-"label": "Image",
+"label": "Image"
 },
 {
 "type": "select",
-"options": [
-{
+"options": [{
 "value": "tamano",
 "label": "TAMANO"
 },
@@ -118,13 +114,10 @@
 "id": "type"
 }
 ]
-}
-],
-"presets": [
-{
+}],
+"presets": [{
 "category": "Quiz",
-"name":"Quiz"
-}
-],
+"name": "Quiz"
+}]
 }
 {% endschema %}
