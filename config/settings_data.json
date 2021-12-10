@@ -74,21 +74,21 @@
             "type": "footer_col",
             "settings": {
               "heading": "Catálogo",
-              "footer_menu": "main-menu"
+              "footer_menu": "cat-logo"
             }
           },
           "daa592cc-514f-438d-bf86-916f2b7d4637": {
             "type": "footer_col",
             "settings": {
-              "heading": "empresa",
-              "footer_menu": "main-menu"
+              "heading": "Empresa",
+              "footer_menu": "empresa-1"
             }
           },
           "dfc261e7-07db-4997-a12f-08eac3524c02": {
             "type": "footer_col",
             "settings": {
-              "heading": "legales",
-              "footer_menu": "main-menu"
+              "heading": "Legales",
+              "footer_menu": "legales"
             }
           }
         },
