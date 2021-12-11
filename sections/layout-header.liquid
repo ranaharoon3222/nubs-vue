@@ -89,10 +89,19 @@
 
           <li class="nav-item">
             <div class="nav-item dropdown">
+              
+              
               <a  aria-expanded="false" class="dropdown-toggle" data-bs-toggle="dropdown" href="#"><img
                   src="{{'search.static.png '|asset_url}}"> </a>
-              <div class="border-0 dropdown-menu" id="search-box"><input placeholder="| ¿Qué estás buscando?"
-                  type="search">
+              <div class="border-0 dropdown-menu" id="search-box">
+                
+                <form class="search" action="/search">
+    <input type="text" placeholder="Search" name="q" value="{{ search.terms | escape }}"  />
+    <input type="submit" value="Search" />
+</form>
+                
+<!--                 <input placeholder="| ¿Qué estás buscando?"
+                  type="search"> -->
               </div>
             </div>
           </li>
