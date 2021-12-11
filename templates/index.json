@@ -6,7 +6,7 @@
         "e87ea3d0-3250-40f3-b6ab-55ad6c2764af": {
           "type": "questions",
           "settings": {
-            "title": "Individual",
+            "title": "Doble",
             "image": "shopify:\/\/shop_images\/radio-1.png",
             "quiz_type": "tamano"
           }
@@ -78,7 +78,7 @@
         "b943c8c9-b477-4cab-bbc0-3795c298b2ee": {
           "type": "questions",
           "settings": {
-            "title": "Barragán",
+            "title": "Azul Barragán",
             "image": "shopify:\/\/shop_images\/radio-1.png",
             "quiz_type": "color"
           }
@@ -86,7 +86,7 @@
         "74074535-8c5a-4910-871a-cb664c78311b": {
           "type": "questions",
           "settings": {
-            "title": "Fresno",
+            "title": "Madera Maple",
             "image": "shopify:\/\/shop_images\/radio-1.png",
             "quiz_type": "costados"
           }
