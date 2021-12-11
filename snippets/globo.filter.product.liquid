@@ -6,7 +6,7 @@
   {% assign text_options   = '' | downcase | replace: ', ', ',' | split: ","  %}
   {% assign show_selected_variant_info = true %}
 
-  {% assign image_size     = '360x350' %}
+  {% assign image_size     = '360x220' %}
   {% assign images_count   = product.images | size %}
   {% assign variants_count = product.variants | size %}
   {% assign options_count  = product.options | size %}
@@ -45,7 +45,7 @@
             <span translatable class="spf-product__label spf-product__label-sale sale-percent">
                             -{{ product_compare_at_price | minus: product_price | times: 100.0 | divided_by: product_compare_at_price | round }}%                          </span>
                         {% endunless %}
-                        <a class="spf-product-card__image-wrapper{% if images_count > 1 %} hover-effect{% endif %}" href="{{root_url}}{{ product.url | within: collection }}" style="padding-top:97.222222222222%;">
+                        <a class="spf-product-card__image-wrapper{% if images_count > 1 %} hover-effect{% endif %}" href="{{root_url}}{{ product.url | within: collection }}" style="padding-top:61.111111111111%;">
               {% if images_count > 0 %}
                 {% for image in product.images %}
                   <img
