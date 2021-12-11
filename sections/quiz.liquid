@@ -78,7 +78,8 @@
                                     {% render 'quiz', b:b, for: forloop.index , screen:'costados' quizModel:
                                     'v-model="quizValues.costados"' %}
                                 </div>
-                                {% endif %}
+
+                                {% elsif b.quiz_type == 'patas' %}
 
                                 <div v-if="step.value === 6">
                                     {% render 'quiz', b:b, for: forloop.index , screen:'patas' quizModel:
@@ -178,6 +179,10 @@
 {
 "value": "costados",
 "label": "COSTADOS"
+},
+{
+"value": "patas",
+"label": "Patas"
 }
 ]
 }
