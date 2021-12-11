@@ -40,7 +40,7 @@
       cur_currency: {{cart.currency.iso_code | json}},
       cur_locale: {{request.locale.iso_code | json}},
       locale: {{primary_locale}},
-      product_image: {width: 360, height: 504},
+      product_image: {width: 360, height: 350},
       no_image_url: "https://cdn.shopify.com/s/images/themes/product-1.png",
       themeStoreId: 0,
       swatches:  {{ shop.metafields.globo.swatches | json }},
@@ -51,7 +51,7 @@
       settings: {{ settings | json }},
       home_filter: {{home_filter}},
       page: {{request.page_type | json}},
-      layout: "theme"
+      layout: "app"
     },
     special_countries: null,
     adjustments: null,
@@ -98,6 +98,5 @@
 {% if globo_search %}<link rel="preload stylesheet" href="{{ 'v5.globo.search.css' | asset_url }}" as="style">
 {% endif %}
 {% endif %}
-
 
 

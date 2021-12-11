@@ -5251,11 +5251,11 @@ span.gf-summary,
   background: #FFFFFF;
 }
 a.spf-product-card__image-wrapper{
-  padding-top: 140%;
+  padding-top: 97.222222222222%;
 }
 .h4.spf-product-card__title a{
   color: #333333;
-  font-size: 15px;
+  font-size: 0px;
   font-family: "Poppins", sans-serif;  font-weight: 500;
   font-style: normal;
   text-decoration: none;
@@ -5303,7 +5303,7 @@ span.spf-product__label.spf-product__label-sale{
   font-size: 14px;
 }
 .spf-image-ratio{
-  padding-top:140% !important;
+  padding-top:97.222222222222% !important;
 }
 .spf-product-card__oldprice,
 .spf-product-card__saleprice,
