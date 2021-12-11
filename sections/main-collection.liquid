@@ -1,7 +1,15 @@
-
 <div class="container">
+  
+  
+  <h2> {{collection.title}} </h2>
+  
+  
+
+   <div data-sectionId="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products"  class="">                       
+                              
+                            </div>
+
+</div>
 
 
- {% render 'searchanise-navigation' %}
 
- </div>
