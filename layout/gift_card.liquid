@@ -24,7 +24,7 @@
     {{ 'bundle.css' | asset_url | stylesheet_tag }}
 
     <!-- header hook for Shopify plugins -->
-    {{ content_for_header }}
+    {% include 'globo.filter.script' %}{{ content_for_header }}
   </head>
 
   <body class="min-h-screen flex flex-col font-sans">
@@ -34,5 +34,6 @@
 
     <!-- webpack bundle -->
     <script src="{{ 'bundle.js' | asset_url }}" defer="defer"></script>
-  </body>
+  {% include 'globo.filter.action' %}
+	</body>
 </html>
