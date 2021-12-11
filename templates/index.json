@@ -133,8 +133,9 @@
         "61853db9-c133-4229-b981-42be8c214aa8"
       ],
       "settings": {
-        "collection": "",
-        "title": ""
+        "collection": "sofa",
+        "title": "Personaliza tu sofá",
+        "sofa": "shopify:\/\/shop_images\/sofa.png"
       }
     },
     "section-hero": {
