@@ -63,7 +63,24 @@
           "type": "questions",
           "settings": {
             "title": "Cenefa",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
             "quiz_type": "costura"
+          }
+        },
+        "8c336a2c-8ff2-48da-9bc6-44d7f542ac68": {
+          "type": "questions",
+          "settings": {
+            "title": "Goeritz",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "color"
+          }
+        },
+        "b943c8c9-b477-4cab-bbc0-3795c298b2ee": {
+          "type": "questions",
+          "settings": {
+            "title": "Barragán",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "color"
           }
         }
       },
@@ -75,7 +92,9 @@
         "08e6165d-70f0-4225-aeb1-ef8ffe626ac5",
         "9e05b251-2bd5-4287-9aee-d29e162d2764",
         "b26e6a56-d9c8-405f-82e9-ed5f92a9a7a9",
-        "0129a63c-b573-4b8d-929b-63180388a92e"
+        "0129a63c-b573-4b8d-929b-63180388a92e",
+        "8c336a2c-8ff2-48da-9bc6-44d7f542ac68",
+        "b943c8c9-b477-4cab-bbc0-3795c298b2ee"
       ],
       "settings": {
         "title": ""
