@@ -1,13 +1,10 @@
 <div class="container">
   
   
-  <h2> {{collection.title | capitalize  }} </h2>
+  <h1> {{collection.title | capitalize  }} </h1>
   
   
-
-   <div data-sectionId="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products"  class="">                       
-                              
-                            </div>
+ {% render 'searchanise-navigation' %}.
 
 </div>
 
