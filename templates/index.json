@@ -1,5 +1,123 @@
 {
   "sections": {
+    "1639200108da1f5a8f": {
+      "type": "quiz",
+      "blocks": {
+        "e87ea3d0-3250-40f3-b6ab-55ad6c2764af": {
+          "type": "questions",
+          "settings": {
+            "title": "Individual",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "tamano"
+          }
+        },
+        "62c95e0b-7fa3-4529-a4d2-6ab6d1cfa8aa": {
+          "type": "questions",
+          "settings": {
+            "title": "Loveseat",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "tamano"
+          }
+        },
+        "09e43c26-d2ab-4f4d-8d72-6f0ba34c3947": {
+          "type": "questions",
+          "settings": {
+            "title": "Fijo",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "modelo"
+          }
+        },
+        "e827e5af-9a53-4331-a720-243b21fe517a": {
+          "type": "questions",
+          "settings": {
+            "title": "Reclinable",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "modelo"
+          }
+        },
+        "08e6165d-70f0-4225-aeb1-ef8ffe626ac5": {
+          "type": "questions",
+          "settings": {
+            "title": "Tela",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "textil"
+          }
+        },
+        "9e05b251-2bd5-4287-9aee-d29e162d2764": {
+          "type": "questions",
+          "settings": {
+            "title": "Suede",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "textil"
+          }
+        },
+        "b26e6a56-d9c8-405f-82e9-ed5f92a9a7a9": {
+          "type": "questions",
+          "settings": {
+            "title": "Vivo tela",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "costura"
+          }
+        },
+        "0129a63c-b573-4b8d-929b-63180388a92e": {
+          "type": "questions",
+          "settings": {
+            "title": "Cenefa",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "costura"
+          }
+        },
+        "8c336a2c-8ff2-48da-9bc6-44d7f542ac68": {
+          "type": "questions",
+          "settings": {
+            "title": "Goeritz",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "color"
+          }
+        },
+        "b943c8c9-b477-4cab-bbc0-3795c298b2ee": {
+          "type": "questions",
+          "settings": {
+            "title": "Barragán",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "color"
+          }
+        },
+        "74074535-8c5a-4910-871a-cb664c78311b": {
+          "type": "questions",
+          "settings": {
+            "title": "Fresno",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "costados"
+          }
+        },
+        "c5d9527b-31ba-467a-882b-804d1d220e9a": {
+          "type": "questions",
+          "settings": {
+            "title": "Maple",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "costados"
+          }
+        }
+      },
+      "block_order": [
+        "e87ea3d0-3250-40f3-b6ab-55ad6c2764af",
+        "62c95e0b-7fa3-4529-a4d2-6ab6d1cfa8aa",
+        "09e43c26-d2ab-4f4d-8d72-6f0ba34c3947",
+        "e827e5af-9a53-4331-a720-243b21fe517a",
+        "08e6165d-70f0-4225-aeb1-ef8ffe626ac5",
+        "9e05b251-2bd5-4287-9aee-d29e162d2764",
+        "b26e6a56-d9c8-405f-82e9-ed5f92a9a7a9",
+        "0129a63c-b573-4b8d-929b-63180388a92e",
+        "8c336a2c-8ff2-48da-9bc6-44d7f542ac68",
+        "b943c8c9-b477-4cab-bbc0-3795c298b2ee",
+        "74074535-8c5a-4910-871a-cb664c78311b",
+        "c5d9527b-31ba-467a-882b-804d1d220e9a"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
     "section-hero": {
       "type": "section-hero",
       "blocks": {
@@ -84,6 +202,7 @@
     }
   },
   "order": [
+    "1639200108da1f5a8f",
     "section-hero"
   ]
 }
