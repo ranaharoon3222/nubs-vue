@@ -98,6 +98,22 @@
             "image": "shopify:\/\/shop_images\/radio-1.png",
             "quiz_type": "costados"
           }
+        },
+        "edf90f24-a5cf-4bf0-ab89-ba0f5d5359b5": {
+          "type": "questions",
+          "settings": {
+            "title": "Fresno",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "patas"
+          }
+        },
+        "61853db9-c133-4229-b981-42be8c214aa8": {
+          "type": "questions",
+          "settings": {
+            "title": "Maple",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "patas"
+          }
         }
       },
       "block_order": [
@@ -112,10 +128,14 @@
         "8c336a2c-8ff2-48da-9bc6-44d7f542ac68",
         "b943c8c9-b477-4cab-bbc0-3795c298b2ee",
         "74074535-8c5a-4910-871a-cb664c78311b",
-        "c5d9527b-31ba-467a-882b-804d1d220e9a"
+        "c5d9527b-31ba-467a-882b-804d1d220e9a",
+        "edf90f24-a5cf-4bf0-ab89-ba0f5d5359b5",
+        "61853db9-c133-4229-b981-42be8c214aa8"
       ],
       "settings": {
-        "title": ""
+        "collection": "sofa",
+        "title": "Personaliza tu sofá",
+        "sofa": "shopify:\/\/shop_images\/sofa.png"
       }
     },
     "section-hero": {
