@@ -82,6 +82,14 @@
             "image": "shopify:\/\/shop_images\/radio-1.png",
             "quiz_type": "color"
           }
+        },
+        "74074535-8c5a-4910-871a-cb664c78311b": {
+          "type": "questions",
+          "settings": {
+            "title": "Fresno",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "costados"
+          }
         }
       },
       "block_order": [
@@ -94,7 +102,8 @@
         "b26e6a56-d9c8-405f-82e9-ed5f92a9a7a9",
         "0129a63c-b573-4b8d-929b-63180388a92e",
         "8c336a2c-8ff2-48da-9bc6-44d7f542ac68",
-        "b943c8c9-b477-4cab-bbc0-3795c298b2ee"
+        "b943c8c9-b477-4cab-bbc0-3795c298b2ee",
+        "74074535-8c5a-4910-871a-cb664c78311b"
       ],
       "settings": {
         "title": ""
