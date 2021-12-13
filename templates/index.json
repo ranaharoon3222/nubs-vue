@@ -122,6 +122,14 @@
             "image": "shopify:\/\/shop_images\/radio-1.png",
             "quiz_type": "tamano"
           }
+        },
+        "3a9ab39c-e316-4879-b0ab-d74b49c67ac1": {
+          "type": "questions",
+          "settings": {
+            "title": "Madera Maple",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "costados"
+          }
         }
       },
       "block_order": [
@@ -139,7 +147,8 @@
         "c5d9527b-31ba-467a-882b-804d1d220e9a",
         "edf90f24-a5cf-4bf0-ab89-ba0f5d5359b5",
         "61853db9-c133-4229-b981-42be8c214aa8",
-        "55cf84b7-13e0-4204-8b1a-b8399cad0d19"
+        "55cf84b7-13e0-4204-8b1a-b8399cad0d19",
+        "3a9ab39c-e316-4879-b0ab-d74b49c67ac1"
       ],
       "settings": {
         "collection": "sofa",
