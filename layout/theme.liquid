@@ -108,13 +108,16 @@
         });
       });
 
+      if (document.querySelector('#quiz-close')) {
 
-      document
-        .querySelector("#quiz-close")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector('#quiz-sec').classList.remove("open-quiz");
-        });
+        document
+          .querySelector("#quiz-close")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector('#quiz-sec').classList.remove("open-quiz");
+          });
+      }
+
 
       const e = document.querySelectorAll('.c-accordian .accordion-collapse ');
       window.innerWidth < 980 &&
