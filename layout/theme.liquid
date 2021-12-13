@@ -34,7 +34,7 @@
 
 
   <!-- header hook for Shopify plugins -->
-{{ content_for_header }}
+  {{ content_for_header }}
 </head>
 
 <body class="min-h-screen">
@@ -101,10 +101,14 @@
 
     window.addEventListener('load', function () {
 
-      document.querySelector("#quiz-open").addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector('#quiz-sec').classList.add("open-quiz");
+      document.querySelectorAll(".quiz-open").forEach(function (el) {
+        el.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector('#quiz-sec').classList.add("open-quiz");
+        });
       });
+
+
       document
         .querySelector("#quiz-close")
         .addEventListener("click", function (e) {
@@ -129,6 +133,6 @@
   </script>
 
 
-	</body>
+</body>
 
 </html>
