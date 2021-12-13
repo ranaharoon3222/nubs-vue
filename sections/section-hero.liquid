@@ -11,8 +11,8 @@
           <div class="text-center px-4">
             <h1 class="text-white">{{block.settings.title}}</h1>
             <h1 class="text-white fst-italic"> {{block.settings.sub_title}} </h1><a
-              class="main-button-dark mx-auto mt-4 text-uppercase"
-              href="{{block.settings.btn_link}}" id="quiz-open">{{block.settings.btn_text}}</a>
+              class="main-button-dark mx-auto mt-4 text-uppercase" href="{{block.settings.btn_link}}"
+              id="quiz-open">{{block.settings.btn_text}}</a>
           </div>
         </section><!-- End: Nubs Banner 1 -->
       </div>
@@ -193,8 +193,18 @@
       mousewheel: true,
       hashNavigation: { watchState: !0 },
       on: {
-        slideChange: function () {
+        slideChange: function (swiper) {
+
           setTimeout(() => {
+
+
+            if (location.hash === '#Responsabilidad-social') {
+              document.querySelector('#custom-navigation').classList.add('dark');
+            } else {
+              document.querySelector('#custom-navigation').classList.remove('dark');
+            }
+
+
             e.forEach((i, o) => {
               if (i.getAttribute('data-slide') === location.hash.split('#')[1]) {
                 var a = i.offsetTop;
