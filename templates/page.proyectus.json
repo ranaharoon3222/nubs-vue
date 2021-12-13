@@ -36,6 +36,12 @@
             "image": "shopify:\/\/shop_images\/proyecto-3.jpg"
           }
         },
+        "40f09ff9-2c98-47d5-9a9e-7750ba5aab03": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/proyecto-1.jpg"
+          }
+        },
         "dabfd8a3-9bfa-4465-871d-96dfcefce855": {
           "type": "contact",
           "settings": {
@@ -51,6 +57,7 @@
         "77c7762e-d400-4e3f-82c1-dde23fbf2b4b",
         "747594cd-5b44-405d-a725-09373ffd5b89",
         "b9102835-65f1-418c-aba6-396276ec9720",
+        "40f09ff9-2c98-47d5-9a9e-7750ba5aab03",
         "dabfd8a3-9bfa-4465-871d-96dfcefce855"
       ],
       "settings": {
