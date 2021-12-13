@@ -113,29 +113,35 @@
                     class="text-black s-family text-decoration-none d-block" href="#"> {{block.settings.email}}</a>
             </div>
             <div class="col">
+                {% form 'contact' %}
+
                 <!-- Start: Nubs Input -->
                 <div class="form-floating mb-4">
-                    <input type="text" class="form-control" placeholder="Nombre" /><label
-                        class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre" /><label class="form-label"
+                        name="contact[first_name]">Nombre</label>
                 </div>
                 <!-- End: Nubs Input -->
                 <!-- Start: Nubs Input -->
                 <div class="form-floating mb-4">
-                    <input type="text" class="form-control" placeholder="electrónico" /><label class="form-label">Correo
+                    <input name="contact[email]" type="email" class="form-control" placeholder="electrónico" /><label
+                        class="form-label">Correo
                         electrónico</label>
                 </div>
                 <!-- End: Nubs Input -->
                 <!-- Start: Nubs Input -->
                 <div class="form-floating mb-4">
-                    <input type="text" class="form-control mb-4" placeholder="Teléfono" />
+                    <input type="text" name="contact[Telefono]" class="form-control mb-4" placeholder="Teléfono" />
                     <label class="form-label">Teléfono</label>
                 </div>
                 <!-- End: Nubs Input -->
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Message"></textarea><label class="form-label">Mensaje
+                    <textarea class="form-control" name="contact[body]" placeholder="Message"></textarea><label
+                        class="form-label">Mensaje
                     </label>
                 </div>
-                <a class="main-button text-center w-100 text-uppercase" href="#">enviar</a>
+                <button type="submit" class="main-button text-center w-100 text-uppercase">enviar</button>
+
+                {% endform %}
             </div>
         </div>
     </div>

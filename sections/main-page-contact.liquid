@@ -1,21 +1,43 @@
- <!-- Start: Nubs Contact -->
-    <section class="py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col pb-5">
-                    <h1>Escríbenos</h1>
-                    <p class="pt-5 mt-5 pb-4 mx-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus hendrerit augue et, a nisi, eu at. Consequat odio scelerisque est tincidunt ipsum vitae.</p><a class="text-black s-family text-decoration-none d-block" href="#">+52 22 2196 1353</a><a class="text-black s-family text-decoration-none d-block" href="#">info@nubmobiliario.mx</a>
+<!-- Start: Nubs Contact -->
+<section class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col pb-5">
+                <h1>Escríbenos</h1>
+                <p class="pt-5 mt-5 pb-4 mx-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+                    hendrerit augue et, a nisi, eu at. Consequat odio scelerisque est tincidunt ipsum vitae.</p><a
+                    class="text-black s-family text-decoration-none d-block" href="#">+52 22 2196 1353</a><a
+                    class="text-black s-family text-decoration-none d-block" href="#">info@nubmobiliario.mx</a>
+            </div>
+            <div class="col">
+                {% form 'contact' %}
+
+                <!-- Start: Nubs Input -->
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control" placeholder="Nombre" name="contact[Nombre]">
+                    <label class="form-label">Nombre</label>
+                </div><!-- End: Nubs Input -->
+                <!-- Start: Nubs Input -->
+                <div class="form-floating mb-4">
+                    <input type="email" class="form-control" name="contact[email]" placeholder="Correo electrónico">
+                    <label class="form-label">Correo electrónico</label>
                 </div>
-                <div class="col">
-                    <!-- Start: Nubs Input -->
-                    <div class="form-floating mb-4"><input type="text" class="form-control" placeholder="Email"><label class="form-label">Label</label></div><!-- End: Nubs Input -->
-                    <!-- Start: Nubs Input -->
-                    <div class="form-floating mb-4"><input type="text" class="form-control" placeholder="Email"><label class="form-label">Label</label></div><!-- End: Nubs Input -->
-                    <!-- Start: Nubs Input -->
-                    <div class="form-floating mb-4"><input type="text" class="form-control mb-4" placeholder="Email"><!-- Start: Nubs Textarea -->
-                        <div class="form-floating mb-3"><textarea class="form-control" placeholder="Message"></textarea><label class="form-label">message</label></div><!-- End: Nubs Textarea --><label class="form-label">Label</label>
-                    </div><!-- End: Nubs Input --><a class="main-button text-center w-100 text-uppercase" href="#">enviar</a>
+                <!-- End: Nubs Input -->
+                <!-- Start: Nubs Input -->
+                <div class="form-floating mb-4"><input name="contact[Telefono]" type="text" class="form-control mb-4"
+                        placeholder="Teléfono">
+                    <label class="form-label">Teléfono</label>
                 </div>
+
+                <div class="form-floating mb-3">
+                    <textarea name="contact[body]" class="form-control" placeholder="Mensaje"></textarea><label
+                        class="form-label">Mensaje</label>
+                </div>
+
+                <button type="submit" class="main-button text-center w-100 text-uppercase">enviar</button>
+
+                {% endform %}
             </div>
         </div>
-    </section><!-- End: Nubs Contact -->
+    </div>
+</section><!-- End: Nubs Contact -->
