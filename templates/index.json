@@ -114,6 +114,14 @@
             "image": "shopify:\/\/shop_images\/radio-1.png",
             "quiz_type": "patas"
           }
+        },
+        "55cf84b7-13e0-4204-8b1a-b8399cad0d19": {
+          "type": "questions",
+          "settings": {
+            "title": "test tamano",
+            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "quiz_type": "tamano"
+          }
         }
       },
       "block_order": [
@@ -130,7 +138,8 @@
         "74074535-8c5a-4910-871a-cb664c78311b",
         "c5d9527b-31ba-467a-882b-804d1d220e9a",
         "edf90f24-a5cf-4bf0-ab89-ba0f5d5359b5",
-        "61853db9-c133-4229-b981-42be8c214aa8"
+        "61853db9-c133-4229-b981-42be8c214aa8",
+        "55cf84b7-13e0-4204-8b1a-b8399cad0d19"
       ],
       "settings": {
         "collection": "sofa",
