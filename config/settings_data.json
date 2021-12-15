@@ -34,7 +34,7 @@
             "type": "mega_menu",
             "settings": {
               "main_item": "Proyectos",
-              "main_item_link": "",
+              "main_item_link": "shopify:\/\/pages\/proyectus",
               "sub_menu_1": "",
               "sub_menu_2": ""
             }
