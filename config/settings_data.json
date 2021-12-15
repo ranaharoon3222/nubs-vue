@@ -25,7 +25,7 @@
             "type": "mega_menu",
             "settings": {
               "main_item": "Accesorios",
-              "main_item_link": "",
+              "main_item_link": "shopify:\/\/collections\/accesorios",
               "sub_menu_1": "",
               "sub_menu_2": ""
             }
