@@ -7,7 +7,7 @@
           "type": "questions",
           "settings": {
             "title": "Individual",
-            "image": "shopify:\/\/shop_images\/sofa-individual.png",
+            "image": "shopify:\/\/shop_images\/sofa-individual_8409998e-6d94-4111-8dfb-974aa5e819f8.png",
             "quiz_type": "tamano"
           }
         },
@@ -87,7 +87,7 @@
           "type": "questions",
           "settings": {
             "title": "Goeritz",
-            "image": "shopify:\/\/shop_images\/color-goeritz.png",
+            "image": "shopify:\/\/shop_images\/color-mares.png",
             "quiz_type": "color"
           }
         },
