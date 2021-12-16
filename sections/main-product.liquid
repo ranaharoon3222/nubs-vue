@@ -24,13 +24,21 @@
             </div>
             <div class="mt-5 dropdown">
               <div id="product_toggle">
-                <h6 class="s-family text-uppercase dropdown-toggle position-relative" data-bs-toggle="dropdown"
-                  aria-expanded="false">modificar variantes<i
-                    class="material-icons position-absolute">keyboard_arrow_down</i></h6>
-                <ul class="dropdown-menu" aria-labelledby="product_toggle">
+                <ul class="">
+                  <div class="hstack  font-12 text-uppercase p-color">
+                    <div class=" w-50 ">
+                      <p class="s-family p-color mb-1" style="letter-spacing: 1px !important;">Variantes</p>
+                    </div>
+                    <div class=" w-50 ">
+                      <p class="s-family p-color mb-1" style="letter-spacing: 1px !important;">Modificar</p>
+                    </div>
+                  </div>
+
+                  <div class="hstack mb-3 font-12 text2-color">
+                  </div>
                   {% for block in section.blocks %}
                   {% if block.type == 'features' %}
-                  <div class="hstack px-3 mb-3 font-12 text2-color">
+                  <div class="hstack mb-3 font-12 text2-color">
                     <div class=" w-50 ">{{block.settings.title}}</div>
                     <div class=" w-50 ">
                       <a href="#" class="text2-color">
@@ -40,13 +48,10 @@
                   {% endif %}
                   {% endfor %}
                 </ul>
+
               </div>
             </div>
-            <div class="comp-bg px-2 py-3 product_description">
-              <h6 class="s-family text-uppercase">Descripción</h6>
-              <p class="mb-0"> {{ product.description }} </p>
-              </p>
-            </div>
+
 
             {% capture cartForm %}
             <div class="hstack mt-4 gap-4">
@@ -83,6 +88,13 @@
 
             </form>
             <!-- end cart btn -->
+
+
+            <div class="comp-bg px-2 py-3 product_description">
+              <h6 class="s-family text-uppercase">Descripción</h6>
+              <p class="mb-0"> {{ product.description }} </p>
+              </p>
+            </div>
 
           </div>
         </renderless-product-variant-selector>
