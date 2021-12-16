@@ -7,7 +7,7 @@
           "type": "questions",
           "settings": {
             "title": "Individual",
-            "image": "shopify:\/\/shop_images\/sofa-individual_8409998e-6d94-4111-8dfb-974aa5e819f8.png",
+            "image": "shopify:\/\/shop_images\/sofa-individual.png",
             "quiz_type": "tamano"
           }
         },
@@ -23,7 +23,7 @@
           "type": "questions",
           "settings": {
             "title": "Triple",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/sofa-triple.png",
             "quiz_type": "tamano"
           }
         },
@@ -31,7 +31,7 @@
           "type": "questions",
           "settings": {
             "title": "Seccional",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/sofa-seccional-izq.png",
             "quiz_type": "tamano"
           }
         },
@@ -39,7 +39,7 @@
           "type": "questions",
           "settings": {
             "title": "Reclinable",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/sofa-reclinable.png",
             "quiz_type": "modelo"
           }
         },
@@ -47,7 +47,7 @@
           "type": "questions",
           "settings": {
             "title": "Fijo",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/sofa-fijo.png",
             "quiz_type": "modelo"
           }
         },
@@ -55,7 +55,7 @@
           "type": "questions",
           "settings": {
             "title": "Tela",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/tela.png",
             "quiz_type": "textil"
           }
         },
@@ -63,7 +63,7 @@
           "type": "questions",
           "settings": {
             "title": "Piel",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/piel.png",
             "quiz_type": "textil"
           }
         },
@@ -71,7 +71,7 @@
           "type": "questions",
           "settings": {
             "title": "Vivo tela",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/vivo-tela.png",
             "quiz_type": "costura"
           }
         },
@@ -79,7 +79,7 @@
           "type": "questions",
           "settings": {
             "title": "Cenefa",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/cenefa.png",
             "quiz_type": "costura"
           }
         },
@@ -87,7 +87,7 @@
           "type": "questions",
           "settings": {
             "title": "Goeritz",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/color-goeritz.png",
             "quiz_type": "color"
           }
         },
@@ -95,7 +95,7 @@
           "type": "questions",
           "settings": {
             "title": "Barragán",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/color-barragan.png",
             "quiz_type": "color"
           }
         },
@@ -103,7 +103,7 @@
           "type": "questions",
           "settings": {
             "title": "Ramirez",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/color-ramirez.png",
             "quiz_type": "color"
           }
         },
@@ -111,7 +111,7 @@
           "type": "questions",
           "settings": {
             "title": "Agustín",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
+            "image": "shopify:\/\/shop_images\/color-agustin.png",
             "quiz_type": "color"
           }
         },
@@ -119,6 +119,7 @@
           "type": "questions",
           "settings": {
             "title": "Pani",
+            "image": "shopify:\/\/shop_images\/color-santo-tomas.png",
             "quiz_type": "color"
           }
         },
@@ -126,6 +127,7 @@
           "type": "questions",
           "settings": {
             "title": "Peach nougat",
+            "image": "shopify:\/\/shop_images\/color-peach-nougat.png",
             "quiz_type": "color"
           }
         }
