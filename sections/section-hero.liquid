@@ -189,8 +189,11 @@
       fadeEffect: { crossFade: !0 },
       autoHeight: !0,
       direction: 'horizontal',
-      loop: !0,
-      mousewheel: true,
+      loop: false,
+
+      mousewheel: {
+        releaseOnEdges: true,
+      },
       hashNavigation: { watchState: !0 },
       on: {
         slideChange: function (swiper) {

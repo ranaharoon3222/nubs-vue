@@ -137,6 +137,7 @@ h6 {
   display: block;
   text-decoration: none;
   line-height: 32px;
+      letter-spacing: 1px !important;
 }
 .main-button:focus {
   background-color: var(--p-color);
@@ -410,6 +411,7 @@ section#custom-navigation > div::-webkit-scrollbar {
 }
 #footer {
   background-color: var(--p-color);
+      margin-top: 80px;
 }
 #footer .social {
   margin-top: 30px;
@@ -458,8 +460,10 @@ a.footer_heading:hover {
   color: #fff;
   display: block;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 12px !important;
   margin-top: 6px;
+  letter-spacing:1px !important;
+  line-height:16px !important;
 }
 .breadcrumb a {
   color: #ccc;
@@ -1118,4 +1122,26 @@ div#quiz-sec {
 
 a.no-arrow:after {
     content: none;
+}
+
+.breadcrumb * {
+    font-family: var(--s-family);
+}
+.breadcrumb a.active-item * {
+    color: #999696;
+}
+.breadcrumb a * {
+    color: #CCCCCC;  
+      font-size: 12px;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media all and (min-width:980px) {
+  .footer_heading {
+    pointer-events: none;
+  }
 }
