@@ -108,14 +108,14 @@
             </div>
             <div id="product_slider" class="swiper">
               <div class="swiper-wrapper">
-                
+
                 {% for product in collection.products %}
                 <div class="hover_product swiper-slide">
                   <a href="{{product.url}}">
                     <img class="w-100" src="{{ product.featured_image.src | img_url: '1024x' }}">
-                    <div class="ps-2">
+                    <!-- <div class="ps-2">
                       <h5> {{product.title}} </h5><span> {{ product.price | money_without_trailing_zeros }}</span>
-                    </div>
+                    </div> -->
                   </a>
                 </div>
                 {% endfor %}
@@ -123,9 +123,6 @@
               </div>
             </div>
 
-
-      {{ collection.products | json }}
-          
             <!-- recommneded products -->
 
 
@@ -325,7 +322,7 @@
       navigation: { nextEl: '.next-arrow', prevEl: '.prev-arrow' },
       slidesPerView: 2,
       spaceBetween: 20,
-      breakpoints: { 981: { slidesPerView: 3, spaceBetween: 30 } },
+      breakpoints: { 981: { slidesPerView: 3, spaceBetween: 20 } },
     })
   });
 </script>
