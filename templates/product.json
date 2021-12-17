@@ -7,7 +7,7 @@
           "type": "features",
           "settings": {
             "title": "Tamaño",
-            "value": "{{ product.metafields.prop.tomano.value }}"
+            "value": "{{ product.metafields.prop.tamano.value }}"
           }
         },
         "cfdc1e59-b3a4-428c-a1fa-ff3ca2feaa66": {
