@@ -22,97 +22,113 @@
         "09e43c26-d2ab-4f4d-8d72-6f0ba34c3947": {
           "type": "questions",
           "settings": {
-            "title": "Fijo",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "modelo"
+            "title": "Triple",
+            "image": "shopify:\/\/shop_images\/sofa-triple.png",
+            "quiz_type": "tamano"
           }
         },
         "e827e5af-9a53-4331-a720-243b21fe517a": {
           "type": "questions",
           "settings": {
-            "title": "Reclinable",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "modelo"
+            "title": "Seccional",
+            "image": "shopify:\/\/shop_images\/sofa-seccional-izq.png",
+            "quiz_type": "tamano"
           }
         },
         "08e6165d-70f0-4225-aeb1-ef8ffe626ac5": {
           "type": "questions",
           "settings": {
-            "title": "Tela",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "textil"
+            "title": "Reclinable",
+            "image": "shopify:\/\/shop_images\/sofa-reclinable.png",
+            "quiz_type": "modelo"
           }
         },
         "9e05b251-2bd5-4287-9aee-d29e162d2764": {
           "type": "questions",
           "settings": {
-            "title": "Suede",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "textil"
+            "title": "Fijo",
+            "image": "shopify:\/\/shop_images\/sofa-fijo.png",
+            "quiz_type": "modelo"
           }
         },
         "b26e6a56-d9c8-405f-82e9-ed5f92a9a7a9": {
           "type": "questions",
           "settings": {
-            "title": "Vivo tela",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "costura"
+            "title": "Tela",
+            "image": "shopify:\/\/shop_images\/tela.png",
+            "quiz_type": "textil"
           }
         },
         "0129a63c-b573-4b8d-929b-63180388a92e": {
           "type": "questions",
           "settings": {
-            "title": "Cenefa",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "costura"
+            "title": "Piel",
+            "image": "shopify:\/\/shop_images\/piel.png",
+            "quiz_type": "textil"
           }
         },
         "8c336a2c-8ff2-48da-9bc6-44d7f542ac68": {
           "type": "questions",
           "settings": {
-            "title": "Goeritz",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "color"
+            "title": "Vivo tela",
+            "image": "shopify:\/\/shop_images\/vivo-tela.png",
+            "quiz_type": "costura"
           }
         },
         "b943c8c9-b477-4cab-bbc0-3795c298b2ee": {
           "type": "questions",
           "settings": {
-            "title": "Azul Barragán",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "color"
+            "title": "Cenefa",
+            "image": "shopify:\/\/shop_images\/cenefa.png",
+            "quiz_type": "costura"
           }
         },
         "74074535-8c5a-4910-871a-cb664c78311b": {
           "type": "questions",
           "settings": {
-            "title": "Madera Maple",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "costados"
+            "title": "Goeritz",
+            "image": "shopify:\/\/shop_images\/color-mares.png",
+            "quiz_type": "color"
           }
         },
         "c5d9527b-31ba-467a-882b-804d1d220e9a": {
           "type": "questions",
           "settings": {
-            "title": "Maple",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "costados"
+            "title": "Barragán",
+            "image": "shopify:\/\/shop_images\/color-barragan.png",
+            "quiz_type": "color"
           }
         },
         "edf90f24-a5cf-4bf0-ab89-ba0f5d5359b5": {
           "type": "questions",
           "settings": {
-            "title": "Fresno",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "patas"
+            "title": "Ramirez",
+            "image": "shopify:\/\/shop_images\/color-ramirez.png",
+            "quiz_type": "color"
           }
         },
         "61853db9-c133-4229-b981-42be8c214aa8": {
           "type": "questions",
           "settings": {
-            "title": "Madera Cilíndrica, Maple",
-            "image": "shopify:\/\/shop_images\/radio-1.png",
-            "quiz_type": "patas"
+            "title": "Agustín",
+            "image": "shopify:\/\/shop_images\/color-agustin.png",
+            "quiz_type": "color"
+          }
+        },
+        "47982a5f-7e2a-45f1-abaf-ea6e65d862ea": {
+          "type": "questions",
+          "settings": {
+            "title": "Pani",
+            "image": "shopify:\/\/shop_images\/color-santo-tomas.png",
+            "quiz_type": "color"
+          }
+        },
+        "1c859cb4-6340-4ef7-8045-af1368b68910": {
+          "type": "questions",
+          "settings": {
+            "title": "Peach nougat",
+            "image": "shopify:\/\/shop_images\/color-peach-nougat.png",
+            "quiz_type": "color"
           }
         }
       },
@@ -130,7 +146,9 @@
         "74074535-8c5a-4910-871a-cb664c78311b",
         "c5d9527b-31ba-467a-882b-804d1d220e9a",
         "edf90f24-a5cf-4bf0-ab89-ba0f5d5359b5",
-        "61853db9-c133-4229-b981-42be8c214aa8"
+        "61853db9-c133-4229-b981-42be8c214aa8",
+        "47982a5f-7e2a-45f1-abaf-ea6e65d862ea",
+        "1c859cb4-6340-4ef7-8045-af1368b68910"
       ],
       "settings": {
         "collection": "sofa",
