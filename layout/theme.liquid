@@ -37,7 +37,7 @@
   {{ content_for_header }}
 </head>
 
-<body class="min-h-screen">
+<body class="min-h-screen {{template.name }}" >
   <div vue>
     {% render 'cart-popup' %}
   </div>
@@ -59,7 +59,7 @@
     <main id="main" role="main"
       class="flex-1 pt-8 {% if request.page_type == 'index' %}md:pt-12{% else %}md:pt-20 pb-16 md:pb-32{% endif %}">
 
-      {% if template.name != "index" %}
+      {% if template.name != "index"  %}
       <section>
         <div class="container" style="padding: 0;">
           <ol class="breadcrumb">

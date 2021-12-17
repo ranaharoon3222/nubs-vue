@@ -15,11 +15,11 @@
           :current-variant="{{ current_variant | json | replace: '"', "'" }}"
           :product-options="{{ product.options_with_values | json | replace: '"', "'" }}"
           :product-variants="{{ product.variants | json | replace: '"', "'" }}">
-          <div class="col-md-5 mt-md-0 mt-4 col-xl-4 order-2 order-md-1">
+          <div class="col-md-5 mt-md-0 mt-4 col-xl-4 order-2 order-md-1 product-flow">
             <h3>{{product.title}}</h3>
             <div id="pricing" class="hstack gap-3 comp-bg product-price px-3 py-1 font-12 justify-content-center mt-1">
               <div><span class="s-family"> {{ current_variant.price | money_without_trailing_zeros }} </span></div>
-              <div class="text-decoration-line-through text2-color"><span class="s-family"> {{
+              <div class="text-decoration-line-through text2-color"><span class="text2-color s-family"> {{
                   current_variant.compare_at_price | money_without_trailing_zeros }}</span></div>
             </div>
             <div class="mt-5 dropdown">
@@ -91,10 +91,44 @@
 
 
             <div class="comp-bg px-2 py-3 product_description">
-              <h6 class="s-family text-uppercase">Descripción</h6>
+              <h6 class="s-family text-uppercase ls-1">Descripción</h6>
               <p class="mb-0"> {{ product.description }} </p>
               </p>
             </div>
+
+
+            <!-- recommneded products -->
+
+
+            <div class="mb-3 d-flex justify-content-between mt-4">
+              <h4 class="text-uppercase font-12 s-family ls-1">Complementa Tu ESPACIO</h4>
+              <div class="product_slider_arrow"><img class="prev-arrow"
+                  src="{{ 'prev-arrow.static.png'  | asset_img_url: 'master'}}"><img class="next-arrow"
+                  src="{{ 'next-arrow.static.png'  | asset_img_url: 'master'}}"></div>
+            </div>
+            <div id="product_slider" class="swiper">
+              <div class="swiper-wrapper">
+                {% assign collection = b.product.collection %}
+                {% for product in collection.products %}
+                <div class="hover_product swiper-slide">
+                  <a href="{{product.url}}">
+                    <img class="w-100" src="{{ product.featured_image.src | img_url: '1024x' }}">
+                    <div class="ps-2">
+                      <h5> {{product.title}} </h5><span> {{ product.price | money_without_trailing_zeros }}</span>
+                    </div>
+                  </a>
+                </div>
+                {% endfor %}
+
+              </div>
+            </div>
+
+
+            <!-- recommneded products -->
+
+
+
+
 
           </div>
         </renderless-product-variant-selector>
@@ -280,6 +314,18 @@
       // breakpoints: { 981: { slidesPerView: 4, spaceBetween: 40 } },
     });
   })
+</script>
+
+
+<script>
+  window.addEventListener('load', function () {
+    new Swiper('#product_slider', {
+      navigation: { nextEl: '.next-arrow', prevEl: '.prev-arrow' },
+      slidesPerView: 2,
+      spaceBetween: 20,
+      breakpoints: { 981: { slidesPerView: 3, spaceBetween: 30 } },
+    })
+  });
 </script>
 
 
