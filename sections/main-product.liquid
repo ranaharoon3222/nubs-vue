@@ -216,7 +216,11 @@
         <div class="col-3 col-sm-3 col-md-2 ps-0">
           <h6 class="s-family boder-line pb-2"> {{block.settings.profundidad}} </h6>
         </div>
-        <div class="col-sm-12 col-md-3 py-sm-0 py-4"><img class="w-100" src=""></div>
+        {% if forloop.last == true %}
+
+        <div class="col-sm-12 col-md-3 py-sm-0 py-4 position-relative abs-prod"><img class="w-100 "
+            src="https://cdn.shopify.com/s/files/1/0591/0036/4966/t/4/assets/size.static.png"></div>
+        {% endif %}
       </div>
 
       {% endif %}
