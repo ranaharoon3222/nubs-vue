@@ -109,7 +109,7 @@
             <div id="product_slider" class="swiper">
               <div class="swiper-wrapper">
 
-                {% for product in collection.products %}
+                {% for product in section.settings.accessory.products %}
                 <div class="hover_product swiper-slide">
                   <a href="{{product.url}}">
                     <img class="w-100" src="{{ product.featured_image.src | img_url: '1024x' }}">
@@ -336,7 +336,14 @@
 {% schema %}
 {
 "name": "product",
-"settings": [],
+"settings": [
+{
+"id": "accessory",
+"type": "collection",
+"label": "Accesories Collection",
+}
+
+],
 "blocks": [
 {
 "type": "features",
