@@ -3,6 +3,7 @@
     "main": {
       "type": "main-product",
       "settings": {
+        "accessory": "accesorios"
       }
     }
   },
