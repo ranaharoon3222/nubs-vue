@@ -5,7 +5,7 @@
 
 
 
-  <section class="pb-5">
+  <section class="pb-5 position-relative" style="z-index: 5;">
     <!-- Start: 1 Row 2 Columns -->
 
     <div class="container">
@@ -15,152 +15,159 @@
           :current-variant="{{ current_variant | json | replace: '"', "'" }}"
           :product-options="{{ product.options_with_values | json | replace: '"', "'" }}"
           :product-variants="{{ product.variants | json | replace: '"', "'" }}">
-          <div class="col-md-5 mt-md-0 mt-4 col-xl-4 order-2 order-md-1 product-flow">
-            <h3>{{product.title}}</h3>
-            <div id="pricing" class="hstack gap-3 comp-bg product-price px-3 py-1 font-12 justify-content-center mt-1">
-              <div><span class="s-family"> {{ current_variant.price | money_without_trailing_zeros }} </span></div>
-              <div class="text-decoration-line-through text2-color"><span class="text2-color s-family"> {{
-                  current_variant.compare_at_price | money_without_trailing_zeros }}</span></div>
-            </div>
-            <div class="mt-5 dropdown">
-              <div id="product_toggle">
-                <ul class="">
-                  <div class="hstack  font-12 text-uppercase p-color">
-                    <div class=" w-50 ">
-                      <p class="s-family p-color mb-1" style="letter-spacing: 1px !important;">Variantes</p>
-                    </div>
-                    <div class=" w-50 ">
-                      <p class="s-family p-color mb-1" style="letter-spacing: 1px !important;">Modificar</p>
-                    </div>
-                  </div>
+          <div class="col-md-5 mt-md-0 mt-4 col-xl-4 order-2 order-md-1  ">
+            <div class="">
 
-
-                  {% for block in section.blocks %}
-                  {% if block.type == 'features' %}
-                  <div class="hstack mb-3 font-12 text2-color">
-                    <div class=" w-50 ">{{block.settings.title}}</div>
-                    <div class=" w-50 ">
-                      <a href="#" class="text2-color">
-                        {{ block.settings.value }} </a>
-                    </div>
-                  </div>
-                  {% endif %}
-                  {% endfor %}
-                </ul>
-
+              <h3>{{product.title}}</h3>
+              <div id="pricing"
+                class="hstack gap-3 comp-bg product-price px-3 py-1 font-12 justify-content-center mt-1">
+                <div><span class="s-family"> {{ current_variant.price | money_without_trailing_zeros }} </span></div>
+                <div class="text-decoration-line-through text2-color"><span class="text2-color s-family"> {{
+                    current_variant.compare_at_price | money_without_trailing_zeros }}</span></div>
               </div>
-            </div>
+              <div class="mt-5 dropdown">
+                <div id="product_toggle">
+                  <ul class="">
+                    <div class="hstack  font-12 text-uppercase p-color">
+                      <div class=" w-50 ">
+                        <p class="s-family p-color mb-1" style="letter-spacing: 1px !important;">Variantes</p>
+                      </div>
+                      <div class=" w-50 ">
+                        <p class="s-family p-color mb-1" style="letter-spacing: 1px !important;">Modificar</p>
+                      </div>
+                    </div>
 
 
-            {% capture cartForm %}
-            <div class="hstack mt-4 gap-4">
-              <div id="quantity_picker" class="hstack">
-                <div><button @click="decrement" class="btn " type="button"><i class="material-icons">remove</i></button>
-                </div>
-                <input type="number" class="border-0" name="quantity" :value="quantityValue.value" min="1"
-                  pattern="[0-9]*">
-                <div><button @click="increment" class="btn " type="button"><i class="material-icons">add</i></button>
+                    {% for block in section.blocks %}
+                    {% if block.type == 'features' %}
+                    <div class="hstack mb-3 font-12 text2-color">
+                      <div class=" w-50 ">{{block.settings.title}}</div>
+                      <div class=" w-50 ">
+                        <a href="#" class="text2-color">
+                          {{ block.settings.value }} </a>
+                      </div>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                  </ul>
+
                 </div>
               </div>
-              <div id="add_to_cart"><button name="add" class="main-button text-center text-uppercase">
-                  <span class="mr-1 spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                  agregar al carrito
-                </button>
+
+
+              {% capture cartForm %}
+              <div class="hstack mt-4 gap-4">
+                <div id="quantity_picker" class="hstack">
+                  <div><button @click="decrement" class="btn " type="button"><i
+                        class="material-icons">remove</i></button>
+                  </div>
+                  <input type="number" class="border-0" name="quantity" :value="quantityValue.value" min="1"
+                    pattern="[0-9]*">
+                  <div><button @click="increment" class="btn " type="button"><i class="material-icons">add</i></button>
+                  </div>
+                </div>
+                <div id="add_to_cart"><button name="add" class="main-button text-center text-uppercase">
+                    <span class="mr-1 spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    agregar al carrito
+                  </button>
+                </div>
               </div>
-            </div>
 
-            {% endcapture %}
+              {% endcapture %}
 
-            <!-- add to cart -->
-            <form method="post" @submit.prevent="processCartForm" action="/cart/add" id="product_cart_form">
+              <!-- add to cart -->
+              <form method="post" @submit.prevent="processCartForm" action="/cart/add" id="product_cart_form">
 
-              {% if product.has_only_default_variant %}
-              <input name="id" type="hidden" :value="{{ current_variant.id }}" readonly>
-              {{cartForm}}
-              {% else %}
+                {% if product.has_only_default_variant %}
+                <input name="id" type="hidden" :value="{{ current_variant.id }}" readonly>
+                {{cartForm}}
+                {% else %}
 
-              <input name="id" type="hidden" :value="selectedVariant.id" readonly>
+                <input name="id" type="hidden" :value="selectedVariant.id" readonly>
 
-              {{cartForm}}
+                {{cartForm}}
 
-              {% endif %}
+                {% endif %}
 
-            </form>
-            <!-- end cart btn -->
-
-
-            <div class="comp-bg px-2 py-3 product_description">
-              <h6 class="s-family text-uppercase ls-1">Descripción</h6>
-              <p class="mb-0"> {{ product.description }} </p>
-
-            </div>
+              </form>
+              <!-- end cart btn -->
 
 
-            <!-- recommneded products -->
+              <div class="comp-bg px-2 py-3 product_description">
+                <h6 class="s-family text-uppercase ls-1">Descripción</h6>
+                <p class="mb-0"> {{ product.description }} </p>
+
+              </div>
 
 
-            <div class="mb-3 d-flex justify-content-between mt-4">
-              <h4 class="text-uppercase font-12 s-family ls-1">Complementa Tu ESPACIO</h4>
-              <div class="product_slider_arrow"><img class="prev-arrow"
-                  src="{{ 'prev-arrow.static.png'  | asset_img_url: 'master'}}"><img class="next-arrow"
-                  src="{{ 'next-arrow.static.png'  | asset_img_url: 'master'}}"></div>
-            </div>
-            <div id="product_slider" class="swiper">
-              <div class="swiper-wrapper">
+              <!-- recommneded products -->
 
-                {% for product in section.settings.accessory.products %}
-                <div class="hover_product swiper-slide">
-                  <a href="{{product.url}}">
-                    <img class="w-100" src="{{ product.featured_image.src | img_url: '1024x' }}">
-                    <!-- <div class="ps-2">
+
+              <div class="mb-3 d-flex justify-content-between mt-4">
+                <h4 class="text-uppercase font-12 s-family ls-1">Complementa Tu ESPACIO</h4>
+                <div class="product_slider_arrow"><img class="prev-arrow"
+                    src="{{ 'prev-arrow.static.png'  | asset_img_url: 'master'}}"><img class="next-arrow"
+                    src="{{ 'next-arrow.static.png'  | asset_img_url: 'master'}}"></div>
+              </div>
+              <div id="product_slider" class="swiper">
+                <div class="swiper-wrapper">
+
+                  {% for product in section.settings.accessory.products %}
+                  <div class="hover_product swiper-slide">
+                    <a href="{{product.url}}">
+                      <img class="w-100" src="{{ product.featured_image.src | img_url: '1024x' }}">
+                      <!-- <div class="ps-2">
                       <h5> {{product.title}} </h5><span> {{ product.price | money_without_trailing_zeros }}</span>
                     </div> -->
-                  </a>
+                    </a>
+                  </div>
+                  {% endfor %}
+
                 </div>
-                {% endfor %}
-
               </div>
+
+              <!-- recommneded products -->
+
+
+
             </div>
-
-            <!-- recommneded products -->
-
-
-
 
 
           </div>
         </renderless-product-variant-selector>
 
         <div class="col-md-7 col-xl-8 order-1 order-md-2">
-          <div class="swiper" id="product_gallery">
-            <div class="swiper-wrapper">
-              {% for image in product.images %}
-              <div class="swiper-slide">
-                <a class="spotlight" href="{{ image.src | product_img_url: 'master' }}">
-                  <img class="w-100" src="{{ image.src | product_img_url: 'master' }}">
-                </a>
+          <div class="stick-top">
+            <div class="swiper " id="product_gallery">
+              <div class="swiper-wrapper">
+                {% for image in product.images %}
+                <div class="swiper-slide">
+                  <a class="spotlight" href="{{ image.src | product_img_url: 'master' }}">
+                    <img class="w-100" src="{{ image.src | product_img_url: 'master' }}">
+                  </a>
+                </div>
+                {% endfor %}
+
               </div>
-              {% endfor %}
+
+              <div class="swiper-pagination"></div>
+
+
+              <div id="inner-navigation">
+                <div class="inner-next">
+                  <img src="{{ 'next-arrow.static.png' | asset_url }}">
+                </div>
+                <div class="inner-prev">
+                  <img src="{{ 'prev-arrow.static.png' | asset_url }}">
+                </div>
+              </div>
+
+              <div class="sale-badge">
+                <span> {{ product.compare_at_price_max | minus:product.price | times:100 |
+                  divided_by:product.compare_at_price_max }}% </span>
+              </div>
 
             </div>
-
-            <div class="swiper-pagination"></div>
-
-
-            <div id="inner-navigation">
-              <div class="inner-next">
-                <img src="{{ 'next-arrow.static.png' | asset_url }}">
-              </div>
-              <div class="inner-prev">
-                <img src="{{ 'prev-arrow.static.png' | asset_url }}">
-              </div>
-            </div>
-
-            <div class="sale-badge">
-              <span> {{ product.compare_at_price_max | minus:product.price | times:100 |
-                divided_by:product.compare_at_price_max }}% </span>
-            </div>
-
           </div>
         </div>
       </div>
@@ -171,7 +178,7 @@
 
     <!-- End: 1 Row 2 Columns -->
   </section>
-  <section class="mb-5">
+  <section class="mb-5 position-relative " style="z-index:20;background: #fafafa;">
     <div class="container ">
       <div class="mb-3 full-border-top d-flex justify-content-between">
         <h4>Detalles del producto</h4>
@@ -326,7 +333,10 @@
       slidesPerView: 2,
       spaceBetween: 20,
       breakpoints: { 981: { slidesPerView: 3, spaceBetween: 20 } },
-    })
+    });
+
+    var sticky = new Sticky('.stick-top');
+
   });
 </script>
 
