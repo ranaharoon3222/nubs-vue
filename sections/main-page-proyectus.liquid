@@ -104,7 +104,7 @@
 <section class="py-4 bg-white p-80 pb-80">
     <div class="container">
         <div class="row">
-            <div class="col pb-5">
+            <div class="col-12 col-md-6 pb-5">
                 <h2>{{block.settings.title}}</h2>
                 <div class="pt-5 mt-5 pb-4 mx-430 b2-size">
                     {{block.settings.description}}
@@ -112,7 +112,7 @@
                 <a class="text-black s-family text-decoration-none d-block b3-size" href="#"> {{block.settings.phone}}</a><a
                     class="text-black s-family text-decoration-none d-block b3-size" href="#"> {{block.settings.email}}</a>
             </div>
-            <div class="col">
+            <div class="col-12 col-md-6">
                 {% form 'contact' %}
 
                 {% if form.posted_successfully? %}
