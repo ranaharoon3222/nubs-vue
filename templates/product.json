@@ -108,7 +108,8 @@
             "title": "Reposabrazos",
             "alto": "{{ product.metafields.dimensions.reposabrazos_alto.value }}",
             "ancho": "{{ product.metafields.dimensions.reposabrazos_ancho.value }}",
-            "profundidad": "{{ product.metafields.dimensions.reposabrazos_profundidad.value }}"
+            "profundidad": "{{ product.metafields.dimensions.reposabrazos_profundidad.value }}",
+            "img": "{{ product.metafields.prop.d_image.value }}"
           }
         }
       },
