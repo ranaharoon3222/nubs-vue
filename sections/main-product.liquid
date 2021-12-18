@@ -226,7 +226,7 @@
         {% if forloop.last == true %}
 
         <div class="col-sm-12 col-md-3 py-sm-0 py-4  abs-prod"><img class="w-100 "
-            src="https://cdn.shopify.com/s/files/1/0591/0036/4966/t/4/assets/size.static.png"></div>
+            src="{{block.settings.img | img_url: 'master'}}"></div>
         {% endif %}
       </div>
 
@@ -397,6 +397,11 @@
 "type": "text",
 "id": "profundidad",
 "label": "Profundidad Dimension"
+},
+{
+"type": "image_picker",
+"id": "img",
+"label": "Dimension Image"
 }
 ]
 },
