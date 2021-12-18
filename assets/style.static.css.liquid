@@ -417,6 +417,8 @@ section#custom-navigation > div::-webkit-scrollbar {
 #footer {
   background-color: var(--p-color);
   margin-top: 80px;
+  position: relative;
+  z-index: 10;
 }
 #footer .social {
   margin-top: 30px;
@@ -1126,7 +1128,8 @@ a.no-arrow:after {
   padding-left: 0;
   padding-right: 0;
 }
-.product .breadcrumb {
+.product .breadcrumb,
+.cart .breadcrumb {
   border: none;
 }
 
