@@ -2,7 +2,7 @@
 {% assign b = block.settings %}
 {% if page.handle == b.page %}
 
-<section class="mb-5">
+<section class="team-single">
     <!-- Start: 1 Row 2 Columns -->
     <div class="container">
         <div class="row">
@@ -40,7 +40,9 @@
                     <a href="{{product.url}}">
                         <img class="w-100" src="{{ product.featured_image.src | img_url: '1024x' }}">
                         <div class="ps-2">
-                            <h5> {{product.title}} </h5><span> {{ product.price | money_without_trailing_zeros }}</span>
+                            <h5> {{product.title}} </h5>
+                            <span class="regular_price"> {{ product.price | money_without_trailing_zeros }}</span>
+                             <span class="sale_price"> {{ product.compare_at_price | money_without_trailing_zeros }}</span>
                         </div>
                     </a>
                 </div>
