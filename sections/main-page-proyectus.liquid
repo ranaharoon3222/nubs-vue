@@ -105,12 +105,12 @@
     <div class="container">
         <div class="row">
             <div class="col pb-5">
-                <h1>{{block.settings.title}}</h1>
-                <p class="pt-5 mt-5 pb-4 mx-600">
+                <h2>{{block.settings.title}}</h2>
+                <div class="pt-5 mt-5 pb-4 mx-430 b2-size">
                     {{block.settings.description}}
-                </p>
-                <a class="text-black s-family text-decoration-none d-block" href="#"> {{block.settings.phone}}</a><a
-                    class="text-black s-family text-decoration-none d-block" href="#"> {{block.settings.email}}</a>
+                </div>
+                <a class="text-black s-family text-decoration-none d-block b3-size" href="#"> {{block.settings.phone}}</a><a
+                    class="text-black s-family text-decoration-none d-block b3-size" href="#"> {{block.settings.email}}</a>
             </div>
             <div class="col">
                 {% form 'contact' %}
