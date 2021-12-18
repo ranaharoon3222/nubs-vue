@@ -17,11 +17,11 @@
 <section>
     <div class="container pad-xl" style="
           background: url({{b.bg_image | img_url : "master"}}) no-repeat; background-size: cover; ">
-        <div class=" row mx-600 mx-auto">
+        <div class=" row mx-600 pl-16 mx-auto">
         <div class="col">
-            <h1 class="text-white">
+            <h4 class="text-white">
                 {{b.title}}
-            </h1>
+            </h4>
             <div class="mt-5 text-white">
                 {% if b.ico_1_title != blank %}
                 <div class="d-flex align-items-center mt-3">
@@ -65,7 +65,7 @@
 {% endfor %}
 
 
-<section class="py-5">
+<section class="py-5 p-80 ">
     <!-- Start: 1 Row 2 Columns -->
     <div class="container">
         <div class="mb-3 full-border-top d-flex justify-content-between">
@@ -101,7 +101,7 @@
 {% for block in section.blocks %}
 {% if block.type == 'contact' %}
 
-<section class="py-4">
+<section class="py-4 bg-white p-80 pb-80">
     <div class="container">
         <div class="row">
             <div class="col pb-5">
