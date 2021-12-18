@@ -20,9 +20,9 @@
             <div class="col-md-6 ps-0"><img class="w-100" src="{{ b.image | img_url: 'master' }}">
             </div>
             <div class="col-md-6">
-                <h6 class="text-center text-uppercase s-family fw-normal"> {{b.title}} </h6>
-                <p class="pt-5">{{b.description}} </p>
-                <div class="mt-5">
+                <h6 class="text-center text-uppercase s-family fw-normal space_32"> {{b.title}} </h6>
+                <div class="pt-5 space_32">{{b.description}} </div>
+                <div class="mt-5 space_32">
 
                     {% if b.ico_1_title != blank %}
                     <div class="d-flex align-items-center mt-3"><img src="{{b.ico_1_image | img_url: 'master'}}">
