@@ -1,7 +1,11 @@
 {
   "sections": {
     "main": {
-      "type": "main-cart"
+      "type": "main-cart",
+      "settings": {
+        "btn_text": "explorar sofás",
+        "btn_link": ""
+      }
     }
   },
   "order": [
