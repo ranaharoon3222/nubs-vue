@@ -6,7 +6,8 @@
     <div class="container" style="padding-top: 200px;padding-bottom: 200px;">
         <h3 class="text-center text2-color">Aún no tienes productos en tu carrito.</h3>
         <div>
-            <a href="/" class="mx-auto mt-5 main-button text-uppercase text-center">Explorar sofás</a>
+            <a href="{{section.settings.btn_link}}"
+                class="mx-auto mt-5 main-button text-uppercase text-center">{{section.settings.btn_text}}</a>
         </div>
     </div>
 
@@ -74,3 +75,22 @@
     {% endif %}
 
 </section>
+
+
+{% schema %}
+{
+"name": "cart",
+"settings": [
+{
+"type": "text",
+"label": "Button Text",
+"id": "btn_text",
+},
+{
+"type": "text",
+"label": "Button Link",
+"id": "btn_link",
+}
+]
+}
+{% endschema %}
