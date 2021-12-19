@@ -1205,6 +1205,9 @@ header .nav-item.has-dropdown a {
 }
 
 @media all and (min-width: 980px) {
+  .lg-hidden {
+    display: none;
+  }
   .abs-prod img {
     position: absolute;
     top: 0;
@@ -1232,6 +1235,21 @@ header .nav-item.has-dropdown a {
 }
 
 @media all and (max-width: 980px) {
+  #footer .social a:last-of-type {
+    margin-right: 0;
+  }
+
+  #footer .lg-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sm-hidden {
+    display: none;
+  }
+
   .space_32 {
     margin-top: 32px;
   }

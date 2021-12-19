@@ -2,12 +2,12 @@
   <!-- Start: 1 Row 3 Columns -->
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-xl-3 col-xxl-6"><a href="/"><img
-            src="{{ 'logo-light.static.svg' | asset_url }}"></a>
+      <div class="col-md-3 col-xl-3 col-xxl-6 lg-footer">
+        <a href="/"><img src="{{ 'logo-light.static.svg' | asset_url }}"></a>
         <div class="social"><a href=" {{section.settings.instagram_link}} "><img src="{{ " instagram.static.svg" |
               asset_url}}"></a><a href="{{section.settings.facebook_link}}"><img src="{{ " facebook.static.svg" |
               asset_url}}"></a></div>
-        <p class="copyright">Todos los derechos reservados © 2021 NUB<a href="#">Diseñado
+        <p class="copyright sm-hidden">Todos los derechos reservados © 2021 NUB<a href="#">Diseñado
             por&nbsp;<strong>Remedia</strong></a></p>
       </div>
 
@@ -29,6 +29,10 @@
       {% endfor %}
 
     </div>
+
+    <p class="copyright lg-hidden">Todos los derechos reservados © 2021 NUB<a href="#">Diseñado
+        por&nbsp;<strong>Remedia</strong></a></p>
+
   </div><!-- End: 1 Row 3 Columns -->
 </section>
 
