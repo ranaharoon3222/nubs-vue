@@ -1181,8 +1181,19 @@ a.no-arrow:after {
     auto !important;
 }
 
+header .dropdown-toggle.show::after {
+  transform: rotate(180deg);
+  top: 0;
+}
+
 .team-single {
   margin-bottom: 80px !important;
+}
+
+header .nav-item.has-dropdown a {
+  font-size: 14px !important;
+  text-decoration: none;
+  color: var(--p-color);
 }
 
 @media all and (min-width: 980px) {
