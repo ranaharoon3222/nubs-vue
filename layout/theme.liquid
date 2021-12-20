@@ -147,13 +147,13 @@
       const textInputs = document.querySelectorAll('.text_input');
       textInputs.forEach(function (el) {
         el.addEventListener('change', function (e) {
-          console.log(e.target.value)
+       
           
-//           if (this.target.value.length > 0) {
-//             console.log('greater then 0')
-//           } else {
-//             console.log('less then 0')
-//           }
+          if (e.target.value.length > 0) {
+            console.log('greater then 0')
+          } else {
+            console.log('less then 0')
+          }
         });
       });
 
