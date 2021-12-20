@@ -37,6 +37,13 @@
             "title": "5) ¿Cómo Acceder, Rectificar, Cancelar u Oponerse al uso y tratamiento de sus datos personales (Derechos ARCO) o revocar su consentimiento para el tratamiento de sus datos?",
             "description": "Usted tiene derecho constitucional de Acceder y conocer los datos personales que poseemos y a los detalles del tratamiento y uso de los mismos, así como a Rectificarlos y corregirlos en caso de ser inexactos o incompletos; Cancelarlos y eliminarlos cuando considere que no se requieren para alguna de las finalidades señaladas en el presente aviso de privacidad, o que estén siendo utilizados para finalidades no\n autorizadas por usted o haya finalizado la relación contractual o de servicio, o bien, Oponerse al tratamiento de los mismos para fines específicos.\n<br>\n<br>\n\n\n\nLos mecanismos implementados para el ejercicio de sus Derechos ARCO, así como los plazos, información y documentación que debe contener su solicitud deben solicitarse al correo: jcarrete@watsonphillips.com\n<br>\n<br>\n\n\n¿Cómo revocar el consentimiento para el tratamiento de sus datos personales?\n\n<br>\n<br>\n\nSi usted desea revocar el consentimiento que nos otorgó para el uso de sus datos personales, envíe su solicitud a nuestro Departamento de Protección de Datos Personales en donde le informaremos de los mecanismos implementados para ello."
           }
+        },
+        "f6f906ba-00be-436a-afc8-293a60d64e12": {
+          "type": "term",
+          "settings": {
+            "title": "6) Transferencia de datos personales",
+            "description": "Sus datos personales no serán Transferidos a terceras personas o empresa. Para cumplir con las finalidades establecidas en este Aviso de Privacidad, podrán ser únicamente Remitidos a personas o empresas que tengan el carácter de Encargados."
+          }
         }
       },
       "block_order": [
@@ -44,7 +51,8 @@
         "8d6057ef-74ab-4b6d-9a09-3e055bc992c3",
         "b8546307-6e12-4e3b-b299-78e3c349fc98",
         "b0de20a2-cbb5-46d2-8431-1fee4a0948b8",
-        "46364fc9-1881-42e4-ab59-cabe44fc32db"
+        "46364fc9-1881-42e4-ab59-cabe44fc32db",
+        "f6f906ba-00be-436a-afc8-293a60d64e12"
       ],
       "settings": {
         "title": "Aviso de privacidad",
