@@ -116,17 +116,17 @@
 
     window.addEventListener('load', function () {
 
-      document.querySelectorAll(".quiz-open").forEach(function (el) {
+      document.querySelectorAll('a[href="/quiz"]').forEach(function (el) {
         el.addEventListener('click', function (e) {
           e.preventDefault();
           document.querySelector('#quiz-sec').classList.add("open-quiz");
         });
       });
 
-      if (document.querySelector('a[href="/quiz"]')) {
+      if (document.querySelector('#quiz-close')) {
 
         document
-          .querySelector('a[href="/quiz"]')
+          .querySelector("#quiz-close")
           .addEventListener("click", function (e) {
             e.preventDefault();
             document.querySelector('#quiz-sec').classList.remove("open-quiz");
