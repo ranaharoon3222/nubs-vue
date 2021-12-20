@@ -12,7 +12,8 @@
       </div>
 
       {% for block in section.blocks %}
-      <div class="col-md-3 col-xl-3 col-xxl-2 footer_link_col">
+
+      <div class="col-md-3 col-xl-3 col-xxl-2 footer_link_col sm-hidden ">
         <div><a class="p-0 btn footer_heading text-start collapsed text-uppercase" data-bs-toggle="collapse"
             aria-expanded="true" aria-controls="collapse-{{forloop.index0}}" href="#collapse-{{forloop.index0}}"
             role="button"> {{block.settings.heading}}
@@ -27,6 +28,41 @@
         </div>
       </div>
       {% endfor %}
+
+
+      <div class="accordion lg-hidden footer_link_col" id="footerAccordian">
+        {% for block in section.blocks %}
+
+        <div class="accordion-item ">
+          <a class="accordion-header">
+            <button class="accordion-button {% if forloop.first != true %} collapsed {% endif %}  " type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapse_{{forloop.index0}}"
+              aria-expanded="{% if forloop.first == true %} true {% else %} false {% endif %} "
+              aria-controls="collapse_{{forloop.index0}}">
+              {{block.settings.heading}}
+            </button>
+          </a>
+
+          <div id="collapse_{{forloop.index0}}"
+            class="accordion-collapse collapse {% if forloop.first %} show  {% endif %} "
+            data-bs-parent="#footerAccordian">
+            <div class="accordion-body">
+              <ul class="list-unstyled">
+                {% for link in linklists[block.settings.footer_menu].links %}
+                <li> <a href="{{ link.url }}"> {{link.title}} </a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+
+
+
 
     </div>
 
