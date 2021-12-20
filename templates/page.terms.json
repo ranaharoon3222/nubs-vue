@@ -16,11 +16,19 @@
             "title": "2) Nuestro Departamento de Protección de Datos",
             "description": "Jefe del Departamento: Jesús Donaciano Carrete Arredondo \n<br>\nDomicilio: San Francisco Cuautlalpan 101, Fracc. Industrial Naucalpan, Naucalpan de Juárez, Estado de México, CP 53370\n<br> \nCorreo electrónico: jcarrete@watsonphillips.com \n<p>Teléfono: 55 55762833<\/p>"
           }
+        },
+        "b8546307-6e12-4e3b-b299-78e3c349fc98": {
+          "type": "term",
+          "settings": {
+            "title": "3) ¿Para qué fines recabamos y utilizamos sus datos personales?",
+            "description": "Sus datos personales serán utilizados para las siguientes finalidades:\n<br>\n<br>\n\n<li>Proveer los productos solicitados. <\/li>\n<li>Responder a sus requerimientos de información, atención y servicio. <\/li>\n<li>Gestión financiera, facturación y cobro.<\/li>"
+          }
         }
       },
       "block_order": [
         "537ebb9d-ca0f-470f-90e1-bd5238c3831f",
-        "8d6057ef-74ab-4b6d-9a09-3e055bc992c3"
+        "8d6057ef-74ab-4b6d-9a09-3e055bc992c3",
+        "b8546307-6e12-4e3b-b299-78e3c349fc98"
       ],
       "settings": {
         "title": "Aviso de privacidad",
