@@ -2,6 +2,18 @@
   "sections": {
     "main": {
       "type": "main-page-terms",
+      "blocks": {
+        "537ebb9d-ca0f-470f-90e1-bd5238c3831f": {
+          "type": "term",
+          "settings": {
+            "title": "1) Responsable de la protección de sus datos personales",
+            "description": "<p>Watson Phillips y Compañía Sucesores, S.A. de C.V., con domicilio en San Francisco Cuautlalpan 101, Fracc. Industrial Naucalpan, Naucalpan de Juárez, Estado de México, CP 53370, México, es responsable del tratamiento (uso) de sus datos personales.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "537ebb9d-ca0f-470f-90e1-bd5238c3831f"
+      ],
       "settings": {
         "title": "Aviso de privacidad",
         "description": "<p>Este documento describe la forma en que recabamos y usamos los datos personales que usted nos brinda.<br\/>También describe que tipo de datos son y que opciones tiene para limitar el uso de dichos datos, así comoel procedimiento para ejercer sus derechos ARCO.<\/p>"
