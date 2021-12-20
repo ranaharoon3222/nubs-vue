@@ -146,14 +146,15 @@
 const submitBtn = document.querySelector('.submit_form');
        submitBtn.setAttribute("disabled", "true");
       const textInputs = document.querySelectorAll('.text_input');
-        let all = []
+        let allInputs = []
       textInputs.forEach(function (el) {
         el.addEventListener('change', function (e) {
         
-          all.push(e.target.value);
-              console.log(all)
-          if (e.target.value.length > 0) {
-            console.log('greater then 0')
+          allInputs.push(e.target.value);
+          
+              console.log(allInputs)
+          if (allInputs.filter(Boolean).length === textInputs.length && ) {
+           
             submitBtn.setAttribute("disabled", "false");
           } else {
             console.log('less then 0')
