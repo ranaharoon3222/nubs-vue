@@ -1,0 +1,55 @@
+<section>
+    <div class="container low-border">
+        <h1 class="space-end mx-550 ms-auto"> {{section.settings.title}} </h1>
+        <p class="space-end mx-550 ms-auto pt-5 mt-5"> {{section.settings.description}} </p>
+    </div>
+
+    <div class="container low-border v-low">
+        <h6 class="space-end mx-550 ms-auto button-size s-family compliment">1) Responsable de la protección de sus
+            datos personales</h6>
+        <p class="space-end mx-550 s-family ms-auto pt-3 text2-color"> Watson Phillips y Compañía Sucesores, S.A. de
+            C.V., con
+            domicilio en San Francisco Cuautlalpan 101, Fracc. Industrial Naucalpan, Naucalpan de Juárez, Estado de
+            México, CP 53370, México, es responsable del tratamiento (uso) de sus datos personales. </p>
+    </div>
+
+</section>
+
+
+<script>
+
+
+    window.addEventListener('load', function () {
+
+        new Swiper('#product_slider_2_slides', {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            navigation: { nextEl: '.next-arrow', prevEl: '.prev-arrow' },
+        });
+
+    });
+
+</script>
+
+
+{% schema %}
+{
+"name": "responsibility",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Title"
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Description"
+}
+],
+"blocks": [
+{}
+]
+}
+
+{% endschema %}
