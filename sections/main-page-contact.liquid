@@ -3,11 +3,11 @@
     <div class="container">
         <div class="row">
             <div class="col pb-5">
-                <h1>Escríbenos</h1>
-                <p class="pt-5 mt-5 pb-4 mx-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
-                    hendrerit augue et, a nisi, eu at. Consequat odio scelerisque est tincidunt ipsum vitae.</p><a
-                    class="text-black s-family text-decoration-none d-block" href="#">+52 22 2196 1353</a><a
-                    class="text-black s-family text-decoration-none d-block" href="#">info@nubmobiliario.mx</a>
+                <h1>{{section.settings.title}}</h1>
+                <div class="pt-5 mt-5 pb-4 mx-600 font-14">{{section.settings.description}}</div><a
+                    class="text-black s-family text-decoration-none d-block button-size" href="#">{{
+                    section.settings.phone }}</a><a class="text-black s-family text-decoration-none d-block button-size"
+                    href="#">{{ section.settings.email }}</a>
             </div>
             <div class="col">
                 {% form 'contact' %}
@@ -66,3 +66,35 @@
         </div>
     </div>
 </section><!-- End: Nubs Contact -->
+
+
+
+
+{% schema %}
+{
+"name": "contact",
+"settings": [
+{
+"id": "title",
+"type": "text",
+"label": "Title"
+},
+{
+"id": "description",
+"type": "richtext",
+"label": "Description"
+},
+{
+"type": "text",
+"id": "phone",
+"label": "Phone"
+},
+{
+"type": "text",
+"id": "email",
+"label": "Email"
+}
+]
+
+}
+{% endschema %}
