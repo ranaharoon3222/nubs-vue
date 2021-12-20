@@ -123,10 +123,10 @@
         });
       });
 
-      if (document.querySelector('#quiz-close')) {
+      if (document.querySelector('a[href="/quiz"]')) {
 
         document
-          .querySelector("#quiz-close")
+          .querySelector('a[href="/quiz"]')
           .addEventListener("click", function (e) {
             e.preventDefault();
             document.querySelector('#quiz-sec').classList.remove("open-quiz");
