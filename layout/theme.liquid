@@ -157,7 +157,7 @@ const submitBtn = document.querySelector('.submit_form');
            
             submitBtn.setAttribute("disabled", "false");
           } else {
-            console.log('less then 0')
+            allInputs.pop();
               submitBtn.setAttribute("disabled", "true");
           }
         });
