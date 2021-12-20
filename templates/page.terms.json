@@ -9,10 +9,18 @@
             "title": "1) Responsable de la protección de sus datos personales",
             "description": "<p>Watson Phillips y Compañía Sucesores, S.A. de C.V., con domicilio en San Francisco Cuautlalpan 101, Fracc. Industrial Naucalpan, Naucalpan de Juárez, Estado de México, CP 53370, México, es responsable del tratamiento (uso) de sus datos personales.<\/p>"
           }
+        },
+        "8d6057ef-74ab-4b6d-9a09-3e055bc992c3": {
+          "type": "term",
+          "settings": {
+            "title": "2) Nuestro Departamento de Protección de Datos",
+            "description": "Jefe del Departamento: Jesús Donaciano Carrete Arredondo \n<br>\nDomicilio: San Francisco Cuautlalpan 101, Fracc. Industrial Naucalpan, Naucalpan de Juárez, Estado de México, CP 53370\n<br> \nCorreo electrónico: jcarrete@watsonphillips.com \n<p>Teléfono: 55 55762833<\/p>"
+          }
         }
       },
       "block_order": [
-        "537ebb9d-ca0f-470f-90e1-bd5238c3831f"
+        "537ebb9d-ca0f-470f-90e1-bd5238c3831f",
+        "8d6057ef-74ab-4b6d-9a09-3e055bc992c3"
       ],
       "settings": {
         "title": "Aviso de privacidad",
