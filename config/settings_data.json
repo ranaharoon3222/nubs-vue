@@ -108,6 +108,26 @@
         "type": "layout-mobile-navigation",
         "settings": {
         }
+      },
+      "quiz": {
+        "type": "quiz",
+        "blocks": {
+          "819fb465-9f41-415d-927b-eab27997e430": {
+            "type": "questions",
+            "settings": {
+              "title": "",
+              "quiz_type": "tamano"
+            }
+          }
+        },
+        "block_order": [
+          "819fb465-9f41-415d-927b-eab27997e430"
+        ],
+        "settings": {
+          "collection": "sofa",
+          "title": "Personaliza tu sofá",
+          "sofa": "shopify:\/\/shop_images\/sofa.png"
+        }
       }
     },
     "content_for_index": [
