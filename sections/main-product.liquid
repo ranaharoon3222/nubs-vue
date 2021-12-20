@@ -225,8 +225,12 @@
         </div>
         {% if forloop.last == true %}
 
-        <div class="col-sm-12 col-md-3 py-sm-0 py-4  abs-prod"><img class="w-100 "
-            src="{{block.settings.img | img_url: 'master'}}"></div>
+        <div class="col-sm-12 col-md-3 py-sm-0 py-4  abs-prod">
+        {% if block.settings.img != blank %}
+            <img class="w-100 "
+            src="{{block.settings.img | img_url: 'master'}}">
+        {% endif %}
+      </div>
         {% endif %}
       </div>
 
