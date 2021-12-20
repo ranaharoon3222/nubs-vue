@@ -1,7 +1,13 @@
 {
   "sections": {
     "main": {
-      "type": "main-page-contact"
+      "type": "main-page-contact",
+      "settings": {
+        "title": "Escríbenos",
+        "description": "<p>¿Tienes preguntas o comentarios sobre los sofás NUB? Ponte en contacto con nosotros y nuestro equipo de atención al cliente se comunicará contigo dentro de las 24 horas.<\/p>",
+        "phone": "+52 22 2196 1353",
+        "email": "info@nubmobiliario.mx"
+      }
     }
   },
   "order": [
