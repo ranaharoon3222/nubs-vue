@@ -3,6 +3,8 @@
     "main": {
       "type": "main-page-terms",
       "settings": {
+        "title": "Aviso de privacidad",
+        "description": "<p>Este documento describe la forma en que recabamos y usamos los datos personales que usted nos brinda.<br\/>También describe que tipo de datos son y que opciones tiene para limitar el uso de dichos datos, así comoel procedimiento para ejercer sus derechos ARCO.<\/p>"
       }
     }
   },
