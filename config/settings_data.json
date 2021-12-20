@@ -145,11 +145,28 @@
               "title7": "",
               "quiz_type": "modelo"
             }
+          },
+          "163d4857-4248-4227-bceb-07f846845686": {
+            "type": "questions",
+            "settings": {
+              "title1": "Tela",
+              "image1": "shopify:\/\/shop_images\/tela.png",
+              "title2": "Suede",
+              "image2": "shopify:\/\/shop_images\/suede.png",
+              "title3": "Piel",
+              "image3": "shopify:\/\/shop_images\/piel.png",
+              "title4": "",
+              "title5": "",
+              "title6": "",
+              "title7": "",
+              "quiz_type": "tamano"
+            }
           }
         },
         "block_order": [
           "819fb465-9f41-415d-927b-eab27997e430",
-          "edf8a628-5026-4be5-9206-61917899f7b4"
+          "edf8a628-5026-4be5-9206-61917899f7b4",
+          "163d4857-4248-4227-bceb-07f846845686"
         ],
         "settings": {
           "collection": "sofa",
