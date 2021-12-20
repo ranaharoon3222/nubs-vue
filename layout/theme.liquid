@@ -143,16 +143,17 @@
       //   });
 
 
-
+const submitBtn = document.querySelector('.submit_form');
+       submitBtn.setAttribute("disabled", "true");
       const textInputs = document.querySelectorAll('.text_input');
       textInputs.forEach(function (el) {
         el.addEventListener('change', function (e) {
-       
-          
           if (e.target.value.length > 0) {
             console.log('greater then 0')
+            submitBtn.setAttribute("disabled", "false");
           } else {
             console.log('less then 0')
+              submitBtn.setAttribute("disabled", "true");
           }
         });
       });
