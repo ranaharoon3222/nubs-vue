@@ -153,7 +153,7 @@ const submitBtn = document.querySelector('.submit_form');
           allInputs.push(e.target.value);
           
               console.log(allInputs)
-          if (allInputs.filter(Boolean).length === textInputs.length ) {
+              if (allInputs.filter(item => { item !== null && item !== '' && item !== undefined }).length === textInputs.length ) {
            
             submitBtn.setAttribute("disabled", "false");
           } else {
