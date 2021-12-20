@@ -129,10 +129,27 @@
               "title7": "",
               "quiz_type": "tamano"
             }
+          },
+          "edf8a628-5026-4be5-9206-61917899f7b4": {
+            "type": "questions",
+            "settings": {
+              "title1": "Fijo",
+              "image1": "shopify:\/\/shop_images\/sofa-fijo.png",
+              "title2": "Reclinable",
+              "image2": "shopify:\/\/shop_images\/sofa-reclinable.png",
+              "title3": "Sofá cama",
+              "image3": "shopify:\/\/shop_images\/sofa-cama.png",
+              "title4": "",
+              "title5": "",
+              "title6": "",
+              "title7": "",
+              "quiz_type": "modelo"
+            }
           }
         },
         "block_order": [
-          "819fb465-9f41-415d-927b-eab27997e430"
+          "819fb465-9f41-415d-927b-eab27997e430",
+          "edf8a628-5026-4be5-9206-61917899f7b4"
         ],
         "settings": {
           "collection": "sofa",
