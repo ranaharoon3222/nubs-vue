@@ -143,27 +143,21 @@
       //   });
 
 
-const submitBtn = document.querySelector('.submit_form');
-       submitBtn.setAttribute("disabled", "true");
       const textInputs = document.querySelectorAll('.text_input');
+      const submitBtn = document.querySelector('.submit_form');
+      if (textInputs && submitBtn) {
+        submitBtn.setAttribute("disabled", "true");
         let allInputs = []
-      textInputs.forEach(function (el) {
-        el.addEventListener('change', function (e) {
-        
-          allInputs.push(e.target.value);
-          
-              console.log(allInputs)
-              if (allInputs.filter(item => { return item !== null && item !== '' && item !== undefined }).length === textInputs.length ) {
-           
-            submitBtn.setAttribute("disabled", "false");
-          } else {
-           
-              submitBtn.setAttribute("disabled", "true");
-          }
+        textInputs.forEach(function (el) {
+          el.addEventListener('change', function (e) {
+            allInputs.push(e.target.value);
+
+            if (allInputs.filter(item => { return item !== null && item !== '' && item !== undefined }).length === textInputs.length) {
+              submitBtn.setAttribute("disabled", "false");
+            }
+          });
         });
-      });
-
-
+      }
 
 
     });

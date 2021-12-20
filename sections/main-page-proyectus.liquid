@@ -5,8 +5,8 @@
     <div class="container high-border"></div>
     <div class="container high-border">
         <div class="space-end mx-550 ms-auto pt-3 ">
-        <p class="b2-size p-color mx-430">  {{section.settings.description}} </p>
-           
+            <p class="b2-size p-color mx-430"> {{section.settings.description}} </p>
+
         </div>
     </div>
 </section>
@@ -17,7 +17,7 @@
 
 <section>
     <div class="container pad-xl" style="
-          background: url({{b.bg_image | img_url : "master"}}) no-repeat; background-size: cover; ">
+          background: url({{b.bg_image | img_url : " master"}}) no-repeat; background-size: cover; ">
         <div class=" row mx-600 pl-16 mx-auto">
         <div class="col">
             <h4 class="text-white">
@@ -26,28 +26,28 @@
             <div class="mt-5 text-white">
                 {% if b.ico_1_title != blank %}
                 <div class="d-flex align-items-center mt-3">
-                    <img src="{{b.ico_1_image| img_url : "master"}}" />
+                    <img src="{{b.ico_1_image| img_url : " master"}}" />
                     <p class="mb-0 ms-3 s-family fw-normal text-white"> {{b.ico_1_title}} </p>
                 </div>
                 {% endif %}
 
                 {% if b.ico_2_title != blank %}
                 <div class="d-flex align-items-center mt-3">
-                    <img src="{{b.ico_2_image | img_url : "master"}}" />
+                    <img src="{{b.ico_2_image | img_url : " master"}}" />
                     <p class="mb-0 ms-3 s-family fw-normal text-white">{{b.ico_2_title}}</p>
                 </div>
                 {% endif %}
 
                 {% if b.ico_3_title != blank %}
                 <div class="d-flex align-items-center mt-3">
-                    <img src="{{b.ico_3_image | img_url : "master"}}" />
+                    <img src="{{b.ico_3_image | img_url : " master"}}" />
                     <p class="mb-0 ms-3 s-family fw-normal text-white">{{b.ico_3_title}}</p>
                 </div>
                 {% endif %}
 
                 {% if b.ico_4_title != blank %}
                 <div class="d-flex align-items-center mt-3">
-                    <img src="{{b.ico_4_image | img_url : "master"}}" />
+                    <img src="{{b.ico_4_image | img_url : " master"}}" />
                     <p class="mb-0 ms-3 s-family fw-normal text-white">{{b.ico_4_title}}</p>
                 </div>
                 {% endif %}
@@ -110,8 +110,9 @@
                 <div class="pt-5 mt-5 pb-4 mx-430 b2-size">
                     {{block.settings.description}}
                 </div>
-                <a class="text-black s-family text-decoration-none d-block b3-size" href="#"> {{block.settings.phone}}</a><a
-                    class="text-black s-family text-decoration-none d-block b3-size" href="#"> {{block.settings.email}}</a>
+                <a class="text-black s-family text-decoration-none d-block b3-size" href="#">
+                    {{block.settings.phone}}</a><a class="text-black s-family text-decoration-none d-block b3-size"
+                    href="#"> {{block.settings.email}}</a>
             </div>
             <div class="col-12 col-md-6">
                 {% form 'contact' %}
@@ -142,29 +143,30 @@
 
                 <!-- Start: Nubs Input -->
                 <div class="form-floating mb-4">
-                    <input type="text" class="form-control" placeholder="Nombre" required
+                    <input type="text" class="form-control text_input" placeholder="Nombre" required
                         name="contact[Nombre]" /><label class="form-label">Nombre</label>
                 </div>
                 <!-- End: Nubs Input -->
                 <!-- Start: Nubs Input -->
                 <div class="form-floating mb-4">
-                    <input name="contact[email]" required type="email" class="form-control"
+                    <input name="contact[email]" required type="email" class="text_input form-control"
                         placeholder="electrónico" /><label class="form-label">Correo
                         electrónico</label>
                 </div>
                 <!-- End: Nubs Input -->
                 <!-- Start: Nubs Input -->
                 <div class="form-floating mb-4">
-                    <input type="text" name="contact[Telefono]" class="form-control mb-4" placeholder="Teléfono" />
+                    <input type="text" name="contact[Telefono]" class="text_input form-control mb-4"
+                        placeholder="Teléfono" />
                     <label class="form-label">Teléfono</label>
                 </div>
                 <!-- End: Nubs Input -->
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" required name="contact[body]" placeholder="Message"></textarea><label
-                        class="form-label">Mensaje
+                    <textarea class="text_input form-control" required name="contact[body]"
+                        placeholder="Message"></textarea><label class="form-label">Mensaje
                     </label>
                 </div>
-                <button type="submit" class="main-button text-center w-100 text-uppercase">enviar</button>
+                <button type="submit" class="submit_form main-button text-center w-100 text-uppercase">enviar</button>
 
                 {% endform %}
             </div>
