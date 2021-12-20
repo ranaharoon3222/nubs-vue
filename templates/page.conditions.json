@@ -3,27 +3,67 @@
     "main": {
       "type": "main-page-terms",
       "blocks": {
-        "5e99d9e5-2224-4af7-935c-3895d2bbbfe7": {
+        "537ebb9d-ca0f-470f-90e1-bd5238c3831f": {
           "type": "term",
           "settings": {
             "title": "1) Responsable de la protección de sus datos personales",
-            "description": "Watson Phillips y Compañía Sucesores, S.A. de C.V., con domicilio en San Francisco Cuautlalpan 101, Fracc. Industrial Naucalpan, Naucalpan de Juárez, Estado de México, CP 53370, México, es responsable del tratamiento (uso) de sus datos personales."
+            "description": "<p>Watson Phillips y Compañía Sucesores, S.A. de C.V., con domicilio en San Francisco Cuautlalpan 101, Fracc. Industrial Naucalpan, Naucalpan de Juárez, Estado de México, CP 53370, México, es responsable del tratamiento (uso) de sus datos personales.<\/p>"
           }
         },
-        "2fb4e1ee-874c-4bd9-b4ea-5072fa7911a0": {
+        "8d6057ef-74ab-4b6d-9a09-3e055bc992c3": {
           "type": "term",
           "settings": {
             "title": "2) Nuestro Departamento de Protección de Datos",
-            "description": "Jefe del Departamento: Jesús Donaciano Carrete Arredondo\n<br>\nDomicilio: San Francisco Cuautlalpan 101, Fracc. Industrial Naucalpan, Naucalpan de Juárez, Estado de México, CP 53370\n<br>\nCorreo electrónico: jcarrete@watsonphillips.com\n<br>\nTeléfono: 55 55762833"
+            "description": "Jefe del Departamento: Jesús Donaciano Carrete Arredondo \n<br>\nDomicilio: San Francisco Cuautlalpan 101, Fracc. Industrial Naucalpan, Naucalpan de Juárez, Estado de México, CP 53370\n<br> \nCorreo electrónico: jcarrete@watsonphillips.com \n<p>Teléfono: 55 55762833<\/p>"
+          }
+        },
+        "b8546307-6e12-4e3b-b299-78e3c349fc98": {
+          "type": "term",
+          "settings": {
+            "title": "3) ¿Para qué fines recabamos y utilizamos sus datos personales?",
+            "description": "Sus datos personales serán utilizados para las siguientes finalidades:\n<br>\n<br>\n\n<li>Proveer los productos solicitados. <\/li>\n<li>Responder a sus requerimientos de información, atención y servicio. <\/li>\n<li>Gestión financiera, facturación y cobro.<\/li>"
+          }
+        },
+        "b0de20a2-cbb5-46d2-8431-1fee4a0948b8": {
+          "type": "term",
+          "settings": {
+            "title": "4) ¿Qué datos personales obtenemos y de donde?",
+            "description": "Para las finalidades señaladas anteriormente podemos recabar sus datos\npersonales de distintas formas:\n\n<br>\n<br>\n\n<li>\n  Cuando visita nuestro sitio de Internet o utiliza nuestros servicios en línea.\n<\/li>\n<li>Por teléfono o fax.<\/li>\n<li>Cuando usted nos los proporciona personalmente.<\/li>\n<li>\n  Cuando obtenemos información a traves de otras fuentes de acceso público que\n  están permitidas por la ley (Directorios telefónicos o laborales, sitios web,\n  etc).\n<\/li>\n<br>\n<br>\n\nDatos personales que recabamos:\n\n<br>\n<br>\n\n<li>\n  Información de contacto (Nombre, Email, Dirección, Teléfono, Celular, Fax).\n<\/li>\n<li>\n  Información financiera y medios de pago (Tarjeta de crédito, débito, cheques).\n<\/li>\n<li>Información fiscal (RFC, Dirección de Facturación).<\/li>"
+          }
+        },
+        "46364fc9-1881-42e4-ab59-cabe44fc32db": {
+          "type": "term",
+          "settings": {
+            "title": "5) ¿Cómo Acceder, Rectificar, Cancelar u Oponerse al uso y tratamiento de sus datos personales (Derechos ARCO) o revocar su consentimiento para el tratamiento de sus datos?",
+            "description": "Usted tiene derecho constitucional de Acceder y conocer los datos personales que poseemos y a los detalles del tratamiento y uso de los mismos, así como a Rectificarlos y corregirlos en caso de ser inexactos o incompletos; Cancelarlos y eliminarlos cuando considere que no se requieren para alguna de las finalidades señaladas en el presente aviso de privacidad, o que estén siendo utilizados para finalidades no\n autorizadas por usted o haya finalizado la relación contractual o de servicio, o bien, Oponerse al tratamiento de los mismos para fines específicos.\n<br>\n<br>\n\n\n\nLos mecanismos implementados para el ejercicio de sus Derechos ARCO, así como los plazos, información y documentación que debe contener su solicitud deben solicitarse al correo: jcarrete@watsonphillips.com\n<br>\n<br>\n\n\n¿Cómo revocar el consentimiento para el tratamiento de sus datos personales?\n\n<br>\n<br>\n\nSi usted desea revocar el consentimiento que nos otorgó para el uso de sus datos personales, envíe su solicitud a nuestro Departamento de Protección de Datos Personales en donde le informaremos de los mecanismos implementados para ello."
+          }
+        },
+        "f6f906ba-00be-436a-afc8-293a60d64e12": {
+          "type": "term",
+          "settings": {
+            "title": "6) Transferencia de datos personales",
+            "description": "Sus datos personales no serán Transferidos a terceras personas o empresa. Para cumplir con las finalidades establecidas en este Aviso de Privacidad, podrán ser únicamente Remitidos a personas o empresas que tengan el carácter de Encargados."
+          }
+        },
+        "32ea646e-62f4-4ec3-91df-679b02cca7af": {
+          "type": "term",
+          "settings": {
+            "title": "7) Modificaciones al Aviso de Privacidad",
+            "description": "Nos reservamos el derecho de efectuar en cualquier momento modificaciones o actualizaciones al presente Aviso de Privacidad, para la atención de novedades legislativas, políticas internas o nuevos requerimientos para la prestación u ofrecimiento de nuestros servicios o productos. Estas modificaciones estarán disponibles al público en la dirección web: www.watsonphillips.com\n<br>\n<br>\n\n\nUso de cookies, web beacons y JavaScript\n<br>\n<br>\nLas cookies son una pequeña pieza de información enviada automáticamente por nuestro sitio web, las cuales son almacenadas en su navegador. De esta manera el sitio web puede consultar dicha información para conocer la actividad previa del usuario y agilizar algunos procedimientos como mantener la sesión o identificar que secciones del sitio ya visitó.\n<br>\n<br>\nLas web beacons en conjunto con los JavaScripts de métricas web permiten almacenar información sobre los patrones de uso de nuestro sitio web. Le informamos que utilizamos esas herramientas para obtener información estadística como la siguiente:\n<br>\n<br>\nTipo de navegador y sistema operativo, las páginas de Internet consultadas, origen de la visita, la dirección IP de acceso, tiempo de permanencia en nuestro sitio, entreotros datos estadísticos.\n<br>\n<br>\nLas cookies y el JavaScript y otras tecnologías de seguimiento y rastreo pueden ser deshabilitadas, sin embargo, deactivarlas puede generar que el sitio web o algunas de las funcionalidades no se desempeñen adecuadamente."
           }
         }
       },
       "block_order": [
-        "5e99d9e5-2224-4af7-935c-3895d2bbbfe7",
-        "2fb4e1ee-874c-4bd9-b4ea-5072fa7911a0"
+        "537ebb9d-ca0f-470f-90e1-bd5238c3831f",
+        "8d6057ef-74ab-4b6d-9a09-3e055bc992c3",
+        "b8546307-6e12-4e3b-b299-78e3c349fc98",
+        "b0de20a2-cbb5-46d2-8431-1fee4a0948b8",
+        "46364fc9-1881-42e4-ab59-cabe44fc32db",
+        "f6f906ba-00be-436a-afc8-293a60d64e12",
+        "32ea646e-62f4-4ec3-91df-679b02cca7af"
       ],
       "settings": {
-        "title": "Términos y condiciones",
+        "title": "Aviso de privacidad",
         "description": "<p>Este documento describe la forma en que recabamos y usamos los datos personales que usted nos brinda.<br\/>También describe que tipo de datos son y que opciones tiene para limitar el uso de dichos datos, así comoel procedimiento para ejercer sus derechos ARCO.<\/p>"
       }
     }
