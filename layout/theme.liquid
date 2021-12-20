@@ -153,7 +153,7 @@
             allInputs.push(e.target.value);
 
             if (allInputs.filter(item => { return item !== null && item !== '' && item !== undefined }).length === textInputs.length) {
-              submitBtn.setAttribute("disabled", "false");
+              submitBtn.removeAttribute("disabled", "false");
             }
           });
         });
