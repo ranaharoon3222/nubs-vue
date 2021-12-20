@@ -115,7 +115,13 @@
           "819fb465-9f41-415d-927b-eab27997e430": {
             "type": "questions",
             "settings": {
-              "title": "",
+              "title1": "Individual",
+              "title2": "Loveseat",
+              "title3": "Triple",
+              "title4": "Seccional izquierda",
+              "title5": "Seccional derecha",
+              "title6": "",
+              "title7": "",
               "quiz_type": "tamano"
             }
           }
