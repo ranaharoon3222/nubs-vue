@@ -34,7 +34,7 @@
 
 {% schema %}
 {
-"name": "responsibility",
+"name": "terms",
 "settings": [
 {
 "type": "text",
@@ -48,7 +48,24 @@
 }
 ],
 "blocks": [
-{}
+{
+"type": "term",
+"name": "term",
+"settings": [
+
+{
+"type": "text",
+"id": "title",
+"label": "Title"
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Description"
+}
+
+]
+}
 ]
 }
 
