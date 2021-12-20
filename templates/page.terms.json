@@ -23,12 +23,20 @@
             "title": "3) ¿Para qué fines recabamos y utilizamos sus datos personales?",
             "description": "Sus datos personales serán utilizados para las siguientes finalidades:\n<br>\n<br>\n\n<li>Proveer los productos solicitados. <\/li>\n<li>Responder a sus requerimientos de información, atención y servicio. <\/li>\n<li>Gestión financiera, facturación y cobro.<\/li>"
           }
+        },
+        "b0de20a2-cbb5-46d2-8431-1fee4a0948b8": {
+          "type": "term",
+          "settings": {
+            "title": "4) ¿Qué datos personales obtenemos y de donde?",
+            "description": "Para las finalidades señaladas anteriormente podemos recabar sus datos\npersonales de distintas formas:\n\n<br>\n<br>\n\n<li>\n  Cuando visita nuestro sitio de Internet o utiliza nuestros servicios en línea.\n<\/li>\n<li>Por teléfono o fax.<\/li>\n<li>Cuando usted nos los proporciona personalmente.<\/li>\n<li>\n  Cuando obtenemos información a traves de otras fuentes de acceso público que\n  están permitidas por la ley (Directorios telefónicos o laborales, sitios web,\n  etc).\n<\/li>\n<br>\n<br>\n\nDatos personales que recabamos:\n\n<br>\n<br>\n\n<li>\n  Información de contacto (Nombre, Email, Dirección, Teléfono, Celular, Fax).\n<\/li>\n<li>\n  Información financiera y medios de pago (Tarjeta de crédito, débito, cheques).\n<\/li>\n<li>Información fiscal (RFC, Dirección de Facturación).<\/li>"
+          }
         }
       },
       "block_order": [
         "537ebb9d-ca0f-470f-90e1-bd5238c3831f",
         "8d6057ef-74ab-4b6d-9a09-3e055bc992c3",
-        "b8546307-6e12-4e3b-b299-78e3c349fc98"
+        "b8546307-6e12-4e3b-b299-78e3c349fc98",
+        "b0de20a2-cbb5-46d2-8431-1fee4a0948b8"
       ],
       "settings": {
         "title": "Aviso de privacidad",
