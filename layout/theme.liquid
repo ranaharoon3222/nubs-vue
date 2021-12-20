@@ -146,9 +146,10 @@
 const submitBtn = document.querySelector('.submit_form');
        submitBtn.setAttribute("disabled", "true");
       const textInputs = document.querySelectorAll('.text_input');
+        let all = []
       textInputs.forEach(function (el) {
         el.addEventListener('change', function (e) {
-          let all = []
+        
           all.push(e.target.value);
               console.log(all)
           if (e.target.value.length > 0) {
