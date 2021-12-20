@@ -44,6 +44,20 @@
             "title": "6) Transferencia de datos personales",
             "description": "Sus datos personales no serán Transferidos a terceras personas o empresa. Para cumplir con las finalidades establecidas en este Aviso de Privacidad, podrán ser únicamente Remitidos a personas o empresas que tengan el carácter de Encargados."
           }
+        },
+        "32ea646e-62f4-4ec3-91df-679b02cca7af": {
+          "type": "term",
+          "settings": {
+            "title": "7) Modificaciones al Aviso de Privacidad",
+            "description": "Nos reservamos el derecho de efectuar en cualquier momento modificaciones o actualizaciones al presente Aviso de Privacidad, para la atención de novedades legislativas, políticas internas o nuevos requerimientos para la prestación u ofrecimiento de nuestros servicios o productos. Estas modificaciones estarán disponibles al público en la dirección web: www.watsonphillips.com\n<br>\n<br>\n\n\nUso de cookies, web beacons y JavaScript\n<br>\n<br>\nLas cookies son una pequeña pieza de información enviada automáticamente por nuestro sitio web, las cuales son almacenadas en su navegador. De esta manera el sitio web puede consultar dicha información para conocer la actividad previa del usuario y agilizar algunos procedimientos como mantener la sesión o identificar que secciones del sitio ya visitó.\n<br>\n<br>\nLas web beacons en conjunto con los JavaScripts de métricas web permiten almacenar información sobre los patrones de uso de nuestro sitio web. Le informamos que utilizamos esas herramientas para obtener información estadística como la siguiente:\n<br>\n<br>\nTipo de navegador y sistema operativo, las páginas de Internet consultadas, origen de la visita, la dirección IP de acceso, tiempo de permanencia en nuestro sitio, entreotros datos estadísticos.\n<br>\n<br>\nLas cookies y el JavaScript y otras tecnologías de seguimiento y rastreo pueden ser deshabilitadas, sin embargo, deactivarlas puede generar que el sitio web o algunas de las funcionalidades no se desempeñen adecuadamente."
+          }
+        },
+        "3b2a33d2-89ec-4f84-a66d-3d18734965e4": {
+          "type": "term",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
         }
       },
       "block_order": [
@@ -52,7 +66,9 @@
         "b8546307-6e12-4e3b-b299-78e3c349fc98",
         "b0de20a2-cbb5-46d2-8431-1fee4a0948b8",
         "46364fc9-1881-42e4-ab59-cabe44fc32db",
-        "f6f906ba-00be-436a-afc8-293a60d64e12"
+        "f6f906ba-00be-436a-afc8-293a60d64e12",
+        "32ea646e-62f4-4ec3-91df-679b02cca7af",
+        "3b2a33d2-89ec-4f84-a66d-3d18734965e4"
       ],
       "settings": {
         "title": "Aviso de privacidad",
