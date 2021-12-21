@@ -107,12 +107,14 @@
 
                         {% for product in b.collection.products %}
                         <div class="hover_product swiper-slide">
+                             <a href="{{product.url}}">
                             <img class="w-100" src="{{ product.featured_image.src | img_url: 'master'}}">
                             <div class="ps-2">
                                 <h5> {{product.title}} </h5>
                             <span class="regular_price"> {{ product.price | money_without_trailing_zeros }}</span>
                              <span class="sale_price"> {{ product.compare_at_price | money_without_trailing_zeros }}</span>
                             </div>
+                          </a>
                         </div>
                         {% endfor %}
 
