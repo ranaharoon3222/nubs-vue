@@ -109,8 +109,9 @@
                         <div class="hover_product swiper-slide">
                             <img class="w-100" src="{{ product.featured_image.src | img_url: 'master'}}">
                             <div class="ps-2">
-                                <h5> {{product.title}} </h5><span> {{product.price | money_without_trailing_zeros}}
-                                </span>
+                                <h5> {{product.title}} </h5>
+                            <span class="regular_price"> {{ product.price | money_without_trailing_zeros }}</span>
+                             <span class="sale_price"> {{ product.compare_at_price | money_without_trailing_zeros }}</span>
                             </div>
                         </div>
                         {% endfor %}
