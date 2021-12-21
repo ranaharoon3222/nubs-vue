@@ -38,27 +38,6 @@
             "btn_link": "shopify:\/\/collections\/accesorios"
           }
         },
-        "5f111c39-e6f1-425b-a5f1-56554bc95d01": {
-          "type": "style_3",
-          "settings": {
-            "nav_title": "Responsabilidad social",
-            "title": "Responsabilidad social",
-            "sub_title": "",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed hendrerit bibendum odio sed gravida.",
-            "image": "shopify:\/\/shop_images\/home-6.png",
-            "btn_text": "conoce más",
-            "btn_link": "shopify:\/\/pages\/responsibility",
-            "icno_1_image": "shopify:\/\/shop_images\/recycling.png",
-            "icno_1_title": "Producido de forma sostenible",
-            "icno_1_text": "Creados con materiales de alta calidad, utilizamos los recursos de manera sostenible, aprovechando el 90% de los desechos que se reciclan.",
-            "icno_2_image": "shopify:\/\/shop_images\/materials.png",
-            "icno_2_title": "Materiales para toda la vida",
-            "icno_2_text": "La tela de alto rendimiento se puede limpiar fácilmente con jabón y un poco de agua o se puede quitar por completo y lavar en la lavadora.",
-            "icno_3_image": "shopify:\/\/shop_images\/community.png",
-            "icno_3_title": "Comprometidos con la comunidad social",
-            "icno_3_text": "Actualmente contamos con un taller de alfarería en Iztapalapa que da empleos a la población local."
-          }
-        },
         "33df27a3-78cb-48a5-99cc-c5c3d06a35c6": {
           "type": "style_2",
           "settings": {
@@ -70,14 +49,35 @@
             "btn_text": "conoce más",
             "btn_link": "shopify:\/\/pages\/proyectus"
           }
+        },
+        "5f111c39-e6f1-425b-a5f1-56554bc95d01": {
+          "type": "style_3",
+          "settings": {
+            "nav_title": "Responsabilidad social",
+            "title": "Responsabilidad social",
+            "sub_title": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed hendrerit bibendum odio sed gravida.",
+            "image": "shopify:\/\/shop_images\/home-6.png",
+            "btn_text": "conoce más",
+            "btn_link": "",
+            "icno_1_image": "shopify:\/\/shop_images\/recycling.png",
+            "icno_1_title": "Producido de forma sostenible",
+            "icno_1_text": "Creados con materiales de alta calidad, utilizamos los recursos de manera sostenible, aprovechando el 90% de los desechos que se reciclan.",
+            "icno_2_image": "shopify:\/\/shop_images\/materials.png",
+            "icno_2_title": "Materiales para toda la vida",
+            "icno_2_text": "La tela de alto rendimiento se puede limpiar fácilmente con jabón y un poco de agua o se puede quitar por completo y lavar en la lavadora.",
+            "icno_3_image": "shopify:\/\/shop_images\/community.png",
+            "icno_3_title": "Comprometidos con la comunidad social",
+            "icno_3_text": "Actualmente contamos con un taller de alfarería en Iztapalapa que da empleos a la población local."
+          }
         }
       },
       "block_order": [
         "a06a598e-b235-407e-998e-f8481e8198d2",
         "12fa474d-b43c-4a6d-9512-5672e46066dc",
         "3d5044a6-b77e-4ca5-abda-677710c8c802",
-        "5f111c39-e6f1-425b-a5f1-56554bc95d01",
-        "33df27a3-78cb-48a5-99cc-c5c3d06a35c6"
+        "33df27a3-78cb-48a5-99cc-c5c3d06a35c6",
+        "5f111c39-e6f1-425b-a5f1-56554bc95d01"
       ],
       "settings": {
       }
