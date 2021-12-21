@@ -59,7 +59,7 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed hendrerit bibendum odio sed gravida.",
             "image": "shopify:\/\/shop_images\/home-6.png",
             "btn_text": "conoce más",
-            "btn_link": "",
+            "btn_link": "shopify:\/\/pages\/responsibility",
             "icno_1_image": "shopify:\/\/shop_images\/recycling.png",
             "icno_1_title": "Producido de forma sostenible",
             "icno_1_text": "Creados con materiales de alta calidad, utilizamos los recursos de manera sostenible, aprovechando el 90% de los desechos que se reciclan.",
