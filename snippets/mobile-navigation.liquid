@@ -31,44 +31,48 @@
             {% if block.type == 'mega_menu' %}
 
             <li>
-                <a href="{{block.settings.main_item_link}}">
+                <a class="mb_heading mm-{{ forloop.index0 }}" href="{{block.settings.main_item_link}}">
                     {{block.settings.main_item}}
                 </a>
                 {% if block.settings.sub_menu_1 != blank %}
-                <ul>
+                <div class="mb_submenu">
                     {% for link in linklists[block.settings.sub_menu_1].links %}
-                    <li>
-                        <a href="{{ link.url }}">{{ link.title }}</a>
-                    </li>
+                    <div>
+                        <a class="s-family" href="{{ link.url }}">{{ link.title }}</a>
+                    </div>
                     {% endfor %}
                     {% if block.settings.sub_menu_1 != blank %}
                     {% for link in linklists[block.settings.sub_menu_2].links %}
 
-                    <li>
-                        <a href="{{ link.url }}">{{ link.title }}</a>
-                    </li>
+                    <div>
+                        <a class="s-family" href="{{ link.url }}">{{ link.title }}</a>
+                    </div>
                     {% endfor %}
 
                     {% endif %}
 
-                </ul>
+                </div>
                 {% endif %}
             </li>
 
             {% endif %}
             {% endfor %}
 
+            <li class="btm">
 
-            {% for block in section.blocks %}
-            {% if block.type == 'right_menu' %}
-            <li>
-                <a class=" active text-decoration-none" href="{{ block.settings.main_item_link }}"> {{
-                    block.settings.main_item }} </a>
+
+                {% for block in section.blocks %}
+                {% if block.type == 'right_menu' %}
+                <div>
+                    <a class=" active text-decoration-none" href="{{ block.settings.main_item_link }}"> {{
+                        block.settings.main_item }} </a>
+                </div>
+
+
+
+                {% endif %}
+                {% endfor %}
             </li>
-
-
-            {% endif %}
-            {% endfor %}
 
 
         </ul>
