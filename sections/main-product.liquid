@@ -142,7 +142,7 @@
               <div class="swiper-wrapper">
                 {% for image in product.images %}
                 <div class="swiper-slide">
-                  <a class="spotlight" href="{{ image.src | product_img_url: 'master' }}">
+                  <a data-autohide="false" class="spotlight" href="{{ image.src | product_img_url: 'master' }}">
                     <img class="w-100" src="{{ image.src | product_img_url: 'master' }}">
                   </a>
                 </div>
