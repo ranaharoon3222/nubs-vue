@@ -1131,8 +1131,10 @@ div#quiz-sec {
 }
 
 .open-quiz {
-  transform: translateX(0) !important;
+  transform: none !important;
 }
+  
+  
 
 #quiz-close {
   cursor: pointer;
@@ -1460,6 +1462,18 @@ img.snize-item-image.snize-flip-image {
 }
 
 @media all and (max-width: 980px) {
+  
+  .fixed_btm {
+      position: fixed;
+    bottom: 0;
+    z-index: 9999999;
+    background: white;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+  }
+  
+  
     div#quiz-sec .container {
     max-width: 85% !important;
 }
