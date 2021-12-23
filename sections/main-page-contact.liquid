@@ -13,11 +13,6 @@
                 {% form 'contact' %}
 
                 {% if form.posted_successfully? %}
-    
- <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Launch static backdrop modal
-</button>
 
 <div class="modal fade" id="confirmation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="confirmationLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -37,7 +32,7 @@
   </div>
 </div>
               
-         <script>
+     <script>
     window.addEventListener('load', function () {
       var confirmationModal = new bootstrap.Modal(document.getElementById('confirmation'), {
         backdrop:true,
