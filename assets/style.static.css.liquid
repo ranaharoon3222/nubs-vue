@@ -751,6 +751,33 @@ textarea {
   }
 }
 @media all and (min-width: 980px) {
+  
+  
+  .snize-item.clearfix {
+    position: relative !important;
+}
+.snize-item span.snize-overhidden * {
+    font-family: var(--s-family) !important;
+    font-size: 12px !important;
+}
+span.snize-overhidden {
+    position: absolute !important;
+    bottom: 0;
+    left: 12px;
+    transition: all .3s;
+    opacity: 0;
+}
+
+.snize-item span.snize-title {
+    margin-bottom: 0 !important;
+    color: var(--text-2-color) !important;
+}
+.snize-product:hover span.snize-overhidden {
+    opacity: 1 !important;
+}
+  
+  
+  
   .pl-16 {
     padding-left: 16rem;
   }
