@@ -92,15 +92,20 @@
                                         class="ms-auto me-4 text-decoration-none text-uppercase p-color s-family d-flex align-items-center"
                                         href="#"><i class="material-icons">keyboard_arrow_left</i>&nbsp;AtrÁs</a>
 
-                                    <a v-if="step.value === 6" class="main-button text-center text-uppercase" href="#"
+                                    <a v-if="step.value === 5" class="main-button text-center text-uppercase" href="#"
                                         @click="nextStep" :disabled="state.isDisabled">ver mi sofá</a>
                                     <a v-else class="main-button text-center text-uppercase" href="#" @click="nextStep"
                                         :disabled="state.isDisabled">siguiente</a>
                                 </div>
                         </div>
                     </div>
-                    <div  id="action" class="col-md-6 pe-0 ps-0"><img class="w-100"
-                            src="{{section.settings.sofa | img_url: 'master'}}">
+                    <div   class="col-md-6 pe-0 ps-0">                      
+                      <img v-if="step.value === 1"  class="w-100" src="{{section.settings.sofa | img_url: 'master'}}">                
+                      <img v-else-if="step.value === 2"  class="w-100" src="{{section.settings.sofa | img_url: 'master'}}">
+                      <img v-else-if="step.value === 3"  class="w-100" src="{{section.settings.sofa | img_url: 'master'}}">
+                      <img v-else-if="step.value === 4"  class="w-100" src="{{section.settings.sofa | img_url: 'master'}}">
+                      <img v-else-if="step.value === 5"  class="w-100" src="{{section.settings.sofa | img_url: 'master'}}">
+
                     </div>
                 </div>
             </div>
