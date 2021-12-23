@@ -176,13 +176,43 @@
               "title7": "",
               "quiz_type": "costura"
             }
+          },
+          "721a5be0-8bcb-4abf-8f44-963de392c63b": {
+            "type": "questions",
+            "settings": {
+              "title1": "Goeritz",
+              "image1": "shopify:\/\/shop_images\/color-goeritz.png",
+              "title2": "",
+              "title3": "",
+              "title4": "",
+              "title5": "",
+              "title6": "",
+              "title7": "",
+              "quiz_type": "color"
+            }
+          },
+          "288bb824-b1eb-4c39-a274-f44036ec0826": {
+            "type": "questions",
+            "settings": {
+              "title1": "Fresno",
+              "image1": "shopify:\/\/shop_images\/fresno.png",
+              "title2": "",
+              "title3": "",
+              "title4": "",
+              "title5": "",
+              "title6": "",
+              "title7": "",
+              "quiz_type": "costados"
+            }
           }
         },
         "block_order": [
           "819fb465-9f41-415d-927b-eab27997e430",
           "edf8a628-5026-4be5-9206-61917899f7b4",
           "163d4857-4248-4227-bceb-07f846845686",
-          "dcff2a2b-2660-4e66-ba30-3f8483497eca"
+          "dcff2a2b-2660-4e66-ba30-3f8483497eca",
+          "721a5be0-8bcb-4abf-8f44-963de392c63b",
+          "288bb824-b1eb-4c39-a274-f44036ec0826"
         ],
         "settings": {
           "collection": "sofa",
