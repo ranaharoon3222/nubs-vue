@@ -206,21 +206,6 @@
               "title7": "",
               "quiz_type": "costados"
             }
-          },
-          "347c57e5-e343-4125-a9ec-28bec74a7ac2": {
-            "type": "questions",
-            "settings": {
-              "title1": "daadadw",
-              "image1": "shopify:\/\/shop_images\/maple.png",
-              "title2": "dwaddwaa",
-              "image2": "shopify:\/\/shop_images\/sofa-loveseat.png",
-              "title3": "",
-              "title4": "",
-              "title5": "",
-              "title6": "",
-              "title7": "",
-              "quiz_type": "tamano"
-            }
           }
         },
         "block_order": [
@@ -229,8 +214,7 @@
           "163d4857-4248-4227-bceb-07f846845686",
           "dcff2a2b-2660-4e66-ba30-3f8483497eca",
           "721a5be0-8bcb-4abf-8f44-963de392c63b",
-          "288bb824-b1eb-4c39-a274-f44036ec0826",
-          "347c57e5-e343-4125-a9ec-28bec74a7ac2"
+          "288bb824-b1eb-4c39-a274-f44036ec0826"
         ],
         "settings": {
           "collection": "sofa",
