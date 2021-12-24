@@ -48,8 +48,10 @@
                                 </div><input :value="quantityValue.value" type="number" class="border-0">
                                 <div><button @click="() => increment({{item.variant_id}} )" class="btn" type="button"><i
                                             class="material-icons">add</i></button></div>
-                            </div><i class="material-icons ms-3"
-                                @click="()=> deleteItem({{item.variant_id}})">delete</i>
+                            </div>
+                          
+                          <img @click="()=> deleteItem({{item.variant_id}})" src="{{ 'trash.static.svg' | asset_url }}" class="ps-2" />
+                        
                         </div>
                     </div>
 
