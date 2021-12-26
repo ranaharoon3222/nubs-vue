@@ -60,6 +60,45 @@
                 </renderless-cart>
 
                 {% endfor %}
+              
+              
+              
+              
+              
+              <section class="bg-EFEBEB py-5 minus-80">
+    <div class="container">
+        <div class="mb-3 full-border-top d-flex justify-content-between">
+            <h4>{{b.c_title}}</h4>
+            <div class="product_slider_arrow"><img class="prev-arrow"
+                    src="{{ 'prev-arrow.static.png'  | asset_img_url: 'master'}}"><img class="next-arrow"
+                    src="{{ 'next-arrow.static.png'  | asset_img_url: 'master'}}"></div>
+        </div>
+        <div id="product_slider" class="swiper">
+            <div class="swiper-wrapper">
+                {% assign collection = b.collection %}
+                {% for product in collection.products %}
+                <div class="hover_product swiper-slide">
+                    <a href="{{product.url}}">
+                        <img class="w-100" src="{{ product.featured_image.src | img_url: '1024x' }}">
+                        <div class="ps-2">
+                            <h5> {{product.title}} </h5>
+                            <span class="regular_price"> {{ product.price | money_without_trailing_zeros }}</span>
+                             <span class="sale_price"> {{ product.compare_at_price | money_without_trailing_zeros }}</span>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>
+              
+              
+              
+              
+              
+              
             </div>
             <div class="col-md-4 col-xl-4 bg-white px-3 py-4 pt-5">
                 <h6 class="s-family text-uppercase boder-line pb-2">Resumen de tu compra</h6>
@@ -79,6 +118,21 @@
     {% endif %}
 
 </section>
+
+
+
+
+
+<script>
+    window.addEventListener('load', function () {
+        new Swiper('#product_slider', {
+            navigation: { nextEl: '.next-arrow', prevEl: '.prev-arrow' },
+            slidesPerView: 2,
+            spaceBetween: 20,
+            breakpoints: { 981: { slidesPerView: 4, spaceBetween: 40 } },
+        })
+    });
+</script>
 
 
 {% schema %}
