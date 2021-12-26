@@ -105,11 +105,11 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/cart"><img src="{{'cart.static.svg' | asset_url }}">
-              {% if cart.item_count > 0 %}
-              <span class="cart-counter">
+             
+              <span class="cart-counter" v-if=" $store.state['cart'].count > 0">
                 {% raw %}{{ $store.state['cart'].count }}{% endraw %}
               </span>
-              {% endif %}
+             
             </a>
           </li>
         </ul>
