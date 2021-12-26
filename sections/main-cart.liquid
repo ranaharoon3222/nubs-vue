@@ -65,17 +65,17 @@
               
               
               
-              <section class="bg-EFEBEB py-5 minus-80">
+              <section class="py-5 minus-80">
     <div class="container">
         <div class="mb-3 full-border-top d-flex justify-content-between">
-            <h4>{{b.c_title}}</h4>
+            <h4>{{section.settings.c_title}}</h4>
             <div class="product_slider_arrow"><img class="prev-arrow"
                     src="{{ 'prev-arrow.static.png'  | asset_img_url: 'master'}}"><img class="next-arrow"
                     src="{{ 'next-arrow.static.png'  | asset_img_url: 'master'}}"></div>
         </div>
         <div id="product_slider" class="swiper">
             <div class="swiper-wrapper">
-                {% assign collection = b.collection %}
+                {% assign collection = section.settings.collection %}
                 {% for product in collection.products %}
                 <div class="hover_product swiper-slide">
                     <a href="{{product.url}}">
@@ -139,6 +139,16 @@
 {
 "name": "cart",
 "settings": [
+{
+"type": "text",
+"label": "Collection Title",
+"id": "c_title"
+},
+{
+"type": "collection",
+"label": "Select Collection",
+"id": "collection"
+},
 {
 "type": "text",
 "label": "Button Text",
