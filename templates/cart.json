@@ -3,6 +3,8 @@
     "main": {
       "type": "main-cart",
       "settings": {
+        "c_title": "Completa tu espacio",
+        "collection": "accesorios",
         "btn_text": "explorar sofás",
         "btn_link": "shopify:\/\/collections\/sofa"
       }
