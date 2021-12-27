@@ -4,6 +4,11 @@
 
 
     <div :isopened="popup" id="cart_popup" class="modal fade s-family">
+      
+      <div  @click="close_popup" >
+      <img src="{{ 'close.static.svg' | asset_url }}" >
+      </div>
+      
         <div class="modal-dialog modal-confirm">
             <div class="modal-content">
                 <div class="modal-header">
