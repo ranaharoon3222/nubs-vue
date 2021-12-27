@@ -20,9 +20,9 @@
                             <p class="button-size  s-family mb-0 text2-color">Costados: Madera Maple</p> -->
                             <div class="hstack">
                                 <p class="button-size mb-0  s-family me-3"
-                                    v-text="(cart.original_price / 100).toFixed(2)"> </p>
+                                    v-text="`$ ${(cart.original_price / 100).toFixed(2)}`"> </p>
                                 <p class="button-size mb-0 s-family text2-color text-decoration-line-through"
-                                    v-text="(cart.discounted_price / 100).toFixed(2)">
+                                    v-text="`$ ${(cart.discounted_price / 100).toFixed(2)}`">
                                 </p>
                             </div>
                         </div>
