@@ -1,42 +1,40 @@
 <!-- Modal -->
 
 <renderless-cart-popup v-slot={popup,close_popup,cart}>
-
-
     <div :isopened="popup" id="cart_popup" class="modal fade s-family">
-      
-      <div  @click="close_popup" class="close_cart" >
-      <img src="{{ 'close.static.svg' | asset_url }}" >
-      </div>
-      
+
+        <div @click="close_popup" class="close_cart">
+            <img src="{{ 'close.static.svg' | asset_url }}">
+        </div>
+
         <div class="modal-dialog modal-confirm">
             <div class="modal-content">
                 <div class="modal-header">
-                  
-                  <h6 class="text-uppercase ls-1 s-family pb-3 button-size "> Agregaste a tu carrito </h6>
-                  
-                  
-                  <div class="hstack"><img class="cart_img"
-        src="//cdn.shopify.com/s/files/1/0591/0036/4966/products/1_medium.jpg?v=1638981773">
-    <div class="ms-2">
-        <h5 class="button-size  s-family p-color"  v-text="cart.title" ></h5>
-        <p class="button-size  s-family mb-0 text2-color">Color: Azul Barragán </p>
-        <p class="button-size  s-family mb-0 text2-color">Patas: Madera Cilíndrica, Maple</p>
-        <p class="button-size  s-family mb-0 text2-color">Costados: Madera Maple</p>
-        <div class="hstack">
-            <p class="button-size mb-0  s-family me-3">$ 45,000 </p>
-            <p class="button-size mb-0 s-family text2-color text-decoration-line-through"> $ 550,000</p>
-        </div>
-    </div>
-</div>
-                  
-                   
+                    <h6 class="text-uppercase ls-1 s-family pb-3 button-size "> Agregaste a tu carrito </h6>
+                    <div class="hstack" style="align-items: flex-start;">
+                        <img class="cart_img" :src="cart.image">
+                        <div class="ms-2">
+                            <h5 class="button-size  s-family p-color" v-text="cart.title"></h5>
+                            <!-- <p class="button-size  s-family mb-0 text2-color">Color: Azul Barragán </p>
+                            <p class="button-size  s-family mb-0 text2-color">Patas: Madera Cilíndrica, Maple</p>
+                            <p class="button-size  s-family mb-0 text2-color">Costados: Madera Maple</p> -->
+                            <div class="hstack">
+                                <p class="button-size mb-0  s-family me-3"
+                                    v-text="(cart.original_price / 100).toFixed(2)"> </p>
+                                <p class="button-size mb-0 s-family text2-color text-decoration-line-through"
+                                    v-text="(cart.discounted_price / 100).toFixed(2)">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="modal-body">
-<!--                     <p class="text-center" v-text="cart.product_description"></p> -->
+                    <!--                     <p class="text-center" v-text="cart.product_description"></p> -->
                 </div>
-              
-              
+
+
                 <div class="modal-footer d-flex flex-nowrap">
                     <a href="/cart" class="btn btn-success justify-content-center align-items-center d-flex">Cart</a>
                     <button class="btn btn-success justify-content-center align-items-center d-flex"
