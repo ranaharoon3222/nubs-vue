@@ -18,7 +18,7 @@
         </section><!-- End: Nubs Banner 1 -->
         
         
-        <div class="h-arrow" > 
+        <div class="h-arrow slide-nxt" > 
         <img src="{{ 'downarow.static.svg' | asset_url }}" />
         </div>
       </div>
@@ -190,7 +190,7 @@
             (location.hash = o);
         });
       });
-    new Swiper('#swiper', {
+  const homeSwiper =  new Swiper('#swiper', {
       effect: 'fade',
       fadeEffect: { crossFade: !0 },
       autoHeight: !0,
@@ -235,8 +235,21 @@
         },
       },
     });
+  
+  
+  
+ document.querySelector('.slide-nxt').addEventListener("click", function(){
+  
+homeSwiper.slideNext();
+
+  });
+  
+  
+  
   });
 
+  
+  
 
 
 
