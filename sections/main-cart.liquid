@@ -149,7 +149,7 @@
                 <div class="hstack justify-content-between boder-line pb-1">
                     <h4 class="s-family font-12 mb-0">Descuento</h4>
                     <h4 class="font-12 s-family mb-0" style="color:#F64F4F;">${% raw %}{{
-                         $store.state['cart'].discountedValue - $store.state['cart'].total }}{%
+                        ( $store.state['cart'].discountedValue - Number($store.state['cart'].total) ).toLocaleString('en-US') }}{%
                         endraw %}
                         MXN </h4>
 
