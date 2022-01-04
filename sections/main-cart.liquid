@@ -71,7 +71,7 @@
                     <renderless-add-to-cart v-slot="{ processCartForm }">
 
                         <section class="py-5 minus-80">
-                            <div class="container">
+                            <div class="">
                                 <div class="mb-3 full-border-top d-flex justify-content-between">
                                     <h4>{{section.settings.c_title}}</h4>
                                     <div class="product_slider_arrow"><img class="prev-arrow"
@@ -138,10 +138,6 @@
 
 
 
-
-
-
-
             </div>
             <div class="col-md-4 col-xl-4 bg-white px-3 py-4 pt-5">
                 <h6 class="s-family text-uppercase boder-line pb-2">Resumen de tu compra</h6>
@@ -153,7 +149,7 @@
                 <div class="hstack justify-content-between boder-line pb-1">
                     <h4 class="s-family font-12 mb-0">Descuento</h4>
                     <h4 class="font-12 s-family mb-0" style="color:#F64F4F;">${% raw %}{{
-                        $store.state['cart'].discountedValue.toFixed(2) }}{%
+                        $store.state['cart'].discountedValue.toFixed(2) - $store.state['cart'].total }}{%
                         endraw %}
                         MXN </h4>
 
