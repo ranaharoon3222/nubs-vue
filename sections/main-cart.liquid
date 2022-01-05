@@ -127,7 +127,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-xl-8 pt-5">
+            <div class="col-md-8 col-xl-8 pt-5 hide-sug">
                 <h3 class="mb-4">Mi carrito</h3>
                 {% for item in cart.items %}
                 {% assign prop = item.product.metafields.prop %}
@@ -177,14 +177,15 @@
 
 
 {{suggestions}}
-              
+            {{cartDetails}}   
               
 
 
             </div>
-            <div class="col-md-4 col-xl-4">
-            
-              {{cartDetails}}
+            <div class="col-md-4 col-xl-4 hide-cartd">
+            {{suggestions}}
+              
+            {{cartDetails}}
             
             </div>
         </div>
