@@ -31,72 +31,7 @@
 
 
 
-<section vue style="min-height: 60vh;">
-    {% if cart.items == blank %}
-    <div class="container">
-        <h3>Mi carrito</h3>
-    </div>
-    <div class="container" style="padding-top: 200px;padding-bottom: 200px;">
-        <h3 class="text-center text2-color">Aún no tienes productos en tu carrito.</h3>
-        <div>
-            <a href="{{section.settings.btn_link}}"
-                class="mx-auto mt-5 main-button text-uppercase text-center">{{section.settings.btn_text}}</a>
-        </div>
-    </div>
-
-
-    {% else %}
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-xl-8 pt-5">
-                <h3 class="mb-4">Mi carrito</h3>
-                {% for item in cart.items %}
-                {% assign prop = item.product.metafields.prop %}
-                <renderless-cart v-slot={increment,decrement,quantityValue,deleteItem} :qty="{{item.quantity}}"
-                    :product="{{ item.product.compare_at_price | json | replace: '"', "'" }}">
-
-                    <div class="hstack justify-content-between flex-wrap boder-line-top py-3">
-                        <div class="hstack"><img class="cart_img"
-                                src="{{item.product.featured_image.src | img_url: 'medium'}}">
-                            <div class="ms-2">
-                                <h5 class="font-12 s-family p-color">{{item.product.title}}</h5>
-                                <p class="font-12 s-family mb-0 text2-color">Color: {{prop.color}}
-                                </p>
-                                <p class="font-12 s-family mb-0 text2-color">Patas: {{prop.patas}}</p>
-                                <p class="font-12 s-family mb-0 text2-color">Costados: {{prop.costados}}</p>
-                                <div class="hstack">
-                                    <p class="font-12 s-family me-3">{{item.product.price |
-                                        money_without_trailing_zeros}}
-                                    </p>
-
-
-                                    <p class="font-12 s-family text2-color text-decoration-line-through">
-                                        {{item.product.compare_at_price |
-                                        money_without_trailing_zeros}}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hstack align-self-auto">
-                            <div class="spinner-border spinner-border-sm me-3 cart_spinner" role="status"> </div>
-                            <div class="hstack v2 quantity_picker">
-                                <div><button @click="() => decrement({{item.variant_id}})" class="btn" type="button"><i
-                                            class="material-icons">remove</i></button>
-                                </div><input :value="quantityValue.value" type="number" class="border-0">
-                                <div><button @click="() => increment({{item.variant_id}} )" class="btn" type="button"><i
-                                            class="material-icons">add</i></button></div>
-                            </div>
-
-                            <img style="cursor:pointer" @click="()=> deleteItem({{item.variant_id}})"
-                                src="{{ 'trash.static.svg' | asset_url }}" class="ps-md-4 pe-md-4 ps-3 " />
-
-                        </div>
-                    </div>
-
-                </renderless-cart>
-
-                {% endfor %}
-
+{% capture suggestions %}
 
 
                 <div vue>
@@ -169,6 +104,81 @@
 
                 </div>
 
+
+{% endcapture %}
+
+
+
+<section vue style="min-height: 60vh;">
+    {% if cart.items == blank %}
+    <div class="container">
+        <h3>Mi carrito</h3>
+    </div>
+    <div class="container" style="padding-top: 200px;padding-bottom: 200px;">
+        <h3 class="text-center text2-color">Aún no tienes productos en tu carrito.</h3>
+        <div>
+            <a href="{{section.settings.btn_link}}"
+                class="mx-auto mt-5 main-button text-uppercase text-center">{{section.settings.btn_text}}</a>
+        </div>
+    </div>
+
+
+    {% else %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-xl-8 pt-5">
+                <h3 class="mb-4">Mi carrito</h3>
+                {% for item in cart.items %}
+                {% assign prop = item.product.metafields.prop %}
+                <renderless-cart v-slot={increment,decrement,quantityValue,deleteItem} :qty="{{item.quantity}}"
+                    :product="{{ item.product.compare_at_price | json | replace: '"', "'" }}">
+
+                    <div class="hstack justify-content-between flex-wrap boder-line-top py-3">
+                        <div class="hstack"><img class="cart_img"
+                                src="{{item.product.featured_image.src | img_url: 'medium'}}">
+                            <div class="ms-2">
+                                <h5 class="font-12 s-family p-color">{{item.product.title}}</h5>
+                                <p class="font-12 s-family mb-0 text2-color">Color: {{prop.color}}
+                                </p>
+                                <p class="font-12 s-family mb-0 text2-color">Patas: {{prop.patas}}</p>
+                                <p class="font-12 s-family mb-0 text2-color">Costados: {{prop.costados}}</p>
+                                <div class="hstack">
+                                    <p class="font-12 s-family me-3">{{item.product.price |
+                                        money_without_trailing_zeros}}
+                                    </p>
+
+
+                                    <p class="font-12 s-family text2-color text-decoration-line-through">
+                                        {{item.product.compare_at_price |
+                                        money_without_trailing_zeros}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hstack align-self-auto">
+                            <div class="spinner-border spinner-border-sm me-3 cart_spinner" role="status"> </div>
+                            <div class="hstack v2 quantity_picker">
+                                <div><button @click="() => decrement({{item.variant_id}})" class="btn" type="button"><i
+                                            class="material-icons">remove</i></button>
+                                </div><input :value="quantityValue.value" type="number" class="border-0">
+                                <div><button @click="() => increment({{item.variant_id}} )" class="btn" type="button"><i
+                                            class="material-icons">add</i></button></div>
+                            </div>
+
+                            <img style="cursor:pointer" @click="()=> deleteItem({{item.variant_id}})"
+                                src="{{ 'trash.static.svg' | asset_url }}" class="ps-md-4 pe-md-4 ps-3 " />
+
+                        </div>
+                    </div>
+
+                </renderless-cart>
+
+                {% endfor %}
+
+
+
+              
+              
 
 
             </div>
