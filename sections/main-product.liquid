@@ -91,6 +91,50 @@
 
               </form>
               <!-- end cart btn -->
+              
+              
+              
+              
+          <!--   sticky cart   -->
+                    <form method="post" class="fixed_cart" @submit.prevent="processCartForm" action="/cart/add" id="product_cart_form">
+
+                {% if product.has_only_default_variant %}
+                <input name="id" type="hidden" :value="{{ current_variant.id }}" readonly>
+                {{cartForm}}
+                {% else %}
+
+                <input name="id" type="hidden" :value="selectedVariant.id" readonly>
+
+                      
+                      <div>
+                        
+                        <div>
+                          
+                          
+                         <h3>{{product.title}}</h3>
+              <div id="pricing"
+                class="hstack gap-3 comp-bg product-price px-3 py-1 font-12 justify-content-center mt-1">
+                <div><span class="s-family"> {{ current_variant.price | money_without_trailing_zeros }} </span></div>
+                <div class="text-decoration-line-through text2-color"><span class="text2-color s-family"> {{
+                    current_variant.compare_at_price | money_without_trailing_zeros }}</span></div>
+              </div>
+                        </div>
+                        
+                        <div>
+                            {{cartForm}}
+                        </div>
+                        
+                      </div>
+                      
+                      
+              
+
+                {% endif %}
+
+              </form>
+              
+              <!--   sticky cart   -->
+
 
 
               <div class="comp-bg px-2 py-3 product_description">
