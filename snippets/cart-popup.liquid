@@ -47,7 +47,7 @@
                                             class="next-arrow"
                                             src="{{ 'next-arrow.static.png'  | asset_img_url: 'master'}}"></div>
                                 </div>
-                                <div id="product_slider" class="swiper">
+                                <div id="cart_slider" class="swiper">
                                     <div class="swiper-wrapper">
                                         {% assign collection = settings.cartSuggestions %}
                                         {% for product in collection.products %}
@@ -122,3 +122,18 @@
     </div>
 
 </renderless-cart-popup>
+
+
+
+
+<script>
+    window.addEventListener('load', function () {
+        new Swiper('#cart_slider', {
+            navigation: { nextEl: '.next-arrow', prevEl: '.prev-arrow' },
+            slidesPerView: 2,
+            spaceBetween: 20,
+           direction: 'vertical',
+           mousewheel: true,
+        })
+    });
+</script>
