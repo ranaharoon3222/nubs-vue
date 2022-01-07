@@ -17,6 +17,11 @@
       {
         "type": "paragraph",
         "content": "t:settings_schema.custom_settings.settings.paragraph"
+      },
+      {
+        "type": "collection",
+        "id": "cartSuggestions",
+        "label": "Cart Sugesstions"
       }
     ]
   }
