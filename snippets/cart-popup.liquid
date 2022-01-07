@@ -31,7 +31,80 @@
 
                 </div>
                 <div class="modal-body">
-                    <!--                     <p class="text-center" v-text="cart.product_description"></p> -->
+                   
+                  
+                  
+                <div vue class="">
+
+                    <renderless-add-to-cart v-slot="{ processCartForm }">
+
+                        <section class="py-5 minus-80">
+                            <div class="">
+                                <div class="mb-3 full-border-top d-flex justify-content-between">
+                                    <h4>{{section.settings.c_title}}</h4>
+                                    <div class="product_slider_arrow"><img class="prev-arrow"
+                                            src="{{ 'prev-arrow.static.png'  | asset_img_url: 'master'}}"><img
+                                            class="next-arrow"
+                                            src="{{ 'next-arrow.static.png'  | asset_img_url: 'master'}}"></div>
+                                </div>
+                                <div id="product_slider" class="swiper">
+                                    <div class="swiper-wrapper">
+                                        {% assign collection = section.settings.collection %}
+                                        {% for product in collection.products %}
+                                        <div class=" swiper-slide">
+                                            <div class="hover_product ">
+
+                                                <a href="{{product.url}}">
+                                                    <img class="w-100"
+                                                        src="{{ product.featured_image.src | img_url: '1024x' }}">
+                                                    <div class="ps-2">
+                                                        <h5> {{product.title}} </h5>
+                                                        <span class="regular_price"> {{ product.price |
+                                                            money_without_trailing_zeros }}</span>
+                                                        <span class="sale_price"> {{ product.compare_at_price |
+                                                            money_without_trailing_zeros }}</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            {% capture cartForm %}
+
+                                            <div id="add_to_cart" style="width: 100%;">
+                                                <button name="add" class="text-uppercase ls-1 p-color border-btn">
+
+                                                    agregar al
+                                                    carrito</button>
+                                            </div>
+
+                                            {% endcapture %}
+
+                                            <!-- add to cart -->
+                                            <form method="post" @submit.prevent="processCartForm" action="/cart/add"
+                                                id="product_cart_form">
+
+                                                <input name="id" type="hidden" value="{{product.variants.first.id}}"
+                                                    readonly>
+
+                                                {{cartForm}}
+
+                                            </form>
+                                            <!-- end cart btn -->
+
+                                        </div>
+
+                                        {% endfor %}
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </renderless-add-to-cart>
+
+                </div>
+                  
+                  
                 </div>
 
 
