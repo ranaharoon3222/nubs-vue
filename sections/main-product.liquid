@@ -100,13 +100,8 @@
 
                 {% if product.has_only_default_variant %}
                 <input name="id" type="hidden" :value="{{ current_variant.id }}" readonly>
-                {{cartForm}}
-                {% else %}
-
-                <input name="id" type="hidden" :value="selectedVariant.id" readonly>
-
-                      
-                      <div>
+                
+                          <div>
                         
                         <div>
                           
@@ -127,6 +122,10 @@
                       </div>
                       
                       
+                      
+                {% else %}
+
+                <input name="id" type="hidden" :value="selectedVariant.id" readonly>
               
 
                 {% endif %}
