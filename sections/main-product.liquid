@@ -398,6 +398,23 @@
 
 
 
+<!-- cart popup -->
+
+
+<script>
+    window.addEventListener('load', function () {
+        new Swiper('#cart_slider', {
+            navigation: { nextEl: '.next-arrow', prevEl: '.prev-arrow' },
+            slidesPerView: 2,
+            spaceBetween: 20,
+              direction: 'vertical',
+              mousewheel: true,
+                         
+                         }
+        })
+    });
+</script>
+
 
 <script src="{{'spotlight.static.bundle.js' | asset_url }}"></script>
 
