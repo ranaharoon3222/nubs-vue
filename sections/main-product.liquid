@@ -101,7 +101,7 @@
                 {% if product.has_only_default_variant %}
                 <input name="id" type="hidden" :value="{{ current_variant.id }}" readonly>
                 
-                          <div class="hstack gap-4 st_wp_cart" >
+                          <div class="hstack gap-2 st_wp_cart" >
                         
                         <div>
                           
@@ -116,7 +116,16 @@
                         </div>
                         
                         <div>
-                            {{cartForm}}
+                           
+                         
+              
+                <div id="add_to_cart"><button name="add" class="main-button text-center text-uppercase">
+                    <span class="mr-1 spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <img src="{{ 'cart.static.svg' | asset_url }}" class="cart_ico" >   agregar
+                  </button>
+                </div>
+              
+                          
                         </div>
                         
                       </div>
