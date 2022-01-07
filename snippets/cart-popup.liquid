@@ -37,7 +37,8 @@
 
                 <div class="modal-footer d-flex flex-nowrap justify-content-between " vue>
                     <a href="/cart" class="border_btn text-uppercase s-family p-color button-size ls-1">ir a mi carrito</a>
-                    <a href="/checkout" class="main-button text-center  text-uppercase button-size ls-1 " > Pagar ${% raw %}{{$store.state['cart'].total.toLocaleString('en-US')}}  {% endraw %} </a>
+                    <a href="/checkout" class="main-button text-center  text-uppercase button-size ls-1 " style="height: 40px;line-height: 40px;" >
+                      Pagar ${% raw %}{{$store.state['cart'].total.toLocaleString('en-US')}}  {% endraw %} </a>
                 </div>
             </div>
         </div>
