@@ -52,21 +52,16 @@
                                         {% assign collection = settings.cartSuggestions %}
                                         {% for product in collection.products %}
                                         <div class=" swiper-slide">
-                                            <div class="hover_product ">
+                                            <div class="">
 
                                                 <a href="{{product.url}}">
                                                     <img class="w-100"
                                                         src="{{ product.featured_image.src | img_url: '1024x' }}">
-                                                    <div class="ps-2">
-                                                        <h5> {{product.title}} </h5>
-                                                        <span class="regular_price"> {{ product.price |
-                                                            money_without_trailing_zeros }}</span>
-                                                        <span class="sale_price"> {{ product.compare_at_price |
-                                                            money_without_trailing_zeros }}</span>
-                                                    </div>
+                                                   
                                                 </a>
                                             </div>
 
+                                          
                                             {% capture cartForm %}
 
                                             <div id="add_to_cart" style="width: 100%;">
@@ -79,6 +74,14 @@
                                             {% endcapture %}
 
                                             <!-- add to cart -->
+                                          <div class="side_sugs" >
+                                             <div class="ps-2">
+                                                        <h5> {{product.title}} </h5>
+                                                        <span class="regular_price"> {{ product.price |
+                                                            money_without_trailing_zeros }}</span>
+                                                        <span class="sale_price"> {{ product.compare_at_price |
+                                                            money_without_trailing_zeros }}</span>
+                                                    </div>
                                             <form method="post" @submit.prevent="processCartForm" action="/cart/add"
                                                 id="product_cart_form">
 
@@ -88,6 +91,7 @@
                                                 {{cartForm}}
 
                                             </form>
+                                          </div>
                                             <!-- end cart btn -->
 
                                         </div>
