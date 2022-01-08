@@ -54,7 +54,7 @@
                                 <div class="cart_slider swiper">
                                     <div class="swiper-wrapper">
                                         {% assign collection = settings.cartSuggestions %}
-                                        {% for product in collection.products %}
+                                        {% for product in collection.products offset:1 %}
                                         <div class=" swiper-slide">
                                             <div class="">
 
@@ -113,7 +113,7 @@
                                      <div class="cart_slider swiper">
                                     <div class="swiper-wrapper">
                                         {% assign collection = settings.cartSuggestions %}
-                                        {% for product in collection.products offset:1 %}
+                                        {% for product in collection.products offset:2 %}
                                         <div class=" swiper-slide">
                                             <div class="">
 
