@@ -21,7 +21,7 @@
                                 <p class="button-size mb-0  s-family me-3"
                                     v-text="`$ ${(cart.original_price / 100).toFixed(2)}`"> </p>
                                 <p class="button-size mb-0 s-family text2-color text-decoration-line-through"
-                                    v-text="`$ ${(cart.discounted_price / 100).toFixed(2)}`">
+                                    v-text="`$ ${(cart.discounted_price / 100).toLocaleString('en-US')}`">
                                 </p>
                             </div>
                         </div>
