@@ -106,6 +106,69 @@
 
                                     </div>
                                 </div>
+                              
+                              
+                              
+                              
+                                     <div class="cart_slider swiper">
+                                    <div class="swiper-wrapper">
+                                        {% assign collection = settings.cartSuggestions %}
+                                        {% for product in collection.products offset:1 %}
+                                        <div class=" swiper-slide">
+                                            <div class="">
+
+                                                <a href="{{product.url}}">
+                                                    <img class="w-100"
+                                                        src="{{ product.featured_image.src | img_url: '1024x' }}">
+                                                   
+                                                </a>
+                                            </div>
+
+                                          
+                                            {% capture cartForm %}
+
+                                            <div id="add_to_cart" style="width: 100%;">
+                                                <button name="add" class="text-uppercase ls-1 p-color border-btn">
+
+                                                    agregar al
+                                                    carrito</button>
+                                            </div>
+
+                                            {% endcapture %}
+
+                                            <!-- add to cart -->
+                                          <div class="side_sugs" >
+                                             <div class="ps-2">
+                                                        <h5> {{product.title}} </h5>
+                                                        <span class="regular_price"> {{ product.price |
+                                                            money_without_trailing_zeros }}</span>
+                                                        <span class="sale_price"> {{ product.compare_at_price |
+                                                            money_without_trailing_zeros }}</span>
+                                                    </div>
+                                            <form method="post" @submit.prevent="processCartForm" action="/cart/add"
+                                                id="product_cart_form">
+
+                                                <input name="id" type="hidden" value="{{product.variants.first.id}}"
+                                                    readonly>
+
+                                                {{cartForm}}
+
+                                            </form>
+                                          </div>
+                                            <!-- end cart btn -->
+
+                                        </div>
+
+                                        {% endfor %}
+
+
+
+                                    </div>
+                                </div>
+                              
+                              
+                              
+                              
                             </div>
                         </section>
                     </renderless-add-to-cart>
