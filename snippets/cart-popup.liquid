@@ -41,6 +41,20 @@
                 <div vue class="">
 
                     <renderless-add-to-cart v-slot="{ processCartForm }">
+                      
+                      
+                       {% capture cartForm %}
+
+                                            <div id="add_to_cart" style="width: 100%;">
+                                                <button name="add" class="text-uppercase ls-1 p-color border-btn">
+
+                                                    agregar al
+                                                    carrito</button>
+                                            </div>
+
+                                            {% endcapture %}
+                      
+                      
 
                         <section class="py-5 minus-80">
                             <div class="">
@@ -56,37 +70,20 @@
                                         {% assign collection = settings.cartSuggestions %}
                                         {% for product in collection.products offset:0 limit:3  %}
                                         <div class=" swiper-slide">
-                                            <div class="">
-
-                                                <a href="{{product.url}}">
-                                                    <img class="w-100"
-                                                        src="{{ product.featured_image.src | img_url: '1024x' }}">
-                                                   
-                                                </a>
-                                            </div>
-
                                           
-                                            {% capture cartForm %}
-
-                                            <div id="add_to_cart" style="width: 100%;">
-                                                <button name="add" class="text-uppercase ls-1 p-color border-btn">
-
-                                                    agregar al
-                                                    carrito</button>
-                                            </div>
-
-                                            {% endcapture %}
-
-                                            <!-- add to cart -->
-                                          <div class="side_sugs" >
-                                             <div class="ps-2">
-                                                        <h5> {{product.title}} </h5>
-                                                        <span class="regular_price"> {{ product.price |
-                                                            money_without_trailing_zeros }}</span>
-                                                        <span class="sale_price"> {{ product.compare_at_price |
-                                                            money_without_trailing_zeros }}</span>
-                                                    </div>
-                                            <form method="post" @submit.prevent="processCartForm" action="/cart/add"
+                                           <div class="hstack" style="align-items: flex-start;">
+                                             
+                                             
+                        <img class="cart_img"  src="{{ product.featured_image.src | img_url: '1024x' }}" >
+                        <div class="ms-2">
+                            <a href="{{product.url}}">
+                            <h5 class="button-size  s-family p-color">{{product.title}}</h5>
+                        
+                            <div class="hstack">
+                                <p class="button-size mb-0  s-family me-3">{{ product.price | money_without_trailing_zeros }} </p>
+                                <p class="button-size mb-0 s-family text2-color text-decoration-line-through">{{ product.compare_at_price | money_without_trailing_zeros }} </p>
+                            </div>
+                               <form method="post" @submit.prevent="processCartForm" action="/cart/add"
                                                 id="product_cart_form">
 
                                                 <input name="id" type="hidden" value="{{product.variants.first.id}}"
@@ -95,8 +92,12 @@
                                                 {{cartForm}}
 
                                             </form>
-                                          </div>
-                                            <!-- end cart btn -->
+                              
+                          </a>
+                          
+                        </div>
+                    </div>
+                                       
 
                                         </div>
 
