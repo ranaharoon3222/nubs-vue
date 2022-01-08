@@ -1,9 +1,4 @@
 <!-- Modal -->
-
-
-
-
-
 <renderless-cart-popup v-slot={popup,close_popup,cart}>
     <div :isopened="popup" id="cart_popup" class="modal fade s-family">
 
@@ -35,160 +30,156 @@
 
                 </div>
                 <div class="modal-body">
-                   
-                  
-                  
-                <div vue class="">
 
-                    <renderless-add-to-cart v-slot="{ processCartForm }">
-                      
-                      
-                       {% capture cartForm %}
 
-                                            <div id="add_to_cart" style="width: 100%;">
-                                                <button name="add" class="text-uppercase ls-1 p-color border-btn">
 
-                                                    agregar al
-                                                    carrito</button>
-                                            </div>
+                    <div vue class="">
 
-                                            {% endcapture %}
-                      
-                      
+                        <renderless-add-to-cart v-slot="{ processCartForm }">
 
-                        <section class="py-5 minus-80">
-                            <div class="">
-                                <div class="mb-3 full-border-top d-flex justify-content-between">
-                                    <h4 class="mt-0 s-family button-size text-uppercase">Complementa tu espacio</h4>
-                                    <div class="product_slider_arrow"><img class="prev-arrow"
-                                            src="{{ 'prev-arrow.static.png'  | asset_img_url: 'master'}}"><img
-                                            class="next-arrow"
-                                            src="{{ 'next-arrow.static.png'  | asset_img_url: 'master'}}"></div>
-                                </div>
-                                <div class="cart_slider swiper">
-                                    <div class="swiper-wrapper">
-                                        {% assign collection = settings.cartSuggestions %}
-                                        {% for product in collection.products offset:0 limit:3  %}
-                                        <div class=" swiper-slide">
-                                          
-                                           <div class="hstack" style="align-items: flex-start;">
-                                             
-                                             
-                        <img class="cart_img"  src="{{ product.featured_image.src | img_url: '1024x' }}" >
-                        <div class="ms-2">
-                            <a href="{{product.url}}" class="text-decoration-none" >
-                            <h5 class="button-size  s-family p-color">{{product.title}}</h5>
-                        
-                            <div class="hstack">
-                                <p class="button-size mb-0  s-family me-3">{{ product.price | money_without_trailing_zeros }} </p>
-                                <p class="button-size mb-0 s-family text2-color text-decoration-line-through">{{ product.compare_at_price | money_without_trailing_zeros }} </p>
+
+                            {% capture cartForm %}
+
+                            <div id="add_to_cart" style="width: 100%;">
+                                <button name="add" class="text-uppercase ls-1 p-color border-btn">
+
+                                    agregar al
+                                    carrito</button>
                             </div>
-                               <form method="post" @submit.prevent="processCartForm" action="/cart/add"
-                                                id="product_cart_form">
 
-                                                <input name="id" type="hidden" value="{{product.variants.first.id}}"
-                                                    readonly>
-
-                                                {{cartForm}}
-
-                                            </form>
-                              
-                          </a>
-                          
-                        </div>
-                    </div>
-                                       
-
-                                        </div>
-
-                                        {% endfor %}
+                            {% endcapture %}
 
 
 
+                            <section class="py-5 minus-80">
+                                <div class="">
+                                    <div class="mb-3 full-border-top d-flex justify-content-between">
+                                        <h4 class="mt-0 s-family button-size text-uppercase">Complementa tu espacio</h4>
+                                        <div class="product_slider_arrow"><img class="prev-arrow"
+                                                src="{{ 'prev-arrow.static.png'  | asset_img_url: 'master'}}"><img
+                                                class="next-arrow"
+                                                src="{{ 'next-arrow.static.png'  | asset_img_url: 'master'}}"></div>
                                     </div>
-                                </div>
-                              
-                              
-                              
-                              
-                                     <div class="cart_slider swiper">
-                                    <div class="swiper-wrapper">
-                                        {% assign collection = settings.cartSuggestions %}
-                                        {% for product in collection.products offset:2 limit:3 %}
-                                        <div class=" swiper-slide">
-                                            <div class="">
+                                    <div class="cart_slider swiper">
+                                        <div class="swiper-wrapper">
+                                            {% assign collection = settings.cartSuggestions %}
+                                            {% for product in collection.products offset:0 limit:3 %}
+                                            <div class=" swiper-slide">
 
-                                                <a href="{{product.url}}">
-                                                    <img class="w-100"
+                                                <div class="hstack" style="align-items: flex-start;">
+
+
+                                                    <img class="cart_img"
                                                         src="{{ product.featured_image.src | img_url: '1024x' }}">
-                                                   
-                                                </a>
-                                            </div>
+                                                    <div class="ms-2">
+                                                        <a href="{{product.url}}" class="text-decoration-none">
+                                                            <h5 class="button-size  s-family p-color">{{product.title}}
+                                                            </h5>
 
-                                          
-                                            {% capture cartForm %}
+                                                            <div class="hstack">
+                                                                <p class="button-size mb-0  s-family me-3">{{
+                                                                    product.price | money_without_trailing_zeros }} </p>
+                                                                <p
+                                                                    class="button-size mb-0 s-family text2-color text-decoration-line-through">
+                                                                    {{ product.compare_at_price |
+                                                                    money_without_trailing_zeros }} </p>
+                                                            </div>
+                                                            <form method="post" @submit.prevent="processCartForm"
+                                                                action="/cart/add" id="product_cart_form">
 
-                                            <div id="add_to_cart" style="width: 100%;">
-                                                <button name="add" class="text-uppercase ls-1 p-color border-btn">
+                                                                <input name="id" type="hidden"
+                                                                    value="{{product.variants.first.id}}" readonly>
 
-                                                    agregar al
-                                                    carrito</button>
-                                            </div>
+                                                                {{cartForm}}
 
-                                            {% endcapture %}
+                                                            </form>
 
-                                            <!-- add to cart -->
-                                          <div class="side_sugs" >
-                                             <div class="ps-2">
-                                                        <h5> {{product.title}} </h5>
-                                                        <span class="regular_price"> {{ product.price |
-                                                            money_without_trailing_zeros }}</span>
-                                                        <span class="sale_price"> {{ product.compare_at_price |
-                                                            money_without_trailing_zeros }}</span>
+                                                        </a>
+
                                                     </div>
-                                            <form method="post" @submit.prevent="processCartForm" action="/cart/add"
-                                                id="product_cart_form">
+                                                </div>
 
-                                                <input name="id" type="hidden" value="{{product.variants.first.id}}"
-                                                    readonly>
 
-                                                {{cartForm}}
+                                            </div>
 
-                                            </form>
-                                          </div>
-                                            <!-- end cart btn -->
+                                            {% endfor %}
+
+
 
                                         </div>
-
-                                        {% endfor %}
-
-
-
                                     </div>
-                                </div>
-                              
-                              
-                              
-                              
-                            </div>
-                        </section>
-                    </renderless-add-to-cart>
 
-                </div>
-                  
-                  
+
+
+
+                                   <div class="cart_slider swiper">
+                                        <div class="swiper-wrapper">
+                                            {% assign collection = settings.cartSuggestions %}
+                                            {% for product in collection.products offset:1 limit:3 %}
+                                            <div class=" swiper-slide">
+
+                                                <div class="hstack" style="align-items: flex-start;">
+
+
+                                                    <img class="cart_img"
+                                                        src="{{ product.featured_image.src | img_url: '1024x' }}">
+                                                    <div class="ms-2">
+                                                        <a href="{{product.url}}" class="text-decoration-none">
+                                                            <h5 class="button-size  s-family p-color">{{product.title}}
+                                                            </h5>
+
+                                                            <div class="hstack">
+                                                                <p class="button-size mb-0  s-family me-3">{{
+                                                                    product.price | money_without_trailing_zeros }} </p>
+                                                                <p
+                                                                    class="button-size mb-0 s-family text2-color text-decoration-line-through">
+                                                                    {{ product.compare_at_price |
+                                                                    money_without_trailing_zeros }} </p>
+                                                            </div>
+                                                            <form method="post" @submit.prevent="processCartForm"
+                                                                action="/cart/add" id="product_cart_form">
+
+                                                                <input name="id" type="hidden"
+                                                                    value="{{product.variants.first.id}}" readonly>
+
+                                                                {{cartForm}}
+
+                                                            </form>
+
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            {% endfor %}
+
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </renderless-add-to-cart>
+
+                    </div>
+
+
                 </div>
 
 
                 <div class="modal-footer d-flex flex-nowrap justify-content-between " vue>
-                    <a href="/cart" class="border_btn text-uppercase s-family p-color button-size ls-1">ir a mi carrito</a>
-                    <a href="/checkout" class="main-button text-center  text-uppercase button-size ls-1 " style="height: 40px;line-height: 40px;" >
-                      Pagar ${% raw %}{{$store.state['cart'].total.toLocaleString('en-US')}}  {% endraw %} </a>
+                    <a href="/cart" class="border_btn text-uppercase s-family p-color button-size ls-1">ir a mi
+                        carrito</a>
+                    <a href="/checkout" class="main-button text-center  text-uppercase button-size ls-1 "
+                        style="height: 40px;line-height: 40px;">
+                        Pagar ${% raw %}{{$store.state['cart'].total.toLocaleString('en-US')}} {% endraw %} </a>
                 </div>
             </div>
         </div>
     </div>
 
 </renderless-cart-popup>
-
-
