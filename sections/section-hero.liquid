@@ -424,7 +424,7 @@
     
    afterLoad: function(origin, destination, direction){
    
-   console.log( destination.isLast)
+
     if(destination.isLast) {
            fullpage_api.setAutoScrolling(false);
           } else {
@@ -436,6 +436,7 @@
   
   
   document.getElementById('#nxt_slide').addEventListener('click', function() {
+       console.log'ok')
     fullpage_api.moveSectionDown();
 }); 
   
