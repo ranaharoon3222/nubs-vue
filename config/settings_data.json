@@ -65,7 +65,8 @@
           "3a907643-71fc-4f9b-9c9e-597943a5dfce"
         ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Group.png"
+          "logo": "shopify:\/\/shop_images\/Group.png",
+          "mb_bottom_menu": "mobile-bottom"
         }
       },
       "layout-footer": {
