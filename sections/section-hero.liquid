@@ -435,13 +435,11 @@ const callback = function(mutationsList, observer) {
     // Use traditional 'for loops' for IE 11
     for(const mutation of mutationsList) {
      if (mutation.type === 'attributes') {  
-          console.log( mutation, mutation.target.className );
           if(mutation.target.className == '') {
            fullpage_api.setAutoScrolling(true);
           } else {
            fullpage_api.setAutoScrolling(false);
           }
-
           
         }
     }
@@ -452,11 +450,7 @@ const observer = new MutationObserver(callback);
 
 // Start observing the target node for configured mutations
 observer.observe(targetNode, config);
-  
-  
-  
- fullpage_api.setAutoScrolling(false);
-  
+   
 
 </script>
 
