@@ -408,9 +408,11 @@
 
 <script>
 
-
   
-  new fullpage('#fullpage', {
+  window.addEventListener('load', function () {
+  
+    
+      new fullpage('#fullpage', {
     	css3: true,
     fitToSection: false,
     scrollBar: true,
@@ -465,7 +467,12 @@ const observer = new MutationObserver(callback);
 
 // Start observing the target node for configured mutations
 observer.observe(targetNode, config);
-   
+  
+  });
+  
+
+  
+
 
 </script>
 
