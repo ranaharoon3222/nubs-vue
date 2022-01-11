@@ -189,7 +189,7 @@
 
     </section>
 
-    <div class="h-arrow slide-nxt">
+    <div class="h-arrow slide-nxt" id="nxt_slide">
       <img src="{{ 'downarow.static.svg' | asset_url }}" />
     </div>
   </div>
@@ -435,7 +435,7 @@
   });
   
   
-  document.querySelector('.slide-nxt').addEventListener('click', function() {
+  document.getElementById('#nxt_slide').addEventListener('click', function() {
     fullpage_api.moveSectionDown();
 }); 
   
