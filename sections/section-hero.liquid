@@ -439,7 +439,7 @@ const callback = function(mutationsList, observer) {
         }
         else if (mutation.type === 'attributes') {
             console.log('The ' + mutation.attributeName + ' attribute was modified.');     
-          console.log( mutation, mutation.target.attributes.class.nodeValue );
+          console.log( mutation, mutation.target.attributes.class.value );
 
           
         }
