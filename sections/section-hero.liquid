@@ -223,7 +223,7 @@
 
   {% if block.type == 'style_3' %}
 
-  <div class="section fp-auto-height">
+  <div class="section fp-auto-height" id="norm_scroll" >
     <section class="px-md-5 px-3 mb-4">
       <div class="row py-3 boder-line mx-0 mb-4 mt-3">
         <div class="col-md-6 col-xl-7 ps-0">
@@ -412,11 +412,12 @@
   new fullpage('#fullpage', {
     fitToSection: false,
     scrollBar: true,
-    scrollOverflow: true,
+//     scrollOverflow: true,
     scrollHorizontally: true,
     anchors:['firstPage', 'secondPage'],
     autoScrolling: true,
 	fitToSection: true,
+    normalScrollElements: '#norm_scroll',
     // menu: '.mobile_menu',
     // lockAnchors: false,
     // anchors: ['firstPage', 'secondPage'],
