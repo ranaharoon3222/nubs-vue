@@ -61,16 +61,11 @@
             <li class="btm">
 
 
-                {% for block in section.blocks %}
-                {% if block.type == 'right_menu' %}
+                     {% for link in linklists[section.mb_bottom_menu].links %}
                 <div>
-                    <a class=" active text-decoration-none" href="{{ block.settings.main_item_link }}"> {{
-                        block.settings.main_item }} </a>
+                    <a class=" active text-decoration-none item-{{ forloop.index0 }}" href="{{ link.url }}"> {{  link.title }} </a>
                 </div>
 
-
-
-                {% endif %}
                 {% endfor %}
             </li>
 
