@@ -36,17 +36,13 @@
 }
 
 @font-face {
-    font-family: Atlas;
-    src: url({{'AtlasGrotesk-Medium.static.woff2 '|asset_url}} ) format('woff2'),
-        url({{'AtlasGrotesk-Medium.static.woff '|asset_url}}) format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: Atlas;
+  src: url({{'AtlasGrotesk-Medium.static.woff2 '|asset_url}}) format('woff2'),
+    url({{'AtlasGrotesk-Medium.static.woff '|asset_url}}) format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
-
-
-
-
 
 :root {
   --p-family: 'SangBleu';
@@ -463,8 +459,7 @@ section#custom-navigation > div::-webkit-scrollbar {
   font-size: 10px;
   color: #fff;
   margin-top: 40px;
-    max-width: 213px;
-    
+  max-width: 213px;
 }
 #footer .copyright a {
   color: #fff;
@@ -771,7 +766,6 @@ textarea {
   }
 }
 @media all and (min-width: 980px) {
-  
   .snize-item.clearfix {
     position: relative !important;
   }
@@ -1098,22 +1092,20 @@ div#inner-navigation {
 
 @media all and (min-width: 980px) {
   html.product {
-  overflow-x: visible !important;
-}
-    .fixed_cart {
+    overflow-x: visible !important;
+  }
+  .fixed_cart {
     display: none;
-} 
-  
+  }
+
   .hide-sug .crtd {
     display: none;
-}
-  
+  }
+
   .hide-cartd .sgs {
     display: none;
-}
-  
+  }
 
-  
   .quantity_picker button {
     padding: 0 10px;
   }
@@ -1579,11 +1571,8 @@ a:hover {
 }
 
 @media all and (min-width: 980px) {
-  
   .mb_fixed {
-  
-  display:none;
-  
+    display: none;
   }
   .quiz-col {
     max-height: 80vh;
@@ -1631,49 +1620,53 @@ a:hover {
   color: var(--text-2-color);
   margin-left: 5px;
 }
-  
-  
-  .side_cart .modal-footer {
-    padding: 0;
+
+.side_cart .modal-footer {
+  padding: 0;
 }
-  .border_btn {
-    text-decoration: none;
-    border-bottom: 2px solid var(--p-color);
+.border_btn {
+  text-decoration: none;
+  border-bottom: 2px solid var(--p-color);
 }
 
 @media all and (max-width: 980px) {
-  
+  .mb-hidden {
+    display: none;
+  }
+  .home-banner-1 {
+    height: 100% !important;
+  }
   #cart_popup .modal-footer a.main-button {
     width: 180px;
-}
-  
-  html.product {
-  overflow-x:hidden !important;
   }
-   .fixed_cart img.cart_ico {
+
+  html.product {
+    overflow-x: hidden !important;
+  }
+  .fixed_cart img.cart_ico {
     position: relative;
     top: -2px;
     left: -3px;
-}
+  }
   .fixed_cart div#quantity_picker {
     display: none;
-}
+  }
   .fixed_cart #pricing {
     padding: 0 !important;
     background: transparent !important;
     width: auto;
     max-width: 100%;
     justify-content: flex-start !important;
-}
-  
+  }
+
   .fixed_cart div#add_to_cart {
     width: 164px;
-}
-  
+  }
+
   .st_wp_cart {
     justify-content: space-between;
-}
-  
+  }
+
   .fixed_cart {
     background: white;
     padding: 17px 10px;
@@ -1682,37 +1675,35 @@ a:hover {
     z-index: 30;
     width: 100%;
     left: 0;
-}
-  
-  
+  }
+
   .mb_fixed {
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 99999;
     width: 100%;
-}
+  }
 
-.mb_fixed p {
+  .mb_fixed p {
     display: none;
-}
+  }
 
-.mb_fixed .crtd {
-    padding-top: 20px !IMPORTANT;
-}
-  
+  .mb_fixed .crtd {
+    padding-top: 20px !important;
+  }
+
   .crtd {
     height: auto !important;
-}
-  
+  }
+
   .hide-cartd .crtd {
     display: none;
-}
+  }
   .hide-sug .sgs {
     display: none;
-}
+  }
 
-  
   span.snize-product-filters-title {
     font-family: var(--p-family) !important;
   }
@@ -1900,7 +1891,7 @@ a:hover {
     width: 90%;
   }
   .sm-hidden {
-    display: none;
+    display: none !important;
   }
 
   .space_32 {
@@ -1929,8 +1920,6 @@ a:hover {
     padding-bottom: 15px !important;
   }
 }
-
-
 
 .stick-top {
   position: sticky !important;
@@ -2065,22 +2054,24 @@ li.btm a {
 div#quiz-sec::-webkit-scrollbar {
   display: none;
 }
-  
-  .btm a {
-    font-size: 14px !important;
-    padding-bottom: 5px !important;
+
+.btm a {
+  font-size: 14px !important;
+  padding-bottom: 5px !important;
 }
 
 .btm .item-3 {
-    font-family: var(--p-family) !important;
-    color: var(--p-color) !important;
-    font-size: 16px !important;
-    padding-top: 15px;
+  font-family: var(--p-family) !important;
+  color: var(--p-color) !important;
+  font-size: 16px !important;
+  padding-top: 15px;
 }
 .btm .item-0 {
-    font-size: 16px !important;
-    color: var(--p-color);
-    font-family: var(--p-family) !important;
+  font-size: 16px !important;
+  color: var(--p-color);
+  font-family: var(--p-family) !important;
 }
-  
-  
+
+body:not(.fp-viewing-0) header {
+  display: none;
+}

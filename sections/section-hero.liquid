@@ -1,11 +1,25 @@
-<main id="slider-wrap">
+<link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+
+
+
+{% for block in section.blocks %}
+
+
+
+{% endfor %}
+
+
+
+
+<main id="slider-wrap" class="mb-hidden">
   <div id="swiper">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
+
       {% if block.type == 'style_1' %}
       <div id="slide-{{ forloop.index }}" class="swiper-slide"
         data-hash="{{block.settings.nav_title | replace: ' ', '-' | url_encode}}">
-        <!-- Start: Nubs Banner 1 -->
+
         <section class="vh-100 d-grid align-items-center home-banner-1"
           style="background: url({{block.settings.background_image  | img_url: 'master' }}) no-repeat;background-size: cover;">
           <div class="text-center px-4">
@@ -14,13 +28,13 @@
               class="main-button-dark mx-auto mt-4 text-uppercase quiz-open"
               href="{{block.settings.btn_link}}">{{block.settings.btn_text}}</a>
           </div>
-          
-        </section><!-- End: Nubs Banner 1 -->
-        
-        
-        <div class="h-arrow slide-nxt" > 
-        <img src="{{ 'downarow.static.svg' | asset_url }}" />
+
+        </section>
+
+        <div class="h-arrow slide-nxt">
+          <img src="{{ 'downarow.static.svg' | asset_url }}" />
         </div>
+
       </div>
       {% endif %}
 
@@ -117,7 +131,8 @@
                 href="{{block.settings.btn_url}}">{{block.settings.btn_text}}</a><!-- End: Nubs Button -->
             </div>
           </div>
-        </section><!-- End: Home 5 Nubs -->
+        </section>
+        <!-- End: Home 5 Nubs -->
       </div>
       {% endif %}
       {% endfor %}
@@ -158,6 +173,136 @@
 
 
 
+<div id="fullpage" class="lg-hidden">
+  {% for block in section.blocks %}
+
+  {% if block.type == 'style_1' %}
+  <div class="section">
+    <section class="vh-100 d-grid align-items-center home-banner-1"
+      style="background: url({{block.settings.background_image  | img_url: 'master' }}) no-repeat;background-size: cover;">
+      <div class="text-center px-4">
+        <h1 class="text-white">{{block.settings.title}}</h1>
+        <h1 class="text-white fst-italic"> {{block.settings.sub_title}} </h1><a
+          class="main-button-dark mx-auto mt-4 text-uppercase quiz-open"
+          href="{{block.settings.btn_link}}">{{block.settings.btn_text}}</a>
+      </div>
+
+    </section>
+
+    <div class="h-arrow slide-nxt">
+      <img src="{{ 'downarow.static.svg' | asset_url }}" />
+    </div>
+  </div>
+  {% endif %}
+
+  {% if block.type == 'style_2' %}
+
+  <div class="section">
+    <section class="px-md-5 px-3 mb-4">
+      <div class="row py-3 boder-line mx-0 mb-4 mt-3">
+        <div class="col-md-6 col-xl-7 ps-0">
+          <h3>{{ block.settings.title }}</h3>
+          <h3 class="fst-italic">{{ block.settings.sub_title }}</h3>
+        </div>
+        <div class="col-md-6 col-xl-5 home-cs-width ms-auto ps-0">
+          <p>{{ block.settings.description }}</p>
+        </div>
+      </div>
+      <div class="text-center px-3 home-2"
+        style="background: url({{block.settings.image  | img_url: 'master' }});background-size: cover;">
+        <div class="me-3 pt-5">
+          <!-- Start: Nubs Button --><a class="main-button-dark ms-auto text-uppercase"
+            href="{{ block.settings.btn_link }}">{{ block.settings.btn_text }}</a>
+          <!-- End: Nubs Button -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  {% endif %}
+
+  {% if block.type == 'style_3' %}
+
+  <div class="section fp-auto-height">
+    <section class="px-md-5 px-3 mb-4">
+      <div class="row py-3 boder-line mx-0 mb-4 mt-3">
+        <div class="col-md-6 col-xl-7 ps-0">
+          <h3>{{block.settings.title}}</h3>
+        </div>
+        <div class="col-md-6 col-xl-5 home-cs-width ms-auto ps-0">
+          <p>{{block.settings.description}}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-xl-3"><img class="w-100 slide-4-img"
+            src="{{block.settings.image | img_url: 'master'}}">
+        </div>
+        <div class="col-md-4 col-xl-6 align-self-center">
+          <div class="accordion c-accordian" role="tablist" id="accordion-1">
+            <div class="accordion-item">
+              <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                  data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false"
+                  aria-controls="accordion-1 .item-1">{{block.settings.icno_1_title}}<img
+                    src="{{block.settings.icno_1_image | img_url: 'master'}}"></button></h2>
+              <div class="accordion-collapse collapse item-1 show" role="tabpanel" data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                  <p class="mb-0 s-family">{{block.settings.icno_1_text}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                  data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false"
+                  aria-controls="accordion-1 .item-2">{{block.settings.icno_2_title}}<img
+                    src="{{block.settings.icno_2_image | img_url: 'master'}}"></button></h2>
+              <div class="accordion-collapse collapse item-2 show" role="tabpanel" data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                  <p class="mb-0 s-family">{{block.settings.icno_2_text}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" role="tab"><button class="accordion-button" data-bs-toggle="collapse"
+                  data-bs-target="#accordion-1 .item-3" aria-expanded="true"
+                  aria-controls="accordion-1 .item-3">{{block.settings.icno_3_title}}<img
+                    src="{{block.settings.icno_3_image | img_url: 'master'}}"></button></h2>
+              <div class="accordion-collapse collapse show item-3 show" role="tabpanel" data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                  <p class="mb-0 s-family">{{block.settings.icno_3_text}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <!-- Start: Nubs Button --><a class="main-button mx-lg-auto mt-4 text-uppercase text-center"
+            href="{{block.settings.btn_url}}">{{block.settings.btn_text}}</a><!-- End: Nubs Button -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  {% endif %}
+
+
+  {% endfor %}
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js"></script>
+
+<script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+
 
 <script>
   window.addEventListener('load', () => {
@@ -190,20 +335,20 @@
             (location.hash = o);
         });
       });
-  const homeSwiper =  new Swiper('#swiper', {
+    const homeSwiper = new Swiper('#swiper', {
       effect: 'fade',
       fadeEffect: { crossFade: !0 },
       autoHeight: !0,
       direction: 'horizontal',
       loop: false,
-    touchAngle: 360,
-    touchReleaseOnEdges:true,
+      touchAngle: 360,
+      touchReleaseOnEdges: true,
 
       mousewheel: {
         releaseOnEdges: true,
         thresholdTime: 1500,
-//         thresholdDelta: 95,
-//         sensitivity:600,
+        //         thresholdDelta: 95,
+        //         sensitivity:600,
       },
       hashNavigation: { watchState: !0 },
       on: {
@@ -237,23 +382,49 @@
         },
       },
     });
-  
-  
-  
- document.querySelector('.slide-nxt').addEventListener("click", function(){
-  
-homeSwiper.slideNext();
+
+
+
+    document.querySelector('.slide-nxt').addEventListener("click", function () {
+
+      homeSwiper.slideNext();
+
+    });
+
+
 
   });
-  
-  
-  
+
+
+
+
+
+
+</script>
+
+
+
+
+
+<script>
+
+
+  new fullpage('#fullpage', {
+    fitToSection: false,
+    scrollBar: true,
+    scrollOverflow: true
+    // menu: '.mobile_menu',
+    // lockAnchors: false,
+    // anchors: ['firstPage', 'secondPage'],
+    // navigation: false,
+    // navigationPosition: 'right',
+    // navigationTooltips: ['firstSlide', 'secondSlide'],
+    // showActiveTooltip: false,
+    // slidesNavigation: false,
+    // slidesNavPosition: 'bottom',
+    // sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+    // fitToSection: true,
   });
-
-  
-  
-
-
 
 </script>
 
