@@ -428,22 +428,16 @@
 	scrollBar: true,
 	dragAndMove: true,
     
-   onLeave: function(origin, destination, direction){
+   afterLoad: function(origin, destination, direction){
    
 
-     if(destination.isLast && direction =='down'){
-		fullpage_api.setAutoScrolling(false);
-     } else {
-     fullpage_api.setAutoScrolling(true);
-     }
-     
 //     if(destination.isLast) {
 //            fullpage_api.setAutoScrolling(false);
 //           } else {
 //              fullpage_api.fitToSection();
 //            fullpage_api.setAutoScrolling(true);
 //           }
-   },    
+//    },    
     
   });
   
