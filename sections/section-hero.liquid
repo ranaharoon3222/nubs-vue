@@ -432,15 +432,25 @@
          navigation: true,
         scrollingSpeed: 1000,
    afterLoad: function(origin, destination, direction){
-   
-
     if(destination.isLast) {
            fullpage_api.setAutoScrolling(false);
           } else {
-             fullpage_api.fitToSection();
+//              fullpage_api.fitToSection();
            fullpage_api.setAutoScrolling(true);
           }
-   },    
+   },  
+        
+        onLeave: function(origin, destination, direction){
+		var leavingSection = this;
+
+		//after leaving section 2
+		if(destination.isLast && direction =='up'){
+			fullpage_api.moveSectionUp();
+		}
+
+		
+	}
+        
     
   });
   
