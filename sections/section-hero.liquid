@@ -418,7 +418,7 @@
   window.addEventListener('load', function () {
   
     
-    window.addEventListener('resize', function() {
+    function flPage() {
     
         if(window.innerWidth  < 981 )  {
           new fullpage('#fullpage', {
@@ -449,7 +449,12 @@
     } 
       
       
-    });
+    }
+    
+    
+    flPage();
+    
+    window.addEventListener('resize', flPage);
 
     
     
