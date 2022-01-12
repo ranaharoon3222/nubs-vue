@@ -418,8 +418,9 @@
   window.addEventListener('load', function () {
   
     
+    window.addEventListener('resize', function() {
     
-    if(window.innerWidth  < 981 )  {
+        if(window.innerWidth  < 981 )  {
           new fullpage('#fullpage', {
     	css3: true,
     fitToSection: false,
@@ -446,6 +447,13 @@
   });  
     
     } 
+      
+      
+    });
+
+    
+    
+
     
     
 
