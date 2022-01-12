@@ -513,9 +513,7 @@ observer.observe(targetNode, config);
   body, html {
     overflow-x: hidden !important;
 }
-  body:not(.fp-viewing-0) header {
-  display: none;
-}
+
 
  .ver_center .accordion-body {
     padding-left: 4px;
@@ -550,7 +548,12 @@ observer.observe(targetNode, config);
     background: #ABFEDA !important;
 }
 
-
+  @media all and (max-width:980px){
+  
+    body:not(.fp-viewing-0) header {
+  display: none;
+}
+  }
   
   
   
