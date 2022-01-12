@@ -431,7 +431,7 @@
    onLeave: function(origin, destination, direction){
    
 
-     if( direction =='down'){
+     if(destination.isLast && direction =='down'){
 		fullpage_api.setAutoScrolling(false);
      } else {
      fullpage_api.setAutoScrolling(true);
