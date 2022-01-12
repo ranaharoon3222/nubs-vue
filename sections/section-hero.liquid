@@ -443,6 +443,7 @@
         onLeave: function(origin, destination, direction){
 		//after leaving section 2
 		if(destination.isLast && direction =='up'){
+          console.log('up')
 			fullpage_api.moveSectionUp();
 		}
 	}
