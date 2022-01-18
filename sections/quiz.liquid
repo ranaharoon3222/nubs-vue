@@ -102,9 +102,43 @@
                     <div class="col-md-6 pe-0 ps-0">
 
 
+                        <div>
+                            <img v-if="activeImage.value && step.value === 0 " class="w-100" :src="activeImage.value">
+                            <img v-else="activeImage.value && step.value === 0 " class="w-100"
+                                src="{{section.settings.sofa | img_url: 'master'}}">
+                        </div>
 
-                        <!-- <img v-if="step.value === 0" class="w-100" src="{{section.settings.sofa | img_url: 'master'}}">
-                        <img v-else-if="step.value === 1" class="w-100"
+                        <div>
+                            <img v-if="activeImage.value && step.value === 1" class="w-100" :src="activeImage.value">
+                            <img v-else="activeImage.value && step.value === 1 " class="w-100"
+                                src="{{section.settings.sofa1 | img_url: 'master'}}">
+                        </div>
+
+                        <div>
+                            <img v-if="activeImage.value && step.value === 2" class="w-100" :src="activeImage.value">
+                            <img v-else="activeImage.value && step.value === 2 " class="w-100"
+                                src="{{section.settings.sofa2 | img_url: 'master'}}">
+                        </div>
+
+                        <div>
+                            <img v-if="activeImage.value && step.value === 3" class="w-100" :src="activeImage.value">
+                            <img v-else="activeImage.value && step.value === 3 " class="w-100"
+                                src="{{section.settings.sofa3 | img_url: 'master'}}">
+                        </div>
+
+                        <div>
+                            <img v-if="activeImage.value && step.value === 4" class="w-100" :src="activeImage.value">
+                            <img v-else="activeImage.value && step.value === 4 " class="w-100"
+                                src="{{section.settings.sofa4 | img_url: 'master'}}">
+                        </div>
+
+                        <div>
+                            <img v-if="activeImage.value && step.value === 5" class="w-100" :src="activeImage.value">
+                            <img v-else="activeImage.value && step.value === 5 " class="w-100"
+                                src="{{section.settings.sofa5 | img_url: 'master'}}">
+                        </div>
+
+                        <!-- <img v-else-if="step.value === 1" class="w-100"
                             src="{{section.settings.sofa1 | img_url: 'master'}}">
                         <img v-else-if="step.value === 2" class="w-100"
                             src="{{section.settings.sofa2 | img_url: 'master'}}">
@@ -114,12 +148,6 @@
                             src="{{section.settings.sofa4 | img_url: 'master'}}">
                         <img v-else-if="step.value === 5" class="w-100"
                             src="{{section.settings.sofa5 | img_url: 'master'}}"> -->
-
-
-
-                        <img class="w-100" :src="activeImage.value">
-
-
 
                     </div>
                 </div>
@@ -135,6 +163,7 @@
 
 
 {% schema %}
+
 {
 "name": "quiz",
 "settings": [
@@ -158,26 +187,22 @@
 "type": "image_picker",
 "id": "sofa1",
 "label": "Sofá image 1"
-}
-,
+},
 {
 "type": "image_picker",
 "id": "sofa2",
 "label": "Sofá image 2"
-}
-,
+},
 {
 "type": "image_picker",
 "id": "sofa3",
 "label": "Sofá image 3"
-}
-,
+},
 {
 "type": "image_picker",
 "id": "sofa4",
 "label": "Sofá image 4"
-}
-,
+},
 {
 "type": "image_picker",
 "id": "sofa5",
@@ -196,6 +221,11 @@
 },
 {
 "type": "image_picker",
+"id": "image_lg1",
+"label": "Large Image 1"
+},
+{
+"type": "image_picker",
 "id": "image1",
 "label": "Image 1"
 },
@@ -203,6 +233,11 @@
 "type": "text",
 "id": "title2",
 "label": "Title 2"
+},
+{
+"type": "image_picker",
+"id": "image_lg2",
+"label": "Large Image 2"
 },
 {
 "type": "image_picker",
@@ -216,6 +251,11 @@
 },
 {
 "type": "image_picker",
+"id": "image_lg3",
+"label": "Large Image 3"
+},
+{
+"type": "image_picker",
 "id": "image3",
 "label": "Image 3"
 },
@@ -223,6 +263,11 @@
 "type": "text",
 "id": "title4",
 "label": "Title 4"
+},
+{
+"type": "image_picker",
+"id": "image_lg4",
+"label": "Large Image 4"
 },
 {
 "type": "image_picker",
@@ -236,6 +281,11 @@
 },
 {
 "type": "image_picker",
+"id": "image_lg5",
+"label": "Large Image 5"
+},
+{
+"type": "image_picker",
 "id": "image5",
 "label": "Image 5"
 },
@@ -246,6 +296,11 @@
 },
 {
 "type": "image_picker",
+"id": "image_lg6",
+"label": "Large Image 6"
+},
+{
+"type": "image_picker",
 "id": "image6",
 "label": "Image 6"
 },
@@ -253,6 +308,11 @@
 "type": "text",
 "id": "title7",
 "label": "Title 7"
+},
+{
+"type": "image_picker",
+"id": "image_lg7",
+"label": "Large Image 7"
 },
 {
 "type": "image_picker",
@@ -301,5 +361,6 @@
 }
 ]
 }
+
 
 {% endschema %}
