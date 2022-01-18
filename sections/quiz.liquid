@@ -102,37 +102,37 @@
                     <div class="col-md-6 pe-0 ps-0">
 
 
-                        <div>
+                        <div v-if="step.value === 0">
                             <img v-if="activeImage.value && step.value === 0 " class="w-100" :src="activeImage.value">
                             <img v-else="activeImage.value && step.value === 0 " class="w-100"
                                 src="{{section.settings.sofa | img_url: 'master'}}">
                         </div>
 
-                        <div>
+                        <div v-else-if="step.value === 1">
                             <img v-if="activeImage.value && step.value === 1" class="w-100" :src="activeImage.value">
                             <img v-else="activeImage.value && step.value === 1 " class="w-100"
                                 src="{{section.settings.sofa1 | img_url: 'master'}}">
                         </div>
 
-                        <div>
+                        <div v-else-if="step.value === 2">
                             <img v-if="activeImage.value && step.value === 2" class="w-100" :src="activeImage.value">
                             <img v-else="activeImage.value && step.value === 2 " class="w-100"
                                 src="{{section.settings.sofa2 | img_url: 'master'}}">
                         </div>
 
-                        <div>
+                        <div v-else-if="step.value === 3">
                             <img v-if="activeImage.value && step.value === 3" class="w-100" :src="activeImage.value">
                             <img v-else="activeImage.value && step.value === 3 " class="w-100"
                                 src="{{section.settings.sofa3 | img_url: 'master'}}">
                         </div>
 
-                        <div>
+                        <div v-else-if="step.value === 4">
                             <img v-if="activeImage.value && step.value === 4" class="w-100" :src="activeImage.value">
                             <img v-else="activeImage.value && step.value === 4 " class="w-100"
                                 src="{{section.settings.sofa4 | img_url: 'master'}}">
                         </div>
 
-                        <div>
+                        <div v-else-if="step.value === 5">
                             <img v-if="activeImage.value && step.value === 5" class="w-100" :src="activeImage.value">
                             <img v-else="activeImage.value && step.value === 5 " class="w-100"
                                 src="{{section.settings.sofa5 | img_url: 'master'}}">
