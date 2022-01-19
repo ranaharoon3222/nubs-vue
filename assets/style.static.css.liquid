@@ -1663,12 +1663,14 @@ a:hover {
   div.snize li.snize-product .snize-price-list .snize-discounted-price {
     margin-left: 0 !important;
 }
-  #snize_results.snize-mobile-design.snize-new-version #snize-search-results-grid-mode.snize-two-columns li.snize-product {
-    padding-right: 16px !important;
+#snize_results.snize-mobile-design.snize-new-version #snize-search-results-grid-mode.snize-two-columns li.snize-product:nth-of-type(odd) {
+    padding-right: 8px !important;
+    padding-left: 0px !important;
 }
-  
-  #snize_results.snize-mobile-design.snize-new-version #snize-search-results-grid-mode.snize-two-columns li.snize-product:nth-of-type(even) {
-    padding-right: 0 !IMPORTANT;
+
+#snize_results.snize-mobile-design.snize-new-version #snize-search-results-grid-mode.snize-two-columns li.snize-product:nth-of-type(even) {
+    padding-right: 0!important;
+    padding-left: 8px !important;
 }
   
   
