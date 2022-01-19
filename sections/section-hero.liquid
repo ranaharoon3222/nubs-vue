@@ -49,7 +49,7 @@
       <div id="slide-{{ forloop.index }}" class="swiper-slide"
         data-hash="{{block.settings.nav_title | replace: ' ', '-' | url_encode}}">
         <section class="px-md-5 px-3 mb-4">
-          <div class="row py-3 boder-line mx-0 mb-4 mt-3 animate__animated animate__bounce">
+          <div class="row py-3 boder-line mx-0 mb-4 mt-3 animate__animated animate__bounce" id="s_anim" >
             <div class="col-md-6 col-xl-7 ps-0">
               <h3>{{ block.settings.title }}</h3>
               <h3 class="fst-italic">{{ block.settings.sub_title }}</h3>
@@ -362,9 +362,30 @@
       hashNavigation: { watchState: !0 },
       on: {
         slideChange: function (swiper) {
+          
+          const animateCSS = (element, animation, prefix = 'animate__') =>
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd(event) {
+      event.stopPropagation();
+      node.classList.remove(`${prefix}animated`, animationName);
+      resolve('Animation ended');
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+  });
 
           setTimeout(() => {
+                     
+animateCSS('#s_anim', 'bounce');
 
+                     
 
             if (location.hash === '#Responsabilidad-social') {
               document.querySelector('#custom-navigation').classList.add('dark');
