@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
-
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 
 {% for block in section.blocks %}
@@ -46,7 +49,7 @@
       <div id="slide-{{ forloop.index }}" class="swiper-slide"
         data-hash="{{block.settings.nav_title | replace: ' ', '-' | url_encode}}">
         <section class="px-md-5 px-3 mb-4">
-          <div class="row py-3 boder-line mx-0 mb-4 mt-3">
+          <div class="row py-3 boder-line mx-0 mb-4 mt-3 animate__animated animate__bounce">
             <div class="col-md-6 col-xl-7 ps-0">
               <h3>{{ block.settings.title }}</h3>
               <h3 class="fst-italic">{{ block.settings.sub_title }}</h3>
