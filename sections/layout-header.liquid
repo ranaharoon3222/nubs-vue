@@ -26,7 +26,7 @@
             {% if block.settings.sub_menu_1 != blank %}
             <div class="nav-item dropdown">
               <a aria-expanded="false" class="dropdown-toggle active text-decoration-none" data-bs-toggle="dropdown"
-                href="{{ block.settings.main_item_link }}"> {{ block.settings.main_item }} </a>
+                href="{{ block.settings.main_item_link }}"> {{ block.settings.main_item | strip }} </a>
 
               <div class="py-4 dropdown-menu megamenu w-100" role="menu"
                 style="border-width: 0px;border-radius: 0;box-shadow: 0px 0px 3px 2px var(--s-color);">
