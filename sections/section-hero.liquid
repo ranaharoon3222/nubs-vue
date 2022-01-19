@@ -49,12 +49,12 @@
       <div id="slide-{{ forloop.index }}" class="swiper-slide"
         data-hash="{{block.settings.nav_title | replace: ' ', '-' | url_encode}}">
         <section class="px-md-5 px-3 mb-4">
-          <div class="row py-3 boder-line mx-0 mb-4 mt-3 s_anim"  >
-            <div class="col-md-6 col-xl-7 ps-0">
+          <div class="row py-3 boder-line mx-0 mb-4 mt-3 "  >
+            <div class="col-md-6 col-xl-7 ps-0 s_anim">
               <h3>{{ block.settings.title }}</h3>
               <h3 class="fst-italic">{{ block.settings.sub_title }}</h3>
             </div>
-            <div class="col-md-6 col-xl-5 home-cs-width ms-auto ps-0">
+            <div class="col-md-6 col-xl-5 home-cs-width ms-auto ps-0 s_anim">
               <p>{{ block.settings.description }}</p>
             </div>
           </div>
@@ -386,11 +386,12 @@
 
 
     });
-          setTimeout(() => {
-                     
-animateCSS('.s_anim', 'fadeInUp');
+          
+          animateCSS('.s_anim', 'fadeInUp');
 
-                     
+          
+          setTimeout(() => {
+                                         
 
             if (location.hash === '#Responsabilidad-social') {
               document.querySelector('#custom-navigation').classList.add('dark');
