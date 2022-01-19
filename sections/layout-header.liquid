@@ -19,8 +19,8 @@
           <li class="nav-item {% if block.settings.sub_menu_1 != blank %} dropdown has-megamenu {% endif %}">
 
             {% if block.settings.sub_menu_1 == blank %}
-            <a class=" active text-decoration-none" href="{{ block.settings.main_item_link }}"> {{
-              block.settings.main_item }} </a>
+            <a class=" active text-decoration-none" href="{{ block.settings.main_item_link }}">
+              {{ block.settings.main_item }}</a>
             {% endif %}
 
             {% if block.settings.sub_menu_1 != blank %}
