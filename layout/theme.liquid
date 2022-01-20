@@ -48,7 +48,7 @@
   {{ content_for_header }}
 </head>
 
-<body class="min-h-screen {{template.name }} {{page.handle}}">
+<body class="min-h-screen {{ template }} {{template.name }} {{page.handle}}">
   <div vue>
     {% render 'cart-popup' %}
   </div>
