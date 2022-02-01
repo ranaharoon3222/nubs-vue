@@ -27,7 +27,7 @@
             "settings": {
               "main_item": "Accesorios",
               "main_item_link": "shopify:\/\/collections\/accesorios",
-              "sub_menu_1": "",
+              "sub_menu_1": "sofa-sub-2",
               "sub_menu_2": ""
             }
           },
@@ -45,7 +45,7 @@
             "settings": {
               "main_item": "Nosotros",
               "main_item_link": "",
-              "sub_menu": ""
+              "sub_menu": "main-menu"
             }
           },
           "3a907643-71fc-4f9b-9c9e-597943a5dfce": {
