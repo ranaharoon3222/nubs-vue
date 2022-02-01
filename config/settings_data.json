@@ -19,7 +19,7 @@
               "main_item": "Sofás",
               "main_item_link": "#",
               "sub_menu_1": "main-menu",
-              "sub_menu_2": ""
+              "sub_menu_2": "sof-derecha"
             }
           },
           "63efaab0-f5a6-46f0-9993-8df0a04579da": {
@@ -45,7 +45,7 @@
             "settings": {
               "main_item": "Nosotros",
               "main_item_link": "",
-              "sub_menu": "main-menu"
+              "sub_menu": "colaboradores"
             }
           },
           "3a907643-71fc-4f9b-9c9e-597943a5dfce": {
@@ -66,7 +66,7 @@
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Group.png",
-          "mb_bottom_menu": ""
+          "mb_bottom_menu": "mobile-bottom"
         }
       },
       "layout-footer": {
