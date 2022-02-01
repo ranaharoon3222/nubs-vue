@@ -210,7 +210,8 @@
         ],
         "settings": {
           "collection": "sofa",
-          "title": "Personaliza tu sofá"
+          "title": "Personaliza tu sofá",
+          "sofa": "shopify:\/\/shop_images\/proyecto-1.jpg"
         }
       }
     },
