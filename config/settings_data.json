@@ -76,21 +76,21 @@
             "type": "footer_col",
             "settings": {
               "heading": "Catálogo",
-              "footer_menu": ""
+              "footer_menu": "sofa-sub-2"
             }
           },
           "daa592cc-514f-438d-bf86-916f2b7d4637": {
             "type": "footer_col",
             "settings": {
               "heading": "Empresa",
-              "footer_menu": ""
+              "footer_menu": "main-menu"
             }
           },
           "dfc261e7-07db-4997-a12f-08eac3524c02": {
             "type": "footer_col",
             "settings": {
               "heading": "Legales",
-              "footer_menu": ""
+              "footer_menu": "sofas-sub-1"
             }
           }
         },
