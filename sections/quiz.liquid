@@ -31,8 +31,6 @@
                                     href="#"><span>Textil/Color</span></a></li>
                             <li class="breadcrumb-item quiz-bdc" :class="{active: step.value === 3 ? true : false}"><a
                                     href="#"><span>Costura</span></a></li>
-                            <li class="breadcrumb-item quiz-bdc" :class="{active: step.value === 4 ? true : false}"><a
-                                    href="#"><span>Color</span></a></li>
                             <li class="breadcrumb-item quiz-bdc" :class="{active: step.value === 5 ? true : false}"><a
                                     href="#"><span>costado/patas</span></a></li>
 
@@ -68,13 +66,8 @@
                                     {% render 'quiz', b:b, for: forloop.index , screen:'costura' quizModel:
                                     'v-model="quizValues.costura"' %}
                                 </div>
-                                {% elsif b.quiz_type == 'color' %}
-                                <div v-if="step.value === 4">
-                                    {% render 'quiz', b:b, for: forloop.index , screen:'color' quizModel:
-                                    'v-model="quizValues.color"' %}
-                                </div>
                                 {% elsif b.quiz_type == 'costados' %}
-                                <div v-if="step.value === 5">
+                                <div v-if="step.value === 4">
                                     {% render 'quiz', b:b, for: forloop.index , screen:'costados' quizModel:
                                     'v-model="quizValues.costados"' %}
                                 </div>
@@ -127,12 +120,6 @@
                         </div>
 
                         <div v-else-if="step.value === 4">
-                            <img v-if="activeImage.value && step.value === 4" class="w-100" :src="activeImage.value">
-                            <img v-else="activeImage.value && step.value === 4 " class="w-100"
-                                src="{{section.settings.sofa4 | img_url: 'master'}}">
-                        </div>
-
-                        <div v-else-if="step.value === 5">
                             <img v-if="activeImage.value && step.value === 5" class="w-100" :src="activeImage.value">
                             <img v-else="activeImage.value && step.value === 5 " class="w-100"
                                 src="{{section.settings.sofa5 | img_url: 'master'}}">
@@ -340,10 +327,6 @@
 {
 "value": "costura",
 "label": "COSTURA"
-},
-{
-"value": "color",
-"label": "COLOR"
 },
 {
 "value": "costados",
