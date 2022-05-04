@@ -42,15 +42,12 @@
                                 {% assign b = block.settings %}
 
                                 {% if b.quiz_type == 'tamano' %}
-
                                 <div v-if="step.value === 0">
-                                    {% render 'quiz', b:b, for: forloop.index , screen:'tamano' quizModel:
+                                    {% render 'quiz', b:b, for: forloop.index , screen:'tamanos' quizModel:
                                     'v-model="quizValues.tamano"' %}
                                 </div>
 
-
                                 {% elsif b.quiz_type == 'modelo' %}
-
                                 <div v-if="step.value === 1">
                                     {% render 'quiz', b:b, for: forloop.index , screen:'modelo' quizModel:
                                     'v-model="quizValues.modelo"' %}
@@ -67,7 +64,7 @@
                                     'v-model="quizValues.costura"' %}
                                 </div>
                                 {% elsif b.quiz_type == 'costados' %}
-                                <div v-if="step.value === 5">
+                                <div v-if="step.value === 4">
                                     {% render 'quiz', b:b, for: forloop.index , screen:'costados' quizModel:
                                     'v-model="quizValues.costados"' %}
                                 </div>
@@ -327,7 +324,7 @@
 "label": "MODELO"
 },
 {
-"value": "textil/color",
+"value": "textil",
 "label": "TEXTIL/COLOR"
 },
 {
@@ -335,7 +332,7 @@
 "label": "COSTURA"
 },
 {
-"value": "costados/patas",
+"value": "costados",
 "label": "COSTADOS/PATAS"
 }
 ]
