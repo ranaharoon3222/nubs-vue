@@ -227,12 +227,12 @@
         "settings": {
           "collection": "sofa",
           "title": "Personaliza tu sofá",
-          "sofa": "shopify:\/\/shop_images\/proyecto-1.jpg",
-          "sofa1": "shopify:\/\/shop_images\/proyecto-2.jpg",
-          "sofa2": "shopify:\/\/shop_images\/Rectangle_182.jpg",
-          "sofa3": "shopify:\/\/shop_images\/fondo-desktop.jpg",
+          "sofa": "shopify:\/\/shop_images\/individual.jpg",
+          "sofa1": "shopify:\/\/shop_images\/fijo.jpg",
+          "sofa2": "shopify:\/\/shop_images\/piel-barragan.jpg",
+          "sofa3": "shopify:\/\/shop_images\/vivotela.jpg",
           "sofa4": "shopify:\/\/shop_images\/5-Best-Sofa-Set-Designs-of-2020.jpg",
-          "sofa5": "shopify:\/\/shop_images\/Rectangle_182_1.jpg"
+          "sofa5": "shopify:\/\/shop_images\/maple.jpg"
         }
       }
     },
