@@ -31,7 +31,7 @@
                                     href="#"><span>Textil</span></a></li>
                             <li class="breadcrumb-item quiz-bdc" :class="{active: step.value === 3 ? true : false}"><a
                                     href="#"><span>Costura</span></a></li>
-                            <li class="breadcrumb-item quiz-bdc" :class="{active: step.value === 4 ? true : false}"><a
+                            <li class="breadcrumb-item quiz-bdc" :class="{active: step.value === 5 ? true : false}"><a
                                     href="#"><span>costado/patas</span></a></li>
 
                         </ol>
@@ -69,7 +69,7 @@
                                 </div>
                            
                                 {% elsif b.quiz_type == 'costados' %}
-                                <div v-if="step.value === 4">
+                                <div v-if="step.value === 5">
                                     {% render 'quiz', b:b, for: forloop.index , screen:'costados' quizModel:
                                     'v-model="quizValues.costados"' %}
                                 </div>
@@ -87,7 +87,7 @@
                                         class="ms-auto me-4 text-decoration-none text-uppercase p-color s-family d-flex align-items-center"
                                         href="#"><i class="material-icons">keyboard_arrow_left</i>&nbsp;AtrÁs</a>
 
-                                    <a v-if="step.value === 4" class="main-button text-center text-uppercase" href="#"
+                                    <a v-if="step.value === 5" class="main-button text-center text-uppercase" href="#"
                                         @click="nextStep" :disabled="state.isDisabled">ver mi sofá</a>
                                     <a v-else class="main-button text-center text-uppercase" href="#" @click="nextStep"
                                         :disabled="state.isDisabled">siguiente</a>
@@ -122,10 +122,10 @@
                         </div>
 
 
-                        <div v-else-if="step.value === 4>
-                            <img v-if="activeImage.value && step.value === 4" class="w-100" :src="activeImage.value">
-                            <img v-else="activeImage.value && step.value === 4 " class="w-100"
-                                src="{{section.settings.sofa4 | img_url: 'master'}}">
+                        <div v-else-if="step.value === 5">
+                            <img v-if="activeImage.value && step.value === 5" class="w-100" :src="activeImage.value">
+                            <img v-else="activeImage.value && step.value === 5 " class="w-100"
+                                src="{{section.settings.sofa5 | img_url: 'master'}}">
                         </div>
 
                         <!-- <img v-else-if="step.value === 1" class="w-100"
