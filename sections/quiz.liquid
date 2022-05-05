@@ -126,13 +126,13 @@
                             <img v-else="activeImage.value && step.value === 3 " class="w-100"
                                 src="{{section.settings.sofa3 | img_url: 'master'}}">
                         </div>
-
+{% comment %}
                         <div v-else-if="step.value === 4">
                             <img v-if="activeImage.value && step.value === 4" class="w-100" :src="activeImage.value">
                             <img v-else="activeImage.value && step.value === 4 " class="w-100"
                                 src="{{section.settings.sofa4 | img_url: 'master'}}">
                         </div>
-
+{% endcomment %}
                         <div v-else-if="step.value === 5">
                             <img v-if="activeImage.value && step.value === 5" class="w-100" :src="activeImage.value">
                             <img v-else="activeImage.value && step.value === 5 " class="w-100"
