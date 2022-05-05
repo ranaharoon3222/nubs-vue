@@ -31,8 +31,6 @@
                                     href="#"><span>Textil</span></a></li>
                             <li class="breadcrumb-item quiz-bdc" :class="{active: step.value === 3 ? true : false}"><a
                                     href="#"><span>Costura</span></a></li>
-                            <li class="breadcrumb-item quiz-bdc" :class="{active: step.value === 4 ? true : false}"><a
-                                    href="#"><span>Color</span></a></li>
                             <li class="breadcrumb-item quiz-bdc" :class="{active: step.value === 5 ? true : false}"><a
                                     href="#"><span>costado/patas</span></a></li>
 
@@ -63,16 +61,19 @@
                                     {% render 'quiz', b:b, for: forloop.index , screen:'textil' quizModel:
                                     'v-model="quizValues.textil"' %}
                                 </div>
+
                                 {% elsif b.quiz_type == 'costura' %}
                                 <div v-if="step.value === 3">
                                     {% render 'quiz', b:b, for: forloop.index , screen:'costura' quizModel:
                                     'v-model="quizValues.costura"' %}
                                 </div>
+
                                 {% elsif b.quiz_type == 'color' %}
                                 <div v-if="step.value === 4">
                                     {% render 'quiz', b:b, for: forloop.index , screen:'color' quizModel:
                                     'v-model="quizValues.color"' %}
                                 </div>
+                                
                                 {% elsif b.quiz_type == 'costados' %}
                                 <div v-if="step.value === 5">
                                     {% render 'quiz', b:b, for: forloop.index , screen:'costados' quizModel:
