@@ -197,23 +197,21 @@
               "quiz_type": "costura"
             }
           },
-          "288bb824-b1eb-4c39-a274-f44036ec0826": {
+          "b3cc5f46-5c1c-47b4-943d-38fcc07cca66": {
             "type": "questions",
             "settings": {
-              "title1": "Fresno",
-              "image_lg1": "shopify:\/\/shop_images\/fresno.jpg",
-              "image1": "shopify:\/\/shop_images\/fresno.png",
-              "title2": "Madera Maple",
+              "title1": "Maple",
+              "image_lg1": "shopify:\/\/shop_images\/nogal.jpg",
+              "image1": "shopify:\/\/shop_images\/maple.png",
+              "title2": "nogal",
               "image_lg2": "shopify:\/\/shop_images\/maple.jpg",
-              "image2": "shopify:\/\/shop_images\/maple.png",
-              "title3": "Nogal",
-              "image_lg3": "shopify:\/\/shop_images\/nogal.jpg",
-              "image3": "shopify:\/\/shop_images\/nogal.png",
+              "image2": "shopify:\/\/shop_images\/nogal.png",
+              "title3": "",
               "title4": "",
               "title5": "",
               "title6": "",
               "title7": "",
-              "quiz_type": "costados"
+              "quiz_type": "tamano"
             }
           }
         },
@@ -222,7 +220,7 @@
           "edf8a628-5026-4be5-9206-61917899f7b4",
           "163d4857-4248-4227-bceb-07f846845686",
           "dcff2a2b-2660-4e66-ba30-3f8483497eca",
-          "288bb824-b1eb-4c39-a274-f44036ec0826"
+          "b3cc5f46-5c1c-47b4-943d-38fcc07cca66"
         ],
         "settings": {
           "collection": "sofa",
