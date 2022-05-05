@@ -69,7 +69,7 @@
                                 </div>
                            
                                 {% elsif b.quiz_type == 'costados' %}
-                                <div v-if="step.value === 5">
+                                <div v-if="step.value === 4">
                                     {% render 'quiz', b:b, for: forloop.index , screen:'costados' quizModel:
                                     'v-model="quizValues.costados"' %}
                                 </div>
