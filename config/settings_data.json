@@ -215,6 +215,20 @@
               "title7": "",
               "quiz_type": "costados"
             }
+          },
+          "fe0caedb-7fd8-421a-b9be-23e63080dd18": {
+            "type": "questions",
+            "settings": {
+              "title1": "opcion prueba",
+              "image_lg1": "shopify:\/\/shop_images\/maple.jpg",
+              "title2": "",
+              "title3": "",
+              "title4": "",
+              "title5": "",
+              "title6": "",
+              "title7": "",
+              "quiz_type": "tamano"
+            }
           }
         },
         "block_order": [
@@ -222,7 +236,8 @@
           "edf8a628-5026-4be5-9206-61917899f7b4",
           "163d4857-4248-4227-bceb-07f846845686",
           "dcff2a2b-2660-4e66-ba30-3f8483497eca",
-          "288bb824-b1eb-4c39-a274-f44036ec0826"
+          "288bb824-b1eb-4c39-a274-f44036ec0826",
+          "fe0caedb-7fd8-421a-b9be-23e63080dd18"
         ],
         "settings": {
           "collection": "sofa",
