@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "main-product-accesorio",
       "blocks": {
         "68927a3a-1f16-4cf1-8be0-34e1e8d5be18": {
           "type": "dimensions",
