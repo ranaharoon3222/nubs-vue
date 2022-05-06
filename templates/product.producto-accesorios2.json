@@ -9,7 +9,8 @@
             "title": "General",
             "alto": "{{ product.metafields.dimensions.general_alto.value }}",
             "ancho": "{{ product.metafields.dimensions.general_ancho.value }}",
-            "profundidad": "{{ product.metafields.dimensions.profundidad.value }}"
+            "profundidad": "{{ product.metafields.dimensions.profundidad.value }}",
+            "img": "{{ product.metafields.prop.d_image.value }}"
           }
         },
         "c36cfa2a-aa40-4c61-a43f-502efc2e37ce": {
@@ -42,8 +43,7 @@
         }
       },
       "block_order": [
-        "68927a3a-1f16-4cf1-8be0-34e1e8d5be18",
-        "20886707-5cb0-4f9f-8c6f-4a33b91ffca4"
+        "68927a3a-1f16-4cf1-8be0-34e1e8d5be18"
       ],
       "settings": {
         "accessory": "accesorios"
