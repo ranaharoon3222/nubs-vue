@@ -252,13 +252,22 @@
         </div>
       </div>
 
+      {% for block in section.blocks %}
       {% if block.type == 'dimensions' %}
 
       <div class="row ">
         <div class="col-5 col-sm-5 col-md-3">
-          <h6 class="text-uppercase s-family boder-line pb-2 p-color">dimensiones</h6>
+          <h6 class="s-family boder-line pb-2"> {{block.settings.title}} </h6>
         </div>
-
+        <div class="col-2 col-sm-2 col-md-2 pe-0">
+          <h6 class="s-family boder-line pb-2"> {{block.settings.alto}} </h6>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 px-0">
+          <h6 class="s-family boder-line pb-2"> {{block.settings.ancho}} </h6>
+        </div>
+        <div class="col-3 col-sm-3 col-md-2 ps-0">
+          <h6 class="s-family boder-line pb-2"> {{block.settings.profundidad}} </h6>
+        </div>
         {% if forloop.last == true %}
 
         <div class="col-sm-12 col-md-3 py-sm-0 py-4  abs-prod">
@@ -271,7 +280,8 @@
       </div>
 
       {% endif %}
-      
+      {% endfor %}
+
  {% comment %}
       <!-- materials -->
       <div class="row mt-5">
