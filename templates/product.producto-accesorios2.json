@@ -12,15 +12,6 @@
             "profundidad": "{{ product.metafields.dimensions.profundidad.value }}"
           }
         },
-        "c36cfa2a-aa40-4c61-a43f-502efc2e37ce": {
-          "type": "dimensions",
-          "settings": {
-            "title": "Asiento",
-            "alto": "{{ product.metafields.dimensions.asiento_alto.value }}",
-            "ancho": "{{ product.metafields.dimensions.asiento_ancho.value }}",
-            "profundidad": "{{ product.metafields.dimensions.asiento_profundidad.value }}"
-          }
-        },
         "210b1945-e455-48bb-850f-3bd511b85587": {
           "type": "dimensions",
           "settings": {
@@ -43,7 +34,6 @@
       },
       "block_order": [
         "68927a3a-1f16-4cf1-8be0-34e1e8d5be18",
-        "c36cfa2a-aa40-4c61-a43f-502efc2e37ce",
         "210b1945-e455-48bb-850f-3bd511b85587",
         "20886707-5cb0-4f9f-8c6f-4a33b91ffca4"
       ],
