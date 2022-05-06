@@ -25,6 +25,14 @@
                 <div class="text-decoration-line-through text2-color"><span class="text2-color s-family"> {{
                     current_variant.compare_at_price | money_without_trailing_zeros }}</span></div>
               </div>
+              
+                            <div class="comp-bg px-2 py-3 product_description">
+                <h6 class="s-family text-uppercase ls-1">Descripción</h6>
+                <p class="mb-0"> {{ product.description }} </p>
+
+              </div>              
+              
+              
               <div class="mt-5 dropdown">
                 <div id="product_toggle">
                   <ul class="">
@@ -83,12 +91,6 @@
 
               </form>
               <!-- end cart btn -->
-              
-              <div class="comp-bg px-2 py-3 product_description">
-                <h6 class="s-family text-uppercase ls-1">Descripción</h6>
-                <p class="mb-0"> {{ product.description }} </p>
-
-              </div>              
               
               
           <!--   sticky cart   -->
