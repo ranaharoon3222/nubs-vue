@@ -12,15 +12,6 @@
             "profundidad": "{{ product.metafields.dimensions.profundidad.value }}"
           }
         },
-        "210b1945-e455-48bb-850f-3bd511b85587": {
-          "type": "dimensions",
-          "settings": {
-            "title": "Respaldo",
-            "alto": "{{ product.metafields.dimensions.respaldo_alto.value }}",
-            "ancho": "{{ product.metafields.dimensions.respaldo_ancho.value }}",
-            "profundidad": "{{ product.metafields.dimensions.respaldo_profundidad.value }}"
-          }
-        },
         "20886707-5cb0-4f9f-8c6f-4a33b91ffca4": {
           "type": "dimensions",
           "settings": {
@@ -34,7 +25,6 @@
       },
       "block_order": [
         "68927a3a-1f16-4cf1-8be0-34e1e8d5be18",
-        "210b1945-e455-48bb-850f-3bd511b85587",
         "20886707-5cb0-4f9f-8c6f-4a33b91ffca4"
       ],
       "settings": {
