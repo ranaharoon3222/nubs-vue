@@ -34,7 +34,7 @@
         "dfdc1d88-973e-4755-98f0-f895e8e681e2": {
           "type": "features",
           "settings": {
-            "title": "Costados",
+            "title": "Costados\/Patas",
             "value": "{{ product.metafields.prop.costados.value }}"
           }
         },
