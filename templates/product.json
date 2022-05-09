@@ -6,13 +6,6 @@
         "2404821d-f534-46be-a086-185f126275ef": {
           "type": "features",
           "settings": {
-            "title": "Tamaño",
-            "value": "{{ product.metafields.prop.tamano.value }}"
-          }
-        },
-        "edf8a628-5026-4be5-9206-61917899f7b4": {
-          "type": "features",
-          "settings": {
             "title": "Modelo",
             "value": "{{ product.metafields.prop.modelo.value }}"
           }
