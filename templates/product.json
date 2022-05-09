@@ -14,7 +14,7 @@
           "type": "features",
           "settings": {
             "title": "Modelo",
-            "value": "{{ product.metafields.prop.tamano.value }}"
+            "value": "{{ product.metafields.prop.modelo.value }}"
           }
         },
         "14ac0960-5142-4666-8bd5-778ea881b404": {
