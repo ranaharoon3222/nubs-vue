@@ -6,7 +6,7 @@
         "2404821d-f534-46be-a086-185f126275ef": {
           "type": "features",
           "settings": {
-            "title": "Tamaño",
+            "title": "Camacho",
             "value": "{{ product.metafields.prop.tamano.value }}"
           }
         },
@@ -34,7 +34,7 @@
         "dfdc1d88-973e-4755-98f0-f895e8e681e2": {
           "type": "features",
           "settings": {
-            "title": "Costados <--- aquí está jaja",
+            "title": "Costados",
             "value": "{{ product.metafields.prop.costados.value }}"
           }
         },
