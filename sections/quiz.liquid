@@ -56,7 +56,7 @@
                                     'v-model="quizValues.modelo"' %}
                                 </div>
 
-                                {% elsif b.quiz_type == 'textila' %}
+                                {% elsif b.quiz_type == 'textil' %}
                                 <div v-if="step.value === 2">
                                     {% render 'quiz', b:b, for: forloop.index , screen:'textil' quizModel:
                                     'v-model="quizValues.textil"' %}
