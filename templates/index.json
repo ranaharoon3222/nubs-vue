@@ -3,81 +3,20 @@
     "section-hero": {
       "type": "section-hero",
       "blocks": {
-        "a06a598e-b235-407e-998e-f8481e8198d2": {
+        "3812472e-76cc-4b72-8b3a-af5202a10f98": {
           "type": "style_1",
           "settings": {
-            "background_image": "shopify:\/\/shop_images\/home-banner-desktop-1.jpg",
-            "nav_title": "Personaliza tu sofá",
-            "title": "Una experiencia de sofá",
-            "sub_title": "completamente nueva.",
-            "btn_text": "personaliza tu sofá",
-            "btn_link": "\/quiz"
-          }
-        },
-        "12fa474d-b43c-4a6d-9512-5672e46066dc": {
-          "type": "style_2",
-          "settings": {
-            "nav_title": "Sofás",
-            "title": "Sistema flexible,",
-            "sub_title": "escalable e integrado.",
-            "description": "Con la posibilidad de adaptarse a tus necesidades en cualquier momento.",
-            "image": "shopify:\/\/shop_images\/Rectangle_181.jpg",
-            "btn_text": "ver sofás",
-            "btn_link": "shopify:\/\/collections\/sofa"
-          }
-        },
-        "3d5044a6-b77e-4ca5-abda-677710c8c802": {
-          "type": "style_2",
-          "settings": {
-            "nav_title": "Accesorios",
-            "title": "Accesorios,",
-            "sub_title": "funcionales y únicos.",
-            "description": "Complementa tu sofá NUB con accesorios de alta calidad, cubriendo las necesidades y conford y comodidad que necesitas.",
-            "image": "shopify:\/\/shop_images\/Rectangle_182_1.jpg",
-            "btn_text": "Ver accesorios",
-            "btn_link": "shopify:\/\/collections\/accesorios"
-          }
-        },
-        "33df27a3-78cb-48a5-99cc-c5c3d06a35c6": {
-          "type": "style_2",
-          "settings": {
-            "nav_title": "Proyectos especiales",
-            "title": "Proyectos especiales",
+            "background_image": "shopify:\/\/shop_images\/banner.jpg",
+            "nav_title": "",
+            "title": "",
             "sub_title": "",
-            "description": "El sofá NUB está diseñado para disfrutarlo durante mucho tiempo, por eso hemos creado accesorios de alta calidad que cubrirán las necesidades de conford y comodidad.",
-            "image": "shopify:\/\/shop_images\/Rectangle_181.jpg",
-            "btn_text": "conoce más",
-            "btn_link": "shopify:\/\/pages\/proyectus"
-          }
-        },
-        "5f111c39-e6f1-425b-a5f1-56554bc95d01": {
-          "type": "style_3",
-          "settings": {
-            "nav_title": "Responsabilidad social",
-            "title": "Responsabilidad social",
-            "sub_title": "",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed hendrerit bibendum odio sed gravida.",
-            "image": "shopify:\/\/shop_images\/home-6.png",
-            "btn_text": "conoce más",
-            "btn_link": "shopify:\/\/pages\/responsibility",
-            "icno_1_image": "shopify:\/\/shop_images\/recycling.png",
-            "icno_1_title": "Producido de forma sostenible",
-            "icno_1_text": "Creados con materiales de alta calidad, utilizamos los recursos de manera sostenible, aprovechando el 90% de los desechos que se reciclan.",
-            "icno_2_image": "shopify:\/\/shop_images\/materials.png",
-            "icno_2_title": "Materiales para toda la vida",
-            "icno_2_text": "La tela de alto rendimiento se puede limpiar fácilmente con jabón y un poco de agua o se puede quitar por completo y lavar en la lavadora.",
-            "icno_3_image": "shopify:\/\/shop_images\/community.png",
-            "icno_3_title": "Comprometidos con la comunidad social",
-            "icno_3_text": "Actualmente contamos con un taller de alfarería en Iztapalapa que da empleos a la población local."
+            "btn_text": "",
+            "btn_link": ""
           }
         }
       },
       "block_order": [
-        "a06a598e-b235-407e-998e-f8481e8198d2",
-        "12fa474d-b43c-4a6d-9512-5672e46066dc",
-        "3d5044a6-b77e-4ca5-abda-677710c8c802",
-        "33df27a3-78cb-48a5-99cc-c5c3d06a35c6",
-        "5f111c39-e6f1-425b-a5f1-56554bc95d01"
+        "3812472e-76cc-4b72-8b3a-af5202a10f98"
       ],
       "settings": {
       }
