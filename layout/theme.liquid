@@ -1,3 +1,4 @@
+      <!-- 
 
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}" class="{{template.name }} {{page.handle}}">
@@ -31,7 +32,7 @@
   <link rel="canonical" href="{{ canonical_url }}">
   {% endif %}
 
-  <!-- google fonts -->
+  <!-- google fonts --><!--
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -43,7 +44,7 @@
 
   {%- endcomment -%}
 
-  <!-- header hook for Shopify plugins -->
+  <!-- header hook for Shopify plugins --><!--
 
 
   {{ content_for_header }}
@@ -95,15 +96,15 @@
     </main>
 
     {% section 'layout-footer' %}
-    <!-- {% section 'layout-mobile-navigation' %} -->
+    <!-- {% section 'layout-mobile-navigation' %} --><!--
 
     <!-- <transition name="slide-mobile-menu">
       {% render 'layout-mobile-menu' %}
-    </transition> -->
+    </transition> --><!--
   </div>
   {% endif %}
 
-  <!-- webpack bundle -->
+  <!-- webpack bundle --><!--
   <script src="{{ 'bundle.js' | asset_url }}" defer="defer"></script>
 
   <script src="{{ 'mmenu.static.js' | asset_url }}" defer="defer"></script>
@@ -170,5 +171,5 @@
 
 
 </body>
-
+-->
 </html>
